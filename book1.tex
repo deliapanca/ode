@@ -1,0 +1,384 @@
+\documentclass[a4paper,11pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb,amsfonts,latexsym,makeidx}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}{Definition}[section]
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\M}{\mathcal{M}_{2}}
+\usepackage{setspace}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
+
+\title{Mathematical Models applied in Economy}
+\date{3.07.2018}
+\author{Delia P\^{a}nc\u{a}}
+
+\begin{document}
+ \maketitle
+ \pagenumbering{gobble}
+ 
+ %gobble = no numbers
+ % arabic=arabic numbers
+ %roman = roman numbers
+ 
+
+ \newpage
+ 
+ \chapter{Ordinary Differential Equations and Linear Systems}
+ \pagenumbering{arabic}
+ \nopagebreak
+ \section{Equations with separable variables}
+ This chapter presents the general method of solving separable equations and a few examples.
+ \subsection{The general form of an Equation with separable variables}
+ Let us consider the equation:
+ \begin{equation}
+  x'=f(t)g(x) \label{SE} \tag{SE}
+ \end{equation}
+ where $f:(t_1,t_2)\subset \R \rightarrow \R$ and $g:(x_1,x_2)\subset \R \rightarrow \R$ are continuous functions and g does not cancel on $(x_1,x_2)$.
+ Before showing how to solve \eqref{SE}, we recall the following definition:
+ 
+ \begin{definition}
+  We call a solution on the interval $I \subset \R$ for the differential equation $F(t,x,x')=0$ (where $F$ is a real function defined on an open set from $\R^3$) a function
+ $x:I\rightarrow\R$, differentiable on $I$ and which verifies the equation on $I$, meaning:
+  \begin{equation}
+   F(t,x(t),x'(t))=0, \forall t\in I \nonumber
+  \end{equation}
+
+ \end{definition}
+ 
+It is understood that $x$ is such as $(t,x(t),x'(t))$ is in the domain of function $F$ for $t\in I$.
+When reffering to a solution, we will usually point the interval on which it is defined (even the maximal interval if possible).
+\newline\newline
+
+We return now to \eqref{SE}.
+We assume that $x=x(t)$,$t\in(t_1,t_2)$ is a solution for \eqref{SE}. Then
+\begin{equation}
+ \int_{x_0}^{x(t)}\frac{d\xi}{g(\xi)} = \int_{t_0}^{t}f(s)ds, t\in (t_1,t_2) \label{1.1} \tag{1.1}
+\end{equation}
+where $t_0$ is a random point from the interval $(t_1,t_2)$ and $x_0=x(t_0)$. We define
+\begin{equation}
+ G(y)=\int_{x_0}^{y}\frac{d\xi}{g(\xi)}, y\in(x_1,x_2) \label{1.2} \tag{1.2}
+\end{equation}
+knowing that G is a differentiable function (with continuous derivative) on $(x_1,x_2)$ and strictly monotone. Therefore we can talk about $G^{-1}$, defined on the set $G((x_1,x_2))$
+which has the same properties as function $G$. Since relation \eqref{1.1} can be written:
+\begin{equation}
+ G(x(t))=\int_{t_0}^{t} f(s)ds, t\in(t_1,t_2) \label{1.3}\tag{1.3}
+\end{equation}
+results that solution $x$ has the following expression:
+\begin{equation}
+ x(t)=G^{-1}\bigg(\int_{t_0}^{t} f(s)ds\bigg), t\in(t_1,t_2) \label{1.4}\tag{1.4}
+\end{equation}
+Mutually, a function $x=x(t)$ defined by relation \eqref{1.4} (where $x_0$ is arbitrary in $(x_1,x_2)$ and $t$ goes through a neighbourhood of point $t_0$ such that $\int_{t_0}^{t} f(s)ds$ is
+in the domain of function $G^{-1}$) is a solution for \eqref{SE}, also checking the Cauchy condition $x(t_0)=x_0$.
+
+
+\subsection{Examples}
+
+%\begin{examples}
+
+%\textbf{Ex. 1} \\ $t^{3}x'+\sqrt{1-x^{2}} = 0$ \\
+%\break \textbf{Solution:} \\
+
+% $\int_{x_0}^{x} \frac{d\xi}{\sqrt{1-\xi^{2}}}= - \int_{t_0}^{t} \frac{1}{s^{3}}ds$ \\
+% $\arcsin{x}=\frac{1}{2t^{2}}+c, c\in\R$ \\
+ %$x = \sin{\frac{1}{2t^{2}}+c}$ \\
+
+
+%\textbf{Ex. 2} \\ $\sqrt{t}x'=\sqrt{1+x^{2}}$ \\
+%\break \textbf{Solution:} 
+%Let $t=t(x)$.\\
+%Then, as we solve the equation, we get:\\
+%$-2\sqrt{t}=\ln(x+\sqrt{1+x^{2}})+c$, where $c\in\R$\\
+%The solution is: $t=\frac{1}{4}(\ln(x+\sqrt{1+x^{2}})+c)^{2}$\\s
+%\end{examples}
+%aici scrii exercitii delia
+%urmatorul ex ti-e in caiet!
+
+
+
+
+
+\section{Linear Differential Equations of First Order}
+
+The following chapter introduces the reader to the general method of solving Linear Differential Equations of First Order and a few examples.
+
+\section{The General Form of a Linear Differential Equation of First Order}
+
+A Linear differential equation has the following expression:
+
+\begin{equation}
+ x'=a(t)x+b(t) \label{LE} \tag{LE}
+\end{equation}
+
+where $a,b: (t_1,t_2) \subset \R\rightarrow\R$ are continous on $(t_1,t_2)$ (bounded or not). If $x=x(t)$, $t_1<t<t_2$ is a solutions for \eqref{LE}, then
+multiplying with $exp(-\int_{t_0}^{t} a(s)ds)$, where $t_0$ is arbitrary chosen from $(t_1,t_2)$, the following equation is obtained
+\begin{equation*}
+ \frac{d}{dt}\bigg[ e^{-\int_{t_0}^{t} a(s)ds}x(t)\bigg] = b(t)e^{-\int_{t_0}^{t} a(s)ds}, t \in (t_1,t_2) 
+\end{equation*}
+
+So
+
+\begin{equation}
+ x(t)=e^{\int_{t_0}^{t} a(s)ds}(x_0 + \int_{t_0}^{t} b(s)e^{-\int_{t_0}^{s} a(\sigma)d\sigma}) , t \in (t_1,t_2) \label{SOL} \tag{SOL}
+\end{equation}
+
+where $x_0$ is an arbitrary real number. Reciprocally, we can easily agree that any function $x=x(t), t\in (t_1,t_2)$ given by the formula \eqref{SOL} is a solution for \eqref{LE}.
+Actually, \eqref{SOL} asserts the solution of \eqref{LE} with the Cauchy condition $x(t_0)=x_0$.
+
+Sometimes, it is more convienent to use the following form of \eqref{SOL}:
+
+\begin{equation}
+ x(t)= e^{\int a(s)ds}*\int b(t)e^{-\int a(t) dt}dt \label{SOL*}\tag{SOL*}
+\end{equation}
+
+with the convention that $\int a(t) dt$ is a fixed primitive of $a=a(t)$ (the same in \eqref{SOL} and \eqref{SOL*}).
+
+
+%\begin{examples}
+
+%aici scriem exercitii.
+%\end{examples}
+
+\chapter{Linear Differential Systems}
+\section{General notions}
+Many evolutive processes from the real world can't be described by only one variable. Therefore, for two or more variables, we must consider a system 
+of two or more differential equations. In the following chapter, we will consider differential systems of the first order:
+\begin{equation}
+\begin{cases}
+ x'=f(t,x,y)\\ 
+ y'=g(t,x,y)\\
+\end{cases}
+ \label{DS}\tag{DS}
+\end{equation}
+
+where $f$,$g$ are given functions and the unknowns are the functions $x,y$ of variable $t$. \\
+
+\begin{definition} 
+A solution for \eqref{DS} is a pair $(x,y)\in C^{1}(J)$, where $J\subseteq \R$, which satisfy on $J$ the two equations from \eqref{DS}, for 
+any $t\in J$. 
+\end{definition}
+ 
+\eqref{DS} is linear if functions $f$ and $g$ depend affinely on $x$ and $y$. Then \eqref{DS} has the following form:
+\begin{equation}
+ \begin{cases}
+  x'=a_{11}(t)x+a_{12}(t)y+b_{1}(t)\\
+  y'=a_{21}(t)x+a_{22}(t)y+b_{2}(t)\\
+ \end{cases}
+\label{DS*}\tag{DS*}
+\end{equation}
+
+Coefficients $a_{ij}$ and free terms $b_{i}$ are alleged to be continuous functions on an interval $J$. If, in particular, coefficients $a_{ij}$
+are constants, we say that the linear system is with constant coefficients. If $b_{i}=0$, we say that the system is homogeneous. If both situations
+take place, the system is linear and homogeneous, with constant coefficients.
+
+\section{Matrix Analysis Theory}
+
+Let us define $\mathcal{M}_{nm}(\mathbb{K})$ the set of matrices with n rows and m columns, with elements from the field $\mathbb{K} (\R$ or $\mathbb{C})$. It is known that $(\mathcal{M}_{nm}(\mathbb{K}), +, \cdot, \R)$ is a linear space of dimension $n\cdot m$. It can be organized as a normalized space using the following norm:
+\begin{equation*}
+ \rVert A \rVert = \bigg( \sum_{i,j=1}^{n} a_{ij}^{2} \bigg)^\frac{1}{2}
+\end{equation*}
+
+Then $(\mathcal{M}_{nm}(\mathbb{K}), \rVert \cdot \rVert)$ is a Banach space. The defined norm has the following properties on the Banach space presented earlier:
+\begin{enumerate}
+  \item $\rVert A+B \rVert \leq \rVert A \rVert + \rVert B \rVert$
+  \item $\rVert \lambda A \rVert = |\lambda|\rVert A \rVert$
+  \item $\rVert Ax\rVert_{\R ^{n}} = \rVert A \rVert \rVert x \rVert _{\R ^{n}}$
+  \item $\rVert A \cdot B \rVert \leq \rVert A \rVert \cdot \rVert B \rVert$
+ \end{enumerate}
+Next, let $M\in\mathcal{M}_{nn}(\mathbb{K})$. Then:
+\begin{equation}
+ e^{M}=\sum_{k\geq0} \frac{1}{k!} M^{k} \label{3.1} \tag{3.1}
+\end{equation}
+\begin{proof}
+ Let $S_{n}=\sum_{k=0}^{n}\frac{1}{k!}M^{k}$ the partial sum of serie \eqref{3.1}. Next, we prove that $S_{n}$ is a Cauchy sequence in the Banach space $(\mathcal{M}_{nm}(\mathbb{K}), \rVert \cdot \rVert)$. 
+ \begin{equation*}
+  \rVert S_{n+p}-S_{n}\rVert=\rVert\frac{1}{(n+1!)} A^{n+1}+...+\frac{1}{(n+p!)} A^{n+p}\rVert
+  \end{equation*}
+  \begin{equation*}
+   \leq \frac{1}{(n+1)!}\rVert A^{n+1}\rVert+...+\frac{1}{(n+p)!}\rVert A^{n+p}\rVert=|a_{n+p}-a_{n}|
+  \end{equation*}
+where $$a_{n}=\sum_{k=0}^{n}\frac{1}{k!}\rVert M \rVert ^{k}$$.\\
+Due to the fact that $$\sum_{k\geq 0} \frac{1}{k!}x^{k}$$ is a convergent series and the sum of it is equal to $e^{x}$, $\forall x\in \R$ $\Rightarrow$ $$\sum_{k\geq 0}\frac{1}{k!}\rVert M \rVert ^{k}$$ is convergent, therefore $a_{n}$ is convergent, which means that $a_{n}$ is Cauchy $\Rightarrow$ $\forall \varepsilon > 0$,  $\exists n(\varepsilon) \in \mathbb{N}$ so that $$\rVert S_{n+p} - S_{n} \rVert \leq \varepsilon$$ $\forall n\geq n(\varepsilon)$, $ \forall p\in \mathbb{N}$ $\Rightarrow$ $(S_{n})$ is a Cauchy sequence $\Rightarrow$ the existence of \eqref{3.1} is proved.
+
+
+\end{proof}
+
+
+
+
+
+\section{Existence and Unicity Theorems}
+
+Let us consider the system:
+\begin{equation}
+ \begin{cases}
+  u'=A(t)u+B(t)\\
+u(t_{0})=u_{0}
+ \end{cases}\label{Sys1}\tag{Sys1}
+\end{equation}
+
+where $t\in J=[t_{0}-a,t_{0}+a], a>0$ $t_{0}\in J$ and $u_{0}\in\R^{2}$. \newline
+Regarding the existence and uniqueness of the solution of the previous system, we present the following result:
+\begin{theorem}
+ Considering \eqref{Sys1}, we assume that $A\in C(J,\mathcal{M}_{2}(\R))$, $B\in C(J,\R^{2})$. Then, there exists a unique 
+ solution $u^{*}\in C^{1}(J,\R^{2})$.
+\end{theorem}
+\begin{proof}
+ We will use the following Lemma:
+ \begin{lemma}
+  The solution $u^{*}$ is equivalent to the following system of integral equations:
+  \begin{equation}
+   u(t)=\int_{t_0}^{t}\bigg[ A(s)u(s)+B(s)\bigg] ds+u_{0} \label{IntSol}\tag{IntSol}
+  \end{equation}
+ \end{lemma}
+\begin{proof}
+  \textquotedblleft $\Rightarrow$ \textquotedblright
+  If $u$ satisfies \eqref{Sys1}, then by integrating from $t_{0}$ to $t\in J$, we get:
+  \begin{equation*}
+   u(t)-u(t_{0})=\int_{t_0}^{t}\bigg[ A(s)u(s)+B(s)\bigg] ds
+  \end{equation*}
+$u(t_{0})=u_{0}$ $\Rightarrow$ \eqref{IntSol}.\newline
+\textquotedblleft$\Rightarrow $\textquotedblright
+  Let $u$ be a solution of \eqref{IntSol}. Then $u'(t)=A(t)u+B(t)$. Since the right side is continuous, we obtain that $u\in C^{1}(J,\R)$.
+  Moreover, $u(t_{0})=u_0$.
+  The lemma is proved.
+\end{proof}
+Resuming the demonstration of the theorem, let us denote $A:C(J,\R^{2})\rightarrow C(J,\R^{2})$, $u\longmapsto Au$, where:
+$Au(t):=\int_{t_0}^{t}\bigg[ A(s)u(s)+B(s)\bigg] ds+u_{0}$
+
+\textquotedblleft\eqref{IntSol} $\Leftrightarrow$ $u=Au$\textquotedblright
+
+We consider on $C(J,\R^2)$ the Bielecki norm:
+\begin{equation*}
+\Arrowvert u \Arrowvert_{B} = max_{t\in J}(\Arrowvert u \Arrowvert_{\R^2} e^{-\tau\arrowvert t-t_{0}\arrowvert}), \tau>0
+\end{equation*}
+$(C(J,\R^{2}),\Arrowvert\ldotp\Arrowvert)$ is a Banach space.\newline
+Then we have that $\Arrowvert Au-Av\Arrowvert_{B}\leq L_{A} \Arrowvert u-v \Arrowvert_{B}, \forall u,v \in C(J,\R^{2}, L_{A} \in (0,1))$.\newline
+For $t\geq t_{0}$:\\
+
+
+ $$\Arrowvert Au(t)-Av(t) \Arrowvert _ {\R^{2}} = \Arrowvert \int_{t_{0}}^{t} A(s)(u(s)-v(s)) ds \Arrowvert$$ 
+ $$\leq \int_{t_{0}}^{t} \Arrowvert A(s)(u(s)-v(s)) \Arrowvert ds$$ 
+ $$\leq \int_{t_{0}}^{t} \Arrowvert A(s) \Arrowvert _ {\M(\R^{2})} \Arrowvert u(s)-v(s) \Arrowvert _ {\R^{2}}ds$$
+ $$\leq M_{A} \int_{t_{0}}^{t} \Arrowvert u(s)-v(s) \Arrowvert e^{-\tau(s-t_{0})}e^{\tau(s-t_{0})} ds$$
+ $$\leq \int_{t_{0}}^{t} \smash{\displaystyle\max_{(s \in J)}} (\Arrowvert u(s)-v(s)\Arrowvert  e^{-\tau(s-t_{0})})  e^{\tau(s-t_{0})} ds $$
+ $$\leq M_{A} \Arrowvert u-v \Arrowvert _ {B} \frac{1}{\tau}(e^{\tau(t-t_{0})}-1)$$
+ $$\leq \frac{M_{A}}{\tau} \Arrowvert u-v \Arrowvert _ {B} e^{\tau(t-t_{0})}$$ 
+ $$\Rightarrow \Arrowvert Au-Av \Arrowvert \leq \frac{M_{A}}{\tau} \Arrowvert u-v \Arrowvert _ {B}.$$ Let $L_{A}=\frac{M_{A}}{\tau}$ such as $\tau > M_{A}$. Then $L_{A}<1$.
+
+
+
+\end{proof}
+
+
+
+
+
+
+\section{Representations of the solution}
+
+Let us remark that \eqref{DS} can be written as a single vectorial equation:
+\begin{equation}
+ u'=F(t,u) \label{VDS}\tag{VDS}
+\end{equation}
+where $u$ and $F$ are vectorials, with two real components, more exactly column matrix:\newline
+\begin{equation*}
+u =
+ \begin{bmatrix}
+  x\\
+  y\\
+ \end{bmatrix}
+, \quad F(t,u) =
+\begin{bmatrix}
+ f(t,x,y)\\
+ g(t,x,y)\\
+\end{bmatrix}
+\end{equation*}
+\newline
+
+The condition for the Cauchy Problem of the system can be written:
+\begin{equation*}
+ u(t_{0})=u_{0},\\
+ u_{0}= \begin{bmatrix}
+         x_{0}\\
+         y_{0}
+        \end{bmatrix}
+\end{equation*}
+\newline
+Also, \eqref{DS*} can be written:
+\begin{equation}
+ u'=A(t)u+B(t) \label{MDS}\tag{MDS}
+\end{equation}
+where 
+\begin{equation*}
+ A(t)=\begin{bmatrix}
+       a_{11}(t) & a_{12}(t)\\
+       a_{21}(t) & a_{22}(t)\\
+      \end{bmatrix}
+\quad
+B(t)=\begin{bmatrix}
+      b_{1}(t)\\
+      b_{2}(t)
+     \end{bmatrix}
+\end{equation*}
+
+\begin{theorem}[of representing the solutions of linear systems]
+ Let $A\in C(J,\mathcal{M_{2}}))$ and $B\in(J,R^{2})$. Then the solutions of the linear system \eqref{MDS} are defined by the formula 
+ \begin{equation*}
+  u=e^{\int_{t_0}^{t} A(\sigma)d\sigma}C+\int_{t_0}^{t}e^{\int_{s}^{t} A(\sigma)d\sigma}B(s)ds
+ \end{equation*}
+where $C=$\begin{bmatrix}C_{1}\\ C_{2}\end{bmatrix} and $C_{1}, C_{2}\in \R.$
+
+\end{theorem}
+
+\begin{theorem}[of existence, unicity and representation]
+ Let $A\in C(J,M_{2}(\R)), B\in C(J,\R), t_{0}\in J and u_{0}\in \R^{2}$. Then the Cauchy Problem has a unique solution 
+ defined on $J$, given by the formula:
+ \begin{equation*}
+  u=e^{\int_{t_0}^{t} A(\sigma)d\sigma}u_{0}+\int_{t_0}^{t}e^{\int_{s}^{t} A(\sigma)d\sigma}B(s)ds
+ \end{equation*}
+
+\end{theorem}
+
+\begin{theorem}[the structure of the set of solutions]
+
+(a) The set of solutions of a bidimensional linear and homogeneous system is a linear bidimensional space.\\
+(b) If $u_{p}$ is a particular solution of a linear non-homogeneous system \eqref{MDS}, then any other solution $u$ of the system \eqref{MDS}
+is the sum between the solution of the homogeneous system ($u_{o}$) with the particular solution $u_{p}$:
+\begin{equation*}
+ u=u_{o}+u_{p}
+\end{equation*}
+\end{theorem}
+
+\begin{definition}
+ A matrix in which the columns are the linearly independent solutions of the homogeneous system is called fundamental matrix of the system.
+\end{definition}
+ 
+ \begin{lemma}
+  (a) Any fundamental matrix is unsingular for any $t \in J$.\\
+  (b) Any fundamental matrix $U(t)$ satisfies the differential matricial equation:
+  \begin{equation*}
+   U'(t)=A(t)U(t)
+  \end{equation*}
+
+ \end{lemma}
+
+
+
+
+
+
+
+
+
+ 
+
+\end{document}
