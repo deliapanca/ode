@@ -4,10 +4,11 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[section]
+\usepackage{enumerate}
+\newtheorem{theorem}{Theorem}[subsection]
 \newtheorem{corollary}{Corollary}[theorem]
 \newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{definition}{Definition}[section]
+\newtheorem{definition}{Definition}[subsection]
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\M}{\mathcal{M}_{2}}
 \usepackage{setspace}
@@ -34,10 +35,10 @@
  
  \chapter{Ordinary Differential Equations and Linear Systems}
  \pagenumbering{arabic}
- \nopagebreak
+ %\nopagebreak
  \section{Equations with separable variables}
  This chapter presents the general method of solving separable equations and a few examples.
- \subsection{The general form of an Equation with separable variables}
+ \subsection{The general form of an equation with separable variables}
  Let us consider the equation:
  \begin{equation}
   x'=f(t)g(x) \label{SE} \tag{SE}
@@ -81,26 +82,48 @@ in the domain of function $G^{-1}$) is a solution for \eqref{SE}, also checking 
 
 
 \subsection{Examples}
+$1)$ 
+      $\begin{cases}
+       xx'=e^{-t}\\
+       x(0)=e\\
+      \end{cases}$\\
+      Solution: Let us consider first the equation $xx'=e^{-t}$. Then we have $$x\frac{dx}{dx}=e^{-t}.$$
+      Separating the variables, we obtain $$xdx=e^{-t}dt.$$ By integration, we get: $$\int xdx =\int e^{-t}dt \Leftrightarrow$$ $$\frac{x^{2}}{2}=-e^{-t}+c_{1}, c_{1}\in \R.$$
+      $$x^{2}=-2e^{-t}+c, c\in \R.$$
+      This form represents the general solution in implicit form. We impose the Cauchy condition $x(0)=e.$ Then $$x^{2}=-2e^{0}+c.$$ Hence $e^{2}=-2+c.$ Thus $c=e^{2}+2$. Hence the solution in implicit form is $$x^{2}=-2e^{-t}+e^{2}+2.$$ Hence $$x=\pm\sqrt{-2e^{-t}+e^{2}+2}.$$ We choose $x=\sqrt{-2e^{-t}+e^{2}+2}.$ Thus, for $t>0$ we have the solution: $$x=\sqrt{2(1-e^{-t})+e^{2}}.$$
+      
+$2)$ $x'=x^{2}-x$, $t\in \R.$ We consider the equation: $$x'=x(x-1).$$ For $x\neq0$ and $x\neq1$ we can separate the variables: $$\frac{1}{x(x-1)}dx=dt.$$ By integrating, we obtain: $$\int \frac{1}{x(x-1)} dx = \int dt.$$ $\Leftrightarrow$ $$\int \bigg(\frac{1}{x-1}-\frac{1}{x}\bigg)dx=t+c_{1}, c_{1} \in \R.$$ Next, resolving the integrals, we get:
+$$ln|x-1|-ln|x|=t+c_{1},$$ $$ln|\frac{x-1}{x}|=t+c_{1}$$ $\Leftrightarrow$ $$|\frac{x-1}{x}|=c_{2}e^{t}, c_{2} \in \R.$$ $$\frac{x-1}{x}=\pm c_{2} e^{t}.$$ We can consider $\pm c_{2}$ a constant $c \in \R^{*}$. Then, the implicit form of the solution is: $$\frac{x-1}{x}=ce^{t}, c\in \R^{*}.$$ Next, $x-1=xce^{t}$, resulting that 
 
-%\begin{examples}
+\begin{equation}
+x=\frac{1}{1-ce^{t}}, c\in \R^{*}.
+\end{equation}
+We also notice that $x(t)=0$ and $x(t)=1$, where $t\in \R$ are solution for our equation. For $c=0$ in \eqref{1.1} we get $x(t)=1$. Hence the solutions are $$x(t)=0, t\in\R$$ $$x(t)=\frac{1}{1-ce^{t}}, c\in \R, t\in J$$ where $J$ is defined by the restriction $1-ce^{t}=0$.
+\begin{enumerate}[(i)]
+ \item $c \in R$ $\Rightarrow$ $e^{t}=\frac{1}{c}\Rightarrow$
+ \begin{enumerate}[(a)]
+  \item $c>0\Rightarrow e^{t}=\frac{1}{c} \Leftrightarrow t=\ln{\frac{1}{c}}=-\ln {c}$ $\Rightarrow x(t)=\frac{1}{1-ce^{t}},$ $t\in (-\infty,-\ln{c})$ or $t\in (-\ln{c},+\infty)$.
+  \item $c<0$ $\Rightarrow e^{t}=\frac{1}{c} \Leftrightarrow t\in \O{}$ $\Rightarrow x(t)=\frac{1}{1-ce^{t}}, t\in \R$
+ \end{enumerate}
+ \item $c=0 \Rightarrow x(t)=1, t\in \R.$
+\end{enumerate}
+For example, if we have a Cauchy problem of the following form:
+$\begin{cases}
+  x'=x^{2}-x\\
+  x(0)=2
+ \end{cases}
+$
+then $x(t)=0$ and $x(t)=1$, $t\in \R$ are not solutions.\\
+For $x(t)=\frac{1}{1-ce^{t}}$: $$x(0)=2 \Leftrightarrow \frac{1}{1-c}=2 \Leftrightarrow 1-c=\frac{1}{2} \Leftrightarrow c=\frac{1}{2}.$$ In conclusion, the solution for the given Cauchy problem is:$$x(t)=\frac{1}{1-\frac{1}{2}e^{t}}, t\in (-\infty,-\ln{2}).$$
+For the phase portrait, we have $x'=f(x)$. $f(x)=0 \Leftrightarrow x=0$ or $x=1$. The function $f(x)=x^{2}-x$ has the following signs on $\R$:
+\begin{center}
+\begin{tabular}{c|c c c c c c c}
+ $x$ & $-\infty$& & $0$ & &$1$ & &$\infty$\\
+ \hline
+ $x^{2}-x$ & &$+$& $0$& $-$& $0$ & $+$ &
+\end{tabular}
+\end{center}
 
-%\textbf{Ex. 1} \\ $t^{3}x'+\sqrt{1-x^{2}} = 0$ \\
-%\break \textbf{Solution:} \\
-
-% $\int_{x_0}^{x} \frac{d\xi}{\sqrt{1-\xi^{2}}}= - \int_{t_0}^{t} \frac{1}{s^{3}}ds$ \\
-% $\arcsin{x}=\frac{1}{2t^{2}}+c, c\in\R$ \\
- %$x = \sin{\frac{1}{2t^{2}}+c}$ \\
-
-
-%\textbf{Ex. 2} \\ $\sqrt{t}x'=\sqrt{1+x^{2}}$ \\
-%\break \textbf{Solution:} 
-%Let $t=t(x)$.\\
-%Then, as we solve the equation, we get:\\
-%$-2\sqrt{t}=\ln(x+\sqrt{1+x^{2}})+c$, where $c\in\R$\\
-%The solution is: $t=\frac{1}{4}(\ln(x+\sqrt{1+x^{2}})+c)^{2}$\\s
-%\end{examples}
-%aici scrii exercitii delia
-%urmatorul ex ti-e in caiet!
 
 
 
@@ -110,7 +133,7 @@ in the domain of function $G^{-1}$) is a solution for \eqref{SE}, also checking 
 
 The following chapter introduces the reader to the general method of solving Linear Differential Equations of First Order and a few examples.
 
-\section{The General Form of a Linear Differential Equation of First Order}
+\subsection{The General Form of a linear differential equation of first order}
 
 A Linear differential equation has the following expression:
 
@@ -147,8 +170,8 @@ with the convention that $\int a(t) dt$ is a fixed primitive of $a=a(t)$ (the sa
 %aici scriem exercitii.
 %\end{examples}
 
-\chapter{Linear Differential Systems}
-\section{General notions}
+\section{Linear Differential Systems}
+\subsection{The general form of a linear differential system}
 Many evolutive processes from the real world can't be described by only one variable. Therefore, for two or more variables, we must consider a system 
 of two or more differential equations. In the following chapter, we will consider differential systems of the first order:
 \begin{equation}
@@ -179,7 +202,7 @@ Coefficients $a_{ij}$ and free terms $b_{i}$ are alleged to be continuous functi
 are constants, we say that the linear system is with constant coefficients. If $b_{i}=0$, we say that the system is homogeneous. If both situations
 take place, the system is linear and homogeneous, with constant coefficients.
 
-\section{Matrix Analysis Theory}
+\subsection{Matrix Analysis Theory}
 
 Let us define $\mathcal{M}_{nm}(\mathbb{K})$ the set of matrices with n rows and m columns, with elements from the field $\mathbb{K} (\R$ or $\mathbb{C})$. It is known that $(\mathcal{M}_{nm}(\mathbb{K}), +, \cdot, \R)$ is a linear space of dimension $n\cdot m$. It can be organized as a normalized space using the following norm:
 \begin{equation*}
@@ -215,7 +238,7 @@ Due to the fact that $$\sum_{k\geq 0} \frac{1}{k!}x^{k}$$ is a convergent series
 
 
 
-\section{Existence and Unicity Theorems}
+\subsection{Existence and uniqueness Theorems}
 
 Let us consider the system:
 \begin{equation}
@@ -251,7 +274,7 @@ $u(t_{0})=u_{0}$ $\Rightarrow$ \eqref{IntSol}.\newline
   Moreover, $u(t_{0})=u_0$.
   The lemma is proved.
 \end{proof}
-Resuming the demonstration of the theorem, let us denote $A:C(J,\R^{2})\rightarrow C(J,\R^{2})$, $u\longmapsto Au$, where:
+Resuming the proof of the theorem, let us denote $A:C(J,\R^{2})\rightarrow C(J,\R^{2})$, $u\longmapsto Au$, where:
 $Au(t):=\int_{t_0}^{t}\bigg[ A(s)u(s)+B(s)\bigg] ds+u_{0}$
 
 \textquotedblleft\eqref{IntSol} $\Leftrightarrow$ $u=Au$\textquotedblright
@@ -283,7 +306,7 @@ For $t\geq t_{0}$:\\
 
 
 
-\section{Representations of the solution}
+\subsection{Representations of the solution}
 
 Let us remark that \eqref{DS} can be written as a single vectorial equation:
 \begin{equation}
@@ -339,7 +362,7 @@ where $C=$\begin{bmatrix}C_{1}\\ C_{2}\end{bmatrix} and $C_{1}, C_{2}\in \R.$
 
 \end{theorem}
 
-\begin{theorem}[of existence, unicity and representation]
+\begin{theorem}[of existence, uniqueness and representation of the solution]
  Let $A\in C(J,M_{2}(\R)), B\in C(J,\R), t_{0}\in J and u_{0}\in \R^{2}$. Then the Cauchy Problem has a unique solution 
  defined on $J$, given by the formula:
  \begin{equation*}
