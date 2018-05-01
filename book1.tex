@@ -1,5 +1,6 @@
-\documentclass[a4paper,11pt]{book}
+\documentclass[a4paper,11pt]{report}
 \usepackage[utf8]{inputenc}
+\usepackage[none]{hyphenat}
 \usepackage{amssymb,amsfonts,latexsym,makeidx}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -13,9 +14,13 @@
 \newcommand{\M}{\mathcal{M}_{2}}
 \usepackage{setspace}
 \usepackage{etoolbox}
-\makeatletter
-\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
-\makeatother
+\usepackage{afterpage}
+\setcounter{secnumdepth}{3}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
 
 
 \title{Mathematical Models applied in Economy}
@@ -25,19 +30,18 @@
 \begin{document}
  \maketitle
  \pagenumbering{gobble}
- 
+ \afterpage{\blankpage}
  %gobble = no numbers
  % arabic=arabic numbers
  %roman = roman numbers
  
 
- \newpage
  
  \chapter{Ordinary Differential Equations and Linear Systems}
  \pagenumbering{arabic}
  %\nopagebreak
- \section{Equations with separable variables}
- This chapter presents the general method of solving separable equations and a few examples.
+ \section{Equations with separable variables}\label{1.1.1}
+ The following section presents the general method of solving separable equations and a few examples.
  \subsection{The general form of an equation with separable variables}
  Let us consider the equation:
  \begin{equation}
@@ -86,8 +90,8 @@ $1)$
       $\begin{cases}
        xx'=e^{-t}\\
        x(0)=e\\
-      \end{cases}$\\
-      Solution: Let us consider first the equation $xx'=e^{-t}$. Then we have $$x\frac{dx}{dx}=e^{-t}.$$
+      \end{cases}$\\\\
+      \underline{Solution:} Let us consider first the equation $xx'=e^{-t}$. Then we have $$x\frac{dx}{dx}=e^{-t}.$$
       Separating the variables, we obtain $$xdx=e^{-t}dt.$$ By integration, we get: $$\int xdx =\int e^{-t}dt \Leftrightarrow$$ $$\frac{x^{2}}{2}=-e^{-t}+c_{1}, c_{1}\in \R.$$
       $$x^{2}=-2e^{-t}+c, c\in \R.$$
       This form represents the general solution in implicit form. We impose the Cauchy condition $x(0)=e.$ Then $$x^{2}=-2e^{0}+c.$$ Hence $e^{2}=-2+c.$ Thus $c=e^{2}+2$. Hence the solution in implicit form is $$x^{2}=-2e^{-t}+e^{2}+2.$$ Hence $$x=\pm\sqrt{-2e^{-t}+e^{2}+2}.$$ We choose $x=\sqrt{-2e^{-t}+e^{2}+2}.$ Thus, for $t>0$ we have the solution: $$x=\sqrt{2(1-e^{-t})+e^{2}}.$$
@@ -123,15 +127,21 @@ For the phase portrait, we have $x'=f(x)$. $f(x)=0 \Leftrightarrow x=0$ or $x=1$
  $x^{2}-x$ & &$+$& $0$& $-$& $0$ & $+$ &
 \end{tabular}
 \end{center}
+\begin{figure}[h]
+\caption{The phase portrait for the equation at $2)$ exercise.}
+\centering
+ \includegraphics[width=10cm]{PortretEVS.eps}
+\end{figure}
 
-
+\subsection{Conclusions}
+The section introduced the general method of solving equations with separable variables, presented in the classic differential equations books mentioned in the bibliography. The owner's contribution were the selection and solving of the examples.
 
 
 
 
 \section{Linear Differential Equations of First Order}
 
-The following chapter introduces the reader to the general method of solving Linear Differential Equations of First Order and a few examples.
+The following section introduces the reader to the general method of solving Linear Differential Equations of First Order, the solving method used in practice and a few examples.
 
 \subsection{The General Form of a linear differential equation of first order}
 
@@ -150,7 +160,7 @@ multiplying with $exp(-\int_{t_0}^{t} a(s)ds)$, where $t_0$ is arbitrary chosen 
 So
 
 \begin{equation}
- x(t)=e^{\int_{t_0}^{t} a(s)ds}(x_0 + \int_{t_0}^{t} b(s)e^{-\int_{t_0}^{s} a(\sigma)d\sigma}) , t \in (t_1,t_2) \label{SOL} \tag{SOL}
+ x(t)=e^{\int_{t_0}^{t} a(s)ds}x_0 + \int_{t_0}^{t} b(s)e^{-\int_{t_0}^{s} a(\sigma)d\sigma}ds , t \in (t_1,t_2) \label{SOL} \tag{SOL}
 \end{equation}
 
 where $x_0$ is an arbitrary real number. Reciprocally, we can easily agree that any function $x=x(t), t\in (t_1,t_2)$ given by the formula \eqref{SOL} is a solution for \eqref{LE}.
@@ -159,20 +169,53 @@ Actually, \eqref{SOL} asserts the solution of \eqref{LE} with the Cauchy conditi
 Sometimes, it is more convienent to use the following form of \eqref{SOL}:
 
 \begin{equation}
- x(t)= e^{\int a(s)ds}*\int b(t)e^{-\int a(t) dt}dt \label{SOL*}\tag{SOL*}
+ x(t)= e^{\int a(s)ds}\cdot\int b(t)e^{-\int a(t) dt}dt \label{SOL*}\tag{SOL*}
 \end{equation}
 
 with the convention that $\int a(t) dt$ is a fixed primitive of $a=a(t)$ (the same in \eqref{SOL} and \eqref{SOL*}).
 
+In practice, a method that does not require the use of \eqref{SOL} formula is based on the algebraic link which exists between the set of the \eqref{LE} solutions and the set of the associated homogeneous equation solutions: $$x'=a(t)x.$$
+This link is contained in the following theorem:
+\begin{theorem}\label{1.2.1.1}
+ If $x_{p}$ is a particular solution of \eqref{LE}, than any other solution $x$ of the equation is the sum between a certain solution $x_{o}$ of the homogeneous equation and $x_{p}$, meaning: $$x=x_{o}+x_{p}.$$ Reciprocically, any solution $x_{o}$ of the homogeneous equation is the difference between a certain solution $x$ of \eqref{LE} and $x_{p}$.
+\end{theorem}
+The theorem sustains that for solving a \eqref{LE}, we have to go through two stages:
+\begin{enumerate}
+ \item to solve the associated homogeneous equation;
+ \item to determine a particular solution of \eqref{LE}.
+\end{enumerate}
 
-%\begin{examples}
+\subsection{Examples}
+$1)$ $x'+x\tan t=\frac{1}{\cos{t}}$, $t\in (-\frac{\pi}{2},\frac{\pi}{2})$\\\\
+\underline{Solution}: For solving this equation, we will use the result from \ref{1.2.1.1}. 
+The associated homogeneous equation is: $$x{o}'=-x_{o}\tan t.$$ Separating the variables, we get: $$\frac{dx_{o}}{x_{o}}=-\tan t dt.$$ By integration, we obtain: $$\ln{x_{o}}=\ln{\cos{t}}+c_{1},c_{1}\in\R \Leftrightarrow$$
+$$x_{o}=c\cos{t}, c\in\R.$$ 
+The particular solution for the given linear differential equation of first order is:
+$$x_{p}=c(t)\cos{t}.$$ By replacing in the given equation, we obtain:
+$$c'(t)\cos{t}-c(t)\sin{t}+c(t)\tan t\cos{t}=\frac{1}{\cos{t}}\Leftrightarrow$$
+$$c'(t)\cos{t}=\frac{1}{\cos{t}}\Leftrightarrow$$
+$$c'(t)=\frac{1}{\cos^{2}{t}}\Leftrightarrow$$
+$$c(t)=\tan t.$$
+Meaning that the particular solution is:
+$$x_{p}=\tan t \cos{t} \Leftrightarrow x_{p}=\sin{t}.$$
+Hence, the solution is:
+$$x=x_{p}+x_{o} \Leftrightarrow x=\sin{t}+c\cos{t}.$$
+$2)$ $\begin{cases}
+       x'+x=e^{2t}\\
+       x(0)=1
+      \end{cases}$\\\\
+      \underline{Solution:} The associated homogeneous equation is: $$x_{o}'=-x_{o}.$$ Separating the variables, we get: $$\frac{dx_{o}}{x_{o}}=-dt.$$ By integration, we obtain: $$\ln{x_{o}}=-t+c_{1},c_{1}\in\R\Leftrightarrow$$ 
+      $$x_{o}=ce^{-t},c\in\R.$$ Hence, the particular solution for the given linear differential quation of first order has the following form: $$x_{p}=c(t)e^{-t}.$$ Further, replacing in the given equation we get: $$c'(t)e^{-t}-e^{-t}c(t)+e^{-t}c(t)=e^{2t}\Leftrightarrow$$
+      $$c'(t)=e^{3t}\Leftrightarrow c(t)=\frac{1}{3}e^{3t}.$$
+      Thus, the general solution has the following form:
+      $$x=ce^{-t}+\frac{1}{3}e^{2t}, c\in \R.$$
+      Then, by attaching the Cauchy condition, we get that the constant $c=\frac{2}{3}$, which means that the solution for the given Cauchy problem is: $$x=\frac{2}{3}e^{-t}+\frac{1}{3}e^{2t}.$$
 
-%aici scriem exercitii.
-%\end{examples}
-
+\subsection{Conclusions}
+The section introduced the notion of linear differential equation of first order and two methods of solving it, including the one used in practice, from the classic differential equations books mentioned in the bibliography. The owner's contribution was the selection and solving of the examples. 
 \section{Linear Differential Systems}
 \subsection{The general form of a linear differential system}
-Many evolutive processes from the real world can't be described by only one variable. Therefore, for two or more variables, we must consider a system 
+Many evolutive processes from the real world can not be described by only one variable. Therefore, for two or more variables, we must consider a system 
 of two or more differential equations. In the following chapter, we will consider differential systems of the first order:
 \begin{equation}
 \begin{cases}
@@ -228,7 +271,7 @@ Next, let $M\in\mathcal{M}_{nn}(\mathbb{K})$. Then:
   \begin{equation*}
    \leq \frac{1}{(n+1)!}\rVert A^{n+1}\rVert+...+\frac{1}{(n+p)!}\rVert A^{n+p}\rVert=|a_{n+p}-a_{n}|
   \end{equation*}
-where $$a_{n}=\sum_{k=0}^{n}\frac{1}{k!}\rVert M \rVert ^{k}$$.\\
+where $$a_{n}=\sum_{k=0}^{n}\frac{1}{k!}\rVert M \rVert ^{k}.$$\\
 Due to the fact that $$\sum_{k\geq 0} \frac{1}{k!}x^{k}$$ is a convergent series and the sum of it is equal to $e^{x}$, $\forall x\in \R$ $\Rightarrow$ $$\sum_{k\geq 0}\frac{1}{k!}\rVert M \rVert ^{k}$$ is convergent, therefore $a_{n}$ is convergent, which means that $a_{n}$ is Cauchy $\Rightarrow$ $\forall \varepsilon > 0$,  $\exists n(\varepsilon) \in \mathbb{N}$ so that $$\rVert S_{n+p} - S_{n} \rVert \leq \varepsilon$$ $\forall n\geq n(\varepsilon)$, $ \forall p\in \mathbb{N}$ $\Rightarrow$ $(S_{n})$ is a Cauchy sequence $\Rightarrow$ the existence of \eqref{3.1} is proved.
 
 
@@ -238,7 +281,7 @@ Due to the fact that $$\sum_{k\geq 0} \frac{1}{k!}x^{k}$$ is a convergent series
 
 
 
-\subsection{Existence and uniqueness Theorems}
+\subsection{Existence and uniqueness theorems}
 
 Let us consider the system:
 \begin{equation}
@@ -355,19 +398,19 @@ B(t)=\begin{bmatrix}
 
 \begin{theorem}[of representing the solutions of linear systems]
  Let $A\in C(J,\mathcal{M_{2}}))$ and $B\in(J,R^{2})$. Then the solutions of the linear system \eqref{MDS} are defined by the formula 
- \begin{equation*}
+ \begin{equation}\label{1.2}
   u=e^{\int_{t_0}^{t} A(\sigma)d\sigma}C+\int_{t_0}^{t}e^{\int_{s}^{t} A(\sigma)d\sigma}B(s)ds
- \end{equation*}
-where $C=$\begin{bmatrix}C_{1}\\ C_{2}\end{bmatrix} and $C_{1}, C_{2}\in \R.$
+ \end{equation}
+where $C=\begin{bmatrix}C_{1}\\ C_{2}\end{bmatrix}$ and $C_{1}, C_{2}\in \R.$
 
 \end{theorem}
 
 \begin{theorem}[of existence, uniqueness and representation of the solution]
  Let $A\in C(J,M_{2}(\R)), B\in C(J,\R), t_{0}\in J and u_{0}\in \R^{2}$. Then the Cauchy Problem has a unique solution 
  defined on $J$, given by the formula:
- \begin{equation*}
+ \begin{equation}\label{1.3}
   u=e^{\int_{t_0}^{t} A(\sigma)d\sigma}u_{0}+\int_{t_0}^{t}e^{\int_{s}^{t} A(\sigma)d\sigma}B(s)ds
- \end{equation*}
+ \end{equation}
 
 \end{theorem}
 
@@ -385,7 +428,7 @@ is the sum between the solution of the homogeneous system ($u_{o}$) with the par
  A matrix in which the columns are the linearly independent solutions of the homogeneous system is called fundamental matrix of the system.
 \end{definition}
  
- \begin{lemma}
+ \begin{lemma}\label{1.3.4.4.}
   (a) Any fundamental matrix is unsingular for any $t \in J$.\\
   (b) Any fundamental matrix $U(t)$ satisfies the differential matricial equation:
   \begin{equation*}
@@ -393,15 +436,121 @@ is the sum between the solution of the homogeneous system ($u_{o}$) with the par
   \end{equation*}
 
  \end{lemma}
+\subsection{Representation with fundamental matrix}
+In this paragraph, let us submit the possibility of representing the solutions of the non-homogeneous system in terms of the fundamental matrix $U(t)$, of which purpose is to replace the matrix $e^{\int_{t_{0}}^{t} A(\sigma)d\sigma}$ from \eqref{1.2}.\\
+Firstly, let $$u_{p}=U(t)C(t)$$ be a particular solution of the non-homogeneous system, where the vectorial function $$C(t)=
+\begin{bmatrix}
+ C_{1}(t)\\
+ C_{2}(t)
+\end{bmatrix}$$ is to be determined with the condition that $u_{p}$ satisfies the given system. Hence
+$$u'_{p}=U'(t)C(t)U(t)C'(t)$$
+and by replacing we find that
+$$U'(t)C(t)+U(t)C'(t)=A(t)U(t)C(t)+B(t).$$
+Point $b)$ from lemma \ref{1.3.4.4.} guarantees that
+$$U'(t)=A(t)U(t).$$
+Thus $U(t)C'(t)=B(t)$, which means that $C'(t)=U^{-1}(t)B(t)$. Then, according to point $a)$ from \ref{1.3.4.4.}, matrix $U(t)$ is invertible. Let us choose
+$$C(t)=\int_{t_0}^{t} U^{-1}(s)B(s)ds$$
+and so we get a particular solution of the non-homogeneous system:
+$$u_{p}=\int_{t_0}^{t} U(t)U^{-1}(s)B(s)ds.$$
+Thus, an equivalent of \eqref{1.2} is:
+\begin{equation}\label{1.4}
+ u=U(t)C+\int_{t_0}^{t} U(t)U^{-1}(s)B(s)ds.
+\end{equation}
+The analogue of \eqref{1.3} results immediately:
+\begin{equation}\label{1.5}
+ u=U(t)U^{-1}(t_{0})u_{0}+\int_{t_0}^{t} U(t)U^{-1}(s)B(s)ds.
+\end{equation}
+
+Hence, we can present the following theorem:
+\begin{theorem}[of representation with fundamental matrix]\label{1.3.5.1}
+ If $U(t)$ is a fundamental matrix of \eqref{MDS}, then:
+ \begin{enumerate}[(i)]
+  \item The solutions of the homogeneous system are the functions $u_{o}=U(t)C$, where $C$ is a random vector from $\R^{2}$;
+  \item The solutions of the non-homogeneous system are the functions defined by \eqref{1.4}, where $C\in\R^{2}$;
+  \item The solution of the Cauchy problem for \eqref{Sys1} is the function defined by formula \eqref{1.5}.
+ \end{enumerate}
+\end{theorem}
+According to \ref{1.3.5.1}, solving a linear system depends on finding a fundamental matrix. Generally, this is not possible, but for the systems with constant coefficients is possible.
 
 
+\subsection{Linear systems with constant coefficients}
 
+In this paragraph, we consider the system \eqref{DS*}, where the coefficients $a_{ij}(i,j=1,2)$ are constant, and $b_{1},b_{2}\in C(J)$. By using matrices, we can rewrite the system as:
+$$u'=Au+B(t),$$
+where
+$$u=\begin{bmatrix}
+     x\\
+     y\\
+    \end{bmatrix}, 
+A=\begin{bmatrix}
+   a_{11} & a_{12}\\
+   a_{21} & a_{22}\\
+  \end{bmatrix},
+B=\begin{bmatrix}
+   b_{1}(t)\\
+   b_{2}(t)\\
+  \end{bmatrix}.$$
 
+Due to the fact that all the previous results stay valid, the solutions of the system have the following form:
+$$u=u_{o}+u_{p}.$$
+The explicit form of the solution is:
+\begin{equation*}
+ u=e^{(t-t_{0})\cdot A}\cdot C+\int_{t_0}^{t} e^{(t-s)\cdot A}B(s) ds,
+\end{equation*}
+where the constant vector $C$ is random. Also, the Cauchy problem, with $u(t_{0})=u_{0}$ as the initial condition admits only one solution, which is
+\begin{equation}\label{1.6}
+  u=e^{(t-t_{0})\cdot A}\cdot u_{0}+\int_{t_0}^{t} e^{(t-s)\cdot A}B(s) ds
+\end{equation}
+If by the replacement of $e^{(t-t_{0})\cdot A}$ it is considered another fundamental matrix $U(t)$, then the solutions of the system and also for the Cauchy problem are given by formulas \eqref{1.4} and \eqref{1.5}. The question of how we can determinate the fundamental matrix and how we can directly solve the system still remains.\\
+For this, let us search for solutions for the associated homogeneous system based on the following form:
+$$u=e^{rt}V,$$
+where $r\in\R$ and $V=\begin{bmatrix} v_{1}\\v_{2}\\ \end{bmatrix} \in \R^{2}$ are determined with the condition that $u$ satisfies the homogeneous system. Obviously, $V\neq 0$. By replacing in the homogeneous system, we get:
+$$re^{rt}V=A(e^{rt}V)=e^{rt}AV.$$
+By simplifying with $e^{rt}$, we obtain:
+\begin{equation}\label{1.7}(A-rI)V=0.\end{equation}
+As $V\neq 0$, we conclude that $r$ is an eagen value of matrix $A$, and $V$ is an eagen vector associated to this value. Eagen values are determined with the condition that the algebraic homogeneous system \eqref{1.7} admits solutions unequal to $0$, meaning from equation:
+\begin{equation}\label{1.8}
+ det(A-rI)=0.
+\end{equation}
+This equation is named the characteristic equation of the system and is a second grade polynomial. It can be written:
+\begin{equation}
+ \begin{vmatrix}\label{det}
+ a_{11}-r & a_{12}\\
+ a_{21} & a_{22}-r\\
+\end{vmatrix}
+=0,
+\end{equation}
+where, by solving the determinant, we obtain:
+$$r^{2}-(a_{11}+a_{22})r+a_{11}a_{22}-a_{12}a_{21}=0,$$
+meaning
+$$r^{2}-(tr A)r+det A=0.$$
+Here, $$tr A=\sum_{i=0}^{n}a_{ii}$$ is the trace of the matrix. Considering how the roots of the characteristic equations might be, we distinguish the following cases:
+\subsubsection{Case of real and distinct roots}
+Let $r_{1},r_{2}$ be the roots of the characteristic equation, which are presumed to be real and distinct.
+For each one, we choose a non-null solution of system \eqref{1.7}. Let them be $V_{1},V_{2}$. Meaning that we obtained two solutions for the homogeneous system:
+$$ u_{1}=e^{r_{1}t}V_{1},\quad u_{2}=e^{r_{2}t}V_{2}.$$
+As $r_{1}\neq r_{2}$, they are linear independent. Matrix $U(t)$, with columns $u_{1},u_{2}$ thus determined, is a fundamental matrix.
 
+\subsubsection{Case of equal roots}
+Let us presume that the roots of the characteristic equation are equal. Then $r:=r_{1}=r_{2}=\frac{tr A}{2}$. A solution of the system can be determined similarly to the previous case, of form $u_{1}=e^{rt}V$, where $V$ is a non-null solution of the algebraic homogeneous system \eqref{1.7}. A second solution $u_{2}$, linear independent of $u_{1}$, is searched by the form $u_{2}=e^{rt}(tV+W)$, with $V$ being the previous, and $W$ being vector which is obtained with the condition that verifies the system. We have:
+$$ u'_{2}=re^{rt}(tV+W)+e^{rt}V$$
+meaning that $u_{2}$ is a solution if
+$$re^{rt}(tV+W)+e^{rt}V=e^{rt}A(tV+W).$$
+By simplifying with $e^{rt}$ and by reducing the equal terms, we obtain the following algebraic linear and non-homogeneous system:
+$$(A-rI)W=V.$$
+This system is compatible and so we can choose a solution $W$ of it.
 
+\subsubsection{Case of complex roots}
+Let us presume that the roots of the characteristic equation are complex, being them $\alpha \pm \beta i$. Considering one of them, for example $\alpha + \beta i$ and by proceeding like in the case of real and distinct roots, let us determine a solution of the system, this time complex:
 
+ $$u=e^{rt}V=e^{(\alpha+\beta i)t}(V_{1}+iV_{2})=
+ e^{\alpha t}(\cos{\beta t}+i\sin{\beta t})(V_{1}+iV_{2})=$$
+ $$=e^{\alpha t}[V_{1}\cos{\beta t}-V_{2}\sin{\beta t}+i(V_{1}\sin{\beta t}+V_{2}\cos{\beta t})].$$
 
-
+where $V_{1},V_{2}$ represents the column vector of the real parts, respectively the coefficients of the imaginary parts of $V$, meaning $V=V_{1}+iV_{2}$ and $V_{1},V_{2} \in \R^{2}$. 
+With the system being linear, homogeneous and with real coefficients, at once with a complex solution $u$, admits as solutions the conjugate function $\bar{u}$, as well as any linear combination of theirs with complex coefficients, particularly the real functions:
+$$u_{1}:=Re (u)=\frac{1}{2}(u+\bar{u})=e^{\alpha t}(V_{1}\cos{\beta t}-V_{2}\sin{\beta t}),$$
+$$u_{2}:=Im (u)=\frac{1}{2i}(u-\bar{u})=e^{\alpha t}(V_{1}\sin{\beta t}+V_{2}\cos{\beta t}).$$
  
 
 \end{document}
