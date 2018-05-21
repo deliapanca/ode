@@ -134,7 +134,7 @@ For the phase portrait, we have $x'=f(x)$. $f(x)=0 \Leftrightarrow x=0$ or $x=1$
 \end{figure}
 
 \subsection{Conclusions}
-The section introduced the general method of solving equations with separable variables, presented in the classic differential equations books mentioned in the bibliography. The owner's contribution were the selection and solving of the examples.
+The section introduced the general method of solving equations with separable variables, presented in the classic differential equations books mentioned in the bibliography. The author's contribution were the selection and solving of the examples.
 
 
 
@@ -212,7 +212,7 @@ $2)$ $\begin{cases}
       Then, by attaching the Cauchy condition, we get that the constant $c=\frac{2}{3}$, which means that the solution for the given Cauchy problem is: $$x=\frac{2}{3}e^{-t}+\frac{1}{3}e^{2t}.$$
 
 \subsection{Conclusions}
-The section introduced the notion of linear differential equation of first order and two methods of solving it, including the one used in practice, from the classic differential equations books mentioned in the bibliography. The owner's contribution was the selection and solving of the examples. 
+The section introduced the notion of linear differential equation of first order and two methods of solving it, including the one used in practice, from the classic differential equations books mentioned in the bibliography. The author's contribution was the selection and solving of the examples. 
 \section{Linear Differential Systems}
 \subsection{The general form of a linear differential system}
 Many evolutive processes from the real world can not be described by only one variable. Therefore, for two or more variables, we must consider a system 
@@ -552,5 +552,89 @@ With the system being linear, homogeneous and with real coefficients, at once wi
 $$u_{1}:=Re (u)=\frac{1}{2}(u+\bar{u})=e^{\alpha t}(V_{1}\cos{\beta t}-V_{2}\sin{\beta t}),$$
 $$u_{2}:=Im (u)=\frac{1}{2i}(u-\bar{u})=e^{\alpha t}(V_{1}\sin{\beta t}+V_{2}\cos{\beta t}).$$
  
+ \subsection{Examples}
+ $1)$ 
+ $U'=AU$, where $A=\begin{bmatrix}
+                    0 && 4\\
+                    5 && 1\\
+                   \end{bmatrix}$, $U=\begin{bmatrix} u_{1} \\ u_{2}\end{bmatrix}$.
+                   
+ \underline{Solution:}
+First, let us attach the characteristic equation: $r^{2}-(tr(A))r+det(A)=0$. In our case, $tr(A)=1$ and $det(A)=-20$, meaning that the equation becomes: $r^{2}-r-20=0$. By solving the equation, we get the following roots: $r=5$ and $r=-4$. 
+Let us consider the first case, where $r=5$. Next, we need to determine an eigenvector $V=\begin{bmatrix}
+                                                                                           v_{1}\\
+                                                                                           v_{2}
+                                                                                          \end{bmatrix}$,by solving $(A-rI)V=0$. A convienent eigenvector would be $V=\begin{bmatrix}
+                                                                                          4\\
+                                                                                          -5\\\end{bmatrix}$
+Hence, the solution is:
+$$ U_{1}=e^{rt}V=e^{5t}\begin{bmatrix}4\\-5\\\end{bmatrix}=\begin{bmatrix} 4e^{5t} \\ -5e^{5t} \end{bmatrix}.$$
+                                                            
+                                                            
+Next, we consider the case where $r=-4$. Thus, an eigenvector would be $V=\begin{bmatrix} 1 \\ -1 \end{bmatrix}$. Hence, the solution is:
+$$U_{2}=e^{-4t}\begin{bmatrix} 1 \\ -1 \end{bmatrix}=\begin{bmatrix} e^{-4t}\\-e^{-4t}\end{bmatrix}.$$
+
+Then, the fundamental matrix of the solutions of the system is:
+
+$$U=c_{1}U_{1}+c_{2}U_{2},$$
+where $c_{1},c_{2} \in \R$.
+
+                                                                                    
+$2)$ $U'=AU$, where $A=\begin{bmatrix}
+                    -3 && -8\\
+                    2 && 5\\
+                   \end{bmatrix}$, $U=\begin{bmatrix} u_{1} \\ u_{2}\end{bmatrix}$.\\
+\underline{Solution:}
+By attaching the characteristic equation, we get that $r=1$ is a solution of the equation of multiplicity 2. We are in the case of equal roots. Next, by solving the equation $(A-rI)V=0$, we get that $V=\begin{bmatrix} -2\\1\end{bmatrix}$ is an eigenvector of the given equation. By solving $(A-rI)W=V$, we get $W=\begin{bmatrix} 1\\ -\frac{2}{8} \end{bmatrix}$. Then:
+$$ U_{1}=e^{t}\begin{bmatrix} -2\\1\end{bmatrix}$$ and $$U_{2}=e^{t}\begin{bmatrix} -2t+1\\t-\frac{2}{8} \end{bmatrix}.$$
+Hence, the fundamental matrix of the solutions has is $U=c_1U_{1}+c_{2}U_{2}$, where $c_{1},c_{2} \in \R$.
+
+$3)$ $U'=AU$, where $A=\begin{bmatrix}
+                    5 && 5\\
+                    -4 && 3\\
+                   \end{bmatrix}$, $U=\begin{bmatrix} u_{1} \\ u_{2}\end{bmatrix}$.\\
+    \underline{Solution:}
+    By solving the characteristic equation, we denote that we are in the case of complex roots, where $r=1\pm2i$. Next, we find that $V=\begin{bmatrix} 1 \\ -\frac{4}{5}+i\frac{2}{5} \end{bmatrix}$ is a convienient eigenvector for the case. The solution is 
+    $$ U=e^{(1+2i)t}\begin{bmatrix} 1 \\ -\frac{4}{5}+i\frac{2}{5} \end{bmatrix} 
+    = e^{t}(\cos{2t}+i\sin{2t})\bigg( \begin{bmatrix} 1\\ -\frac{4}{5}\end{bmatrix} + \begin{bmatrix} 0\\ \frac{2}{5}\end{bmatrix} i \bigg).$$
+    By separating the real part and the imaginary part, we get two real solutions:
+    $$U_{1}=e^{t}\bigg( \cos{2t}  \begin{bmatrix} 1\\ -\frac{4}{5}\end{bmatrix} - \sin{2t} \begin{bmatrix} 0\\ \frac{2}{5}\end{bmatrix} \bigg) $$ and
+    $$ U_{2}=e^{t}\bigg( \cos{2t} \begin{bmatrix} 0\\ \frac{2}{5}\end{bmatrix} + \sin{2t} \begin{bmatrix} 1\\ -\frac{4}{5}\end{bmatrix} \bigg).$$
+    
+    \subsection{Conclusions}
+    The section introduced the general form of linear systems with differential equations, the existence and uniqueness of the solution and its representations. Moreover, there were presented the three cases of linear systems with constant coefficients and examples. The author's contribution were the selection and solving of the examples.
+    
+    
+    \chapter{Equations with differences}
+    \section{Equations with differences of first order}
+    The general form of a linear equation with diffrences of first order is:
+    \begin{equation} 
+     x_{n+1}=a_{n}x_{n}+b_{n} \label{2.1}
+    \end{equation}
+    for any $n \geq 0$, where $(a_{n})_{n\geq 0}$ and $(b_{n})_{n\geq 0}$ are given series of real numbers. 
+\eqref{2.1} is obtained starting from an initial value $x_{0} \in \R$. Hence:
+\begin{align*}
+ x_{1} & =a_{0}x_{0}+b_{0}\\
+   x_{2} & =a_{1}x_{1}+b_{1} = a_{1}(a_{0}x_{0}+b_{0})+b_{1}\\
+  & = a_{1}a_{0}x_{0}+a_{1}+b_{0}+b_{1}\\
+  & ...\\
+   x_{n}&=a_{n-1}x_{n-1}+b_{n-1} = a_{n-1}\cdot ... \cdot a_{0}x_{0}+a_{n-1}\cdot ...\cdot a_{1}b_{0}+...+a_{n-1}\cdot b_{n-2}+b_{n-1}.
+\end{align*}
+
+Through mathematical induction, it is proved that the solution of the linear equation with differences of first order has the following form:
+\begin{equation}\label{2.2}
+ x_{n}=\bigg( \prod_{j=0}^{n-1} a_{j} \bigg) \cdot x_{0} + \sum_{j=0}^{n-1} \bigg( \prod_{k=j+1}^{n-1} a_{k} \bigg)\cdot b_{j}.
+\end{equation}
+If \eqref{2.1} is valid for $n$ starting from an $n_{0} \geq 0$, meaning that:
+\begin{equation}\label{2.3}
+ x_{n+1}=a_{n}\cdot x_{n}+b_{n}, n\geq n_{0}
+\end{equation}
+Then \eqref{2.2} becomes:
+\begin{equation}
+ x_{n}=\bigg( \prod_{j=n_{0}}^{n-1} a_{j} \bigg) \cdot x_{n_{0}} + \sum_{j=n_{0}}^{n-1} \bigg( \prod_{k=j+1}^{n-1} a_{k} \bigg)\cdot b_{j}.
+\end{equation}
+Ordinarilly, there are multiple particular cases of \eqref{2.1} that can appear in practice, which ease the use of formula \eqref{2.2}.
+\subsection{Particular cases of \eqref{2.1}}
+
 
 \end{document}
