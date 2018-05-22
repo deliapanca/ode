@@ -605,9 +605,9 @@ $3)$ $U'=AU$, where $A=\begin{bmatrix}
     The section introduced the general form of linear systems with differential equations, the existence and uniqueness of the solution and its representations. Moreover, there were presented the three cases of linear systems with constant coefficients and examples. The author's contribution were the selection and solving of the examples.
     
     
-    \chapter{Equations with differences}
-    \section{Equations with differences of first order}
-    The general form of a linear equation with diffrences of first order is:
+    \chapter{Difference Equations}
+    \section{Linear difference equations of first order}
+    The general form of a linear difference equation of first order is:
     \begin{equation} 
      x_{n+1}=a_{n}x_{n}+b_{n} \label{2.1}
     \end{equation}
@@ -621,7 +621,7 @@ $3)$ $U'=AU$, where $A=\begin{bmatrix}
    x_{n}&=a_{n-1}x_{n-1}+b_{n-1} = a_{n-1}\cdot ... \cdot a_{0}x_{0}+a_{n-1}\cdot ...\cdot a_{1}b_{0}+...+a_{n-1}\cdot b_{n-2}+b_{n-1}.
 \end{align*}
 
-Through mathematical induction, it is proved that the solution of the linear equation with differences of first order has the following form:
+Through mathematical induction, it is proved that the solution of the linear difference equation of first order has the following form:
 \begin{equation}\label{2.2}
  x_{n}=\bigg( \prod_{j=0}^{n-1} a_{j} \bigg) \cdot x_{0} + \sum_{j=0}^{n-1} \bigg( \prod_{k=j+1}^{n-1} a_{k} \bigg)\cdot b_{j}.
 \end{equation}
@@ -635,6 +635,81 @@ Then \eqref{2.2} becomes:
 \end{equation}
 Ordinarilly, there are multiple particular cases of \eqref{2.1} that can appear in practice, which ease the use of formula \eqref{2.2}.
 \subsection{Particular cases of \eqref{2.1}}
+\subsubsection{Case $a_{n}\equiv a$} \label{i}
+In this case, \eqref{2.1} becomes:
+\begin{equation}
+\label{2.6}
+ x_{n+1}=a\cdot x_{n}+b_{n}, n\geq 0,
+\end{equation}
+where $a\in \R$ and $(b_{n})_{n\in\mathbb{N}}$ is a given series of real numbers.
+From \eqref{2.1} we have that:
+\begin{align*}
+ \prod_{j=0}^{n-1} a_{j} &=\prod_{j=0}^{n-1} a,\\
+ \prod_{k=j+1}^{n-1} a_{k}&=\prod_{k=j+1}^{n-1} a=a^{n-1-(j+1)+1}=a^{n-j-1}
+\end{align*}
+and the solution is:
+\begin{equation}\eqref{2.6}
+ x_{n}=a^{n}\cdot x_{0}+\sum_{j=0}^{n-1} a^{n-j-1}\cdot b_{j}.
+\end{equation}
 
+\subsubsection{Case $b_{n}\equiv b$}\label{2.1.1.2}
+In this case, \eqref{2.1} becomes:
+\begin{equation}\label{2.7}
+ x_{n+1}=a_{n}\cdot x_{n}+b, n\geq 0,
+\end{equation}
+where $b\in\R$ and $(a_{n})_{n\in\mathbb{N}}$ is a given series of real numbers.
+From \eqref{2.2}, we obtain:
+\begin{align*}
+ x_{n} &= \bigg( \prod_{j=0}^{n-1} a_{j} \bigg) \cdot x_{0} + \sum_{j=0}^{n-1}\bigg(\prod_{k=j+1}^{n-1} a_{k}\bigg)\cdot b_{j} =\\
+ &= \bigg( \prod_{j=0}^{n-1} a_{j} \bigg) \cdot x_{0} + \sum_{j=0}^{n-1}\bigg(\prod_{k=j+1}^{n-1} a_{k}\bigg)\cdot b
+\end{align*}
+meaning that the solution is of form:
+\begin{equation}
+ x_{n}=\bigg( \prod_{j=0}^{n-1} a_{j} \bigg)\cdot x_{0}+b\cdot\sum_{j=0}^{n-1}\bigg(\prod_{k=j+1}^{n-1} a_{k}\bigg).
+\end{equation}
+\subsubsection{Case $a_{n}\equiv a$ and $b_{n}\equiv b$}
+In this case, \eqref{2.1} becomes:
+\begin{equation}
+ x_{n+1}=a\cdot x_{n}+b, n\geq 0,
+\end{equation}
+where $a,b\in \R$.
+From \eqref{2.2} we obtain:
+\begin{align*}
+ x_{n} &= \bigg(\prod_{j=0}^{n-1} a \bigg)\cdot x_{0}+\sum_{j=0}^{n-1}\bigg(\prod_{k=j+1}^{n-1}a\bigg)\cdot b=\\
+ &=a^{n}\cdot x_{0}+b\cdot \sum_{j=0}^{n-1} a^{n-j-1}=\\
+ &=a^{n}\cdot x_{0}+b\cdot (a^{n-1}+a^{n-2}+...+a^{0}).
+\end{align*}
+If $a \neq 1$, we have:
+\begin{align*}
+ x_{n}&=a^{n}\cdot x_{0}+b\cdot \frac{a^{n}-1}{a-1}=\\
+ &= a^{n}\cdot \bigg(x_{0}+\frac{b}{a-1}\bigg)-\frac{b}{a-1}.
+\end{align*}
+And if $a=1$, we have:
+\begin{align*}
+ x_{n}&=a^{n}\cdot x_{0}+b(a^{n-1}+a^{n-2}+...+a^{0})=\\
+ &=x_{0}+n\cdot b.
+\end{align*}
+Thus the solution is:
+
+ $$x_{n}=\begin{cases}
+        a^{n}\cdot \big(x_{0}+\frac{b}{a-1}\big)-\frac{b}{a-1}, a\neq 1 \\
+        x_{0}+n\cdot b, a=1.
+       \end{cases}
+$$
+
+\subsection{Examples}
+$1)$ $x_{n+1}=-x_{n}+n$\\
+\underline{Solution:}
+In this example, $a_{n}=a=-1\in\R$, meaning we are in case \ref{i}. Then, the products become:
+$$ \prod_{j=0}^{n-1} a=a^{n}=(-1)^{n}$$
+and 
+$$\prod_{k=j+1}^{n-1} a=(-1)^{n-j-1}.$$ 
+Hence, by applying \eqref{2.6}, the solution is:
+$$x_{n}=(-1)^{n}\cdot x_{0}+\sum_{j=0}^{n-1} (-1)^{n-j-1}\cdot j.$$
+$2)$ $x_{n+1}=\frac{n+2}{n+1}\cdot x_{n}$.\\
+\underline{Solution:}\\ \\
+In this example, $a_{n}=\frac{n+2}{n+1}$ and $b_{n}=0 \in \R$, meaning we are in case \ref{2.1.1.2}. Then, the solution is:
+$$ x_{n}=\prod_{j=0}^{n-1} \frac{j+2}{j+1}=\prod_{j=0}^{n-1} (1-\frac{1}{n+1})=(1-1)\cdot ...\cdot (1-\frac{1}{n})=0$$
+\subsection{Conclusions}
 
 \end{document}
