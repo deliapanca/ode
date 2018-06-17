@@ -708,10 +708,12 @@ and
 $$\prod_{k=j+1}^{n-1} a=(-1)^{n-j-1}.$$ 
 Hence, by applying \eqref{2.6}, the solution is:
 $$x_{n}=(-1)^{n}\cdot x_{0}+\sum_{j=0}^{n-1} (-1)^{n-j-1}\cdot j.$$
+Let us choose $x_{0}=1$, then the solution is: $$x_{n}=(-1)^{n}+\sum_{j=0}^{n-1} (-1)^{n-j-1}\cdot j.$$
 $2)$ $x_{n+1}=\frac{n+2}{n+1}\cdot x_{n}$.\\
 \underline{Solution:}\\ \\
 In this example, $a_{n}=\frac{n+2}{n+1}$ and $b_{n}=0 \in \R$, meaning we are in case \ref{2.1.1.2}. Then, the solution is:
-$$ x_{n}=\prod_{j=0}^{n-1} \frac{j+2}{j+1}=\prod_{j=0}^{n-1} (1-\frac{1}{n+1})=(1-1)\cdot ...\cdot (1-\frac{1}{n})=0$$
+$$ x_{n}=\prod_{j=0}^{n-1} \frac{j+2}{j+1}\cdot x_{0}=\frac{2}{1}\cdot ...\cdot \frac{n+2}{n+1} \cdot x_{0} =(n+2)\cdot x_{0}.$$
+Let us choose $x_{0}=1$. Then the solution is: $x_{n}=n+2$.
 \subsection{Conclusions}
 
 \section{Dynamical systems}
@@ -829,7 +831,23 @@ The intersection of the vertical from $(x_{1},x_{1})$ with the graphic of $f$ re
  \end{enumerate}
 \end{theorem}
 \begin{proof}
- ?
+ Let $x_{0} \in I$ and let us consider $x_{n}(x_{0})=f^{n}(x_{0})$ the solution of quation $x_{n+1}=f(x_{n})$. From the contraction condition we denote that $$|x_{n+1}(x_{0}-x_{n}(x_{0})|\leq \alpha |x_{n}(x_{0})-x_{n-1}(x_{0})|\leq ... \leq \alpha^{n}|fx_{0}-x_{0}|,$$
+ from where we obtain that
+ \begin{align*}
+  |x_{n+p}(x_{0})-x_{n}(x_{0})| &\leq \sum_{j=0}^{p-1} |x_{n+j+1}(x_{0})-x_{n+j}(x_{0})|\leq \\
+  &\leq \bigg(\sum_{j=0}^{p-1} \alpha^{n+j}\bigg) |f(x_{0})-x_{0}|= \\
+  &=\alpha^{n}\cdot\frac{1-\alpha^{p}}{1-\alpha}|f(x_{0})-x_{0}|\leq \frac{\alpha^{n}}{1-\alpha}|f(x_{0})-x_{0}|.
+ \end{align*}
+We can observe that for $n\rightarrow \infty$ and for all $p\in \mathbb{N}$ we have $|x_{n+p}(x_{0})-x_{n}(x_{0})|\rightarrow 0$, meaning that the series $(x_{n}(x_{0}))_{n\in\mathbb{N}}$ is fundamental. With $I\subseteq \R$ being a closed interval, we have that the series $(x_{n}(x_{0}))_{n\in\mathbb{N}}$ is convergent. Let $x^{*}=\lim_{n\rightarrow\infty} x_{n}(x_{0})$. $I$ is a closed interval, so $x_{*}\in I$.
+From $$x_{n+1}(x_{0})=f(x_{n}(x_{0}))$$ and f being continuous, applying the limit in the relation above we obtain:
+$$x^{*}=f(x^{*})$$ meaning that $x^{*}$ is an equilibrium point for \eqref{2.14}. If $x^{*}$ and $y^{*}$ are two equilibrium points for \eqref{2.14}, then:
+$$|x^{*}-y^{*}|\leq|f(x^{*})-f(y^{*})| \leq \alpha|x^{*}-y^{*}|,$$
+hence
+$$(1-\alpha)|x^{*}-y^{*}|\leq 0,$$
+which implies that $|x^{*}-y^{*}|=0$, so $x^{*}=y^{*}$, meaning that \eqref{2.14} admits an unique equilibrium point. Estimation \eqref{2.17} is given by the inequality:
+$$|x_{n+p}(x_{0})-x_{n}(x_{0})|\leq \alpha^{n} \frac{1-\alpha^{p}}{1-\alpha}|f(x_{0})-x_{0}|$$
+By making $p\rightarrow\infty$, the exponential stability of the equilibrium point $x^{*}$ is proven.
+
 \end{proof}
 \begin{theorem}
  Considering \eqref{2.14} for which $f:I\rightarrow I, I\subseteq\R$ is an interval, we presume that:
