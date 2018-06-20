@@ -874,7 +874,7 @@ By making $p\rightarrow\infty$, the exponential stability of the equilibrium poi
  \end{align*}
 \end{proof}
 
-\begin{theorem}[The stability criteria in first aproximation]
+\begin{theorem}[The stability criteria in first aproximation]\label{2.3.2.3.}
  Let $\xstar\in I$ be an equilibrium point for \eqref{2.14}, $f:I\rightarrow\R$ such that f is differentiable in $\xstar$. Then:
  \begin{enumerate}
   \item if $\xstar$ is locally stable, then $|f'(\xstar)|\leq 1$;
@@ -926,6 +926,7 @@ so $\xstar$ is locally asimptotic stable.
 
 \end{proof}
 \begin{theorem}
+\label{2.3.2.4.}
  Let $\xstar\in I$ be an equilibrium point for \eqref{2.14},$f:I\rightarrow\R$ such that $f'(\xstar)$ exists and $f'(\xstar)=1$. Then:
  \begin{enumerate}
   \item if $f''(\xstar)$ exists and $f''(\xstar)\neq 0$ then $\xstar$ is unstable;
@@ -960,6 +961,7 @@ meaning that $\xstar$ is locally asimptotic stable also for \eqref{2.14}.
 \end{proof}
 
 \begin{theorem}
+\label{2.3.2.5.}
  Let $\xstar$ be an equilibrium point of \eqref{2.14}. If $f\in C^{3}(\R)$ and $f'(\xstar)=-1$, then:
  \begin{enumerate}
   \item if $-3[f''(\xstar)]^{2}-2f'''(\xstar)<0$, then $\xstar$ is locally asymptotic stable(?);
@@ -986,9 +988,41 @@ meaning that $\xstar$ is locally asimptotic stable also for \eqref{2.14}.
 
 \end{lemma}
 
+\subsection{Examples}
 
+\paragraph{1) Depreciation}
 
+Depreciation refers to the process in which a credit is paid through a series of periodic payments. Each payment covers both the primary credit and the interest rates.\\
+Let $p(n)$ be the remaining credit of the $n$ payment and $g(n)$ the percentage of the interest rate equal to $"r"$. \\
+The model is based on the idea that the primary credit $p(n+1)$ is equal to the $p(n)$ credit plus the interest rate $rp(n)$ corresponding to the $n$ periods and minus the $n$ payment $g(n)$. So:
+\begin{align*}
+ p(n+1)=p(n)+rp(n)-g(n)\\
+ p(n+1)=(1+r)p(n)-g(n).
+\end{align*}
+Usually in practice the rate $g(n)=T$, which is constant. Resulting:
+\begin{equation}
+ p(n)=(1+r)^{n}p(0)-\frac{T}{r}[(1+r)^{n}-1].
+\end{equation}
+If we wish to pay the credit in exactly "$n$" payments, then $T$ should be (if $p(n)=0$):
+$$T=p_{0}\cdot\frac{r}{1-(1+r)^{-n}}$$ 
 
+\paragraph{2)} If exists, find the equilibruim points and specify their type for the following equations:\\ \\
+a) $x(n+1)=\frac{1}{3}x^{3}(n)+x(n)$\\ \\
+\textbf{Solution:}
+In this case, $f(x)=\frac{1}{3}x^{3}+x$. To find the equilibruim point, we must solve $f(x)=x$. Meaning that we have:
+$$\frac{1}{3} x^{3}+x=x \Rightarrow x^{3}=0 \Rightarrow x=0.$$
+So the only equilibrium point for the given equation is $x=0$. In order to apply Theorem \ref{2.3.2.4.}, we need to find the value of $f'(0), f''(0)$ and $f'''(0).$ 
+$$f'(x)=x^{2}+1;$$
+$$f''(x)=2x$$ and
+$$f'''(x)=2.$$
+Resulting that $f'(0)=1$, $f''(0)=0$ and $f'''(0)=2$. Hence, $x=0$ is an unstable equilibrium point.\\
 
+b) $x(n+1)=\tan^{-1}{x(n)}$ \\ \\
+\textbf{Solution:}\\
+
+In this case, $f(x)=\tan^{-1}{x}$. If $f(x)=x$, we obtain that $x\tan{x}=1$, resulting that the difference equation does not have equilibrium points. \\ \\
+c) $x(n+1)=-x^{3}(n)-x(n)$\\
+
+In this case, $f(x)=-x^{3}-x$. 
 
 \end{document}
