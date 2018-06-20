@@ -849,16 +849,31 @@ $$|x_{n+p}(x_{0})-x_{n}(x_{0})|\leq \alpha^{n} \frac{1-\alpha^{p}}{1-\alpha}|f(x
 By making $p\rightarrow\infty$, the exponential stability of the equilibrium point $x^{*}$ is proven.
 
 \end{proof}
-\begin{theorem}
+\begin{theorem}\label{2.3.2.2.}
  Considering \eqref{2.14} for which $f:I\rightarrow I, I\subseteq\R$ is an interval, we presume that:
  \begin{enumerate}
   \item \eqref{2.14} has an unique equilibrium point $\xstar\in I$;
-  \item $f$ is an $\alpha$-cvasicontraction(??), meaning that there exists $\alpha\in[0,1)$ such that:
+  \item $f$ is an $\alpha$-cvasicontraction, meaning that there exists $\alpha\in[0,1)$ such that:
   $$|f(x)-\xstar|\leq \alpha |x-\xstar|, \forall x\in I.$$
    \end{enumerate}
   Then the equilibrium point $\xstar$
-  $$|x_{n}(x_{0})-\xstar|\leq\alpha^{n}|x_{0}-\xstar|,\forall x_{0}\in I.$$
+  \begin{equation}\label{2.18}
+   |x_{n}(x_{0})-\xstar|\leq\alpha^{n}|x_{0}-\xstar|,\forall x_{0}\in I.
+  \end{equation}
 \end{theorem}
+
+\begin{proof}
+ Let $x_{0}\in I$ and let us consider $x_{n}(x_{0})=f^{n}(x_{0})$ the solution of \eqref{2.14}, with $x_{0}$ as the starting value. Estimation \eqref{2.18}, which demonstrates the exponential stability of the equilibrium point $x^{*}$, can be proved through mathematical induction by using the $\alpha$-cvasicontraction condition. Hence:
+ \begin{align*}
+  |x_{1}(x_{0})-x^{*}|&\leq\alpha |x_{0}-x^{*}|,\\
+  |x_{2}(x_{0})-x^{*}|&\leq |x_{1}(x_{0})-x^{*}| \leq\alpha |x_{0}-x^{*}|,\\
+  &.\\
+  &.\\
+  &.\\
+  |x_{n}(x_{0})-x^{*}|&\leq \alpha^{n}|x_{0}-x^{*}|.
+ \end{align*}
+\end{proof}
+
 \begin{theorem}[The stability criteria in first aproximation]
  Let $\xstar\in I$ be an equilibrium point for \eqref{2.14}, $f:I\rightarrow\R$ such that f is differentiable in $\xstar$. Then:
  \begin{enumerate}
@@ -868,7 +883,47 @@ By making $p\rightarrow\infty$, the exponential stability of the equilibrium poi
  \end{enumerate}
 \end{theorem}
 \begin{proof}
- ?
+ (a) How f is differentiable in $x^{*}$ then:
+ \begin{equation*}
+  |f'(x^{*})|=\lim_{x\rightarrow x^{*}} \frac{|f(x)-f(x^{*})|}{|x-x^{*}|}
+ \end{equation*}
+If the equilibrium point $x^{*}$ is locally stable, then for all $\epsilon>0$ exists $\delta>0$ such that if $|x_{0}-x^{*}|<\delta$ we have:
+\begin{align*}
+ |x_{n}(x_{0})-x^{*}|&<\epsilon, \forall n\in\mathbb{N} \\
+ |f^{n}(x_{0})-x^{*}|&<\epsilon, \forall n\in\mathbb{N}
+\end{align*}
+For a fixed $x\in I$ we choose $\epsilon=|x-x^{*}|$ and from $x^{*}$'s property of local stability we obtain:
+\begin{equation*}
+ |f^{n}(x)-x^{*}|<\epsilon=|x-x^{*}|, \forall n\in\mathbb{N},
+\end{equation*}
+so for $n=1$ we have:
+\begin{align*}
+ |f(x)-x^{*}|&<|x-x^{*}|,\\
+ \frac{|f(x)-x^{*}|}{|x-x^{*}|}&<1,
+\end{align*}
+and by applying the limit $x\rightarrow x^{*}$, results:
+\begin{equation*}
+ |f'(x^{*})|\leq 1.
+\end{equation*}
+
+(b) For $\epsilon >0$ exists $\delta$ with the property as $0<\delta<\epsilon$ such that for $|x-x^{*}|$ we have:
+\begin{equation*}
+ |f(x)-x^{*}|=|f(x)-f(x^{*})|\leq |f'(x^{*})|\cdot |x-x^{*}|,
+\end{equation*}
+How $|f'(x^{*})|\leq 1$ then $f$ is a cvasicontraction on $(x^{*}-\delta,x^{*}+\delta)$ and applying \ref{2.3.2.2.} we deduce that:
+\begin{equation*}
+ |x_{n}(x_{0})-\xstar|\leq |f'(\xstar)|^{n}\cdot |x_{0}-\xstar|,\forall x_{0} \in (\xstar-\delta,\xstar+\delta),
+\end{equation*}
+meaning
+\begin{equation*}
+ |x_{n}(x_{0})-\xstar|\leq |f'(\xstar)|^{n}\cdot \delta<\epsilon,
+\end{equation*}
+which proves that $\xstar$ is locally stable. In addition
+$$|x_{n}(x_{0})-\xstar|\leq|f'(\xstar)|^{n}\cdot\delta\rightarrow 0, n\rightarrow \infty,$$
+so $\xstar$ is locally asimptotic stable.
+(c) is an immediat consequence of point (a).
+
+
 \end{proof}
 \begin{theorem}
  Let $\xstar\in I$ be an equilibrium point for \eqref{2.14},$f:I\rightarrow\R$ such that $f'(\xstar)$ exists and $f'(\xstar)=1$. Then:
@@ -880,8 +935,30 @@ By making $p\rightarrow\infty$, the exponential stability of the equilibrium poi
 
 \end{theorem}
 \begin{proof}
- ?
+ Let us consider the difference equation:
+ \begin{equation}\label{2.19}
+  y_{n+1}=g(y_{n}),
+ \end{equation}
+where 
+$$g(x)=f^{2}(x)=(f\circ f)(x).$$
+Obviously,if $\xstar$ is an equilibrium point for \eqref{2.14}, then $\xstar$ is also an equilibrium point for \eqref{2.19}. We will demonstrate that if $\xstar$ is a locally asimptotic stable point for \eqref{2.19}, then it is also a locally asimptotic stable point for \eqref{2.14}. For a fixed $\epsilon>0$ exists $\delta>0$ such that for all $x$ that satisfy $|x-\xstar|<\delta$ takes place:
+\begin{align*}
+ |f(x)-\xstar|\leq|f(\xstar)|\cdot |x-\xstar|=|x-\xstar|,\\
+ |g^{n}(x)-\xstar|<\epsilon,|g^{n}(x)-\xstar|\rightarrow 0, n\rightarrow \infty.
+\end{align*}
+So, for a chosen$x_{0}$, such that $|x_{0}-\xstar|<\delta$, we have that also
+$$|f(x_{0})-\xstar|\leq|x_{0}-\xstar|<\delta,$$
+resulting that 
+$$|g^{n}(x_{0})-\xstar|<\epsilon, |g^{n}(f(x_{0}))-\xstar|<\epsilon$$
+and
+$$|g^{n}(x_{0})-\xstar|\rightarrow 0, |g^{n}(f(x_{0}))-\xstar|\rightarrow 0, n\rightarrow \infty,$$
+but
+$$y_{n}(x_{0})=g^{n}(x_{0})=x_{2n}(x_{0}), y_{n}(f(x_{0}))=g^{n}(f(x_{0}))=x_{2n+1}(x_{0}),$$
+so
+$$|x_{n}(x_{0})-\xstar|<\epsilon, |x_{n}(x_{0})-\xstar|\rightarrow 0, n\rightarrow \infty,$$
+meaning that $\xstar$ is locally asimptotic stable also for \eqref{2.14}.
 \end{proof}
+
 \begin{theorem}
  Let $\xstar$ be an equilibrium point of \eqref{2.14}. If $f\in C^{3}(\R)$ and $f'(\xstar)=-1$, then:
  \begin{enumerate}
@@ -889,9 +966,7 @@ By making $p\rightarrow\infty$, the exponential stability of the equilibrium poi
   \item if $-3[f''(\xstar)]^{2}-2f'''(\xstar)>0$, then $\xstar$ is unstable;
  \end{enumerate}
 \end{theorem}
-\begin{proof}
- ?
-\end{proof}
+
 \begin{theorem}
  Let $\xstar$ to be an equilibrium point of \eqref{2.14}. If $f\in C^{k}(\R),k\geq 2$ and $f'(\xstar)=1$, $f^{(j)}(\xstar)=0, j=\overline{2,k-1}$, $f^{(k)}(\xstar)\neq 0$, then:
  \begin{enumerate}
@@ -901,9 +976,16 @@ By making $p\rightarrow\infty$, the exponential stability of the equilibrium poi
  \end{enumerate}
 
 \end{theorem}
-\begin{proof}
- ?
-\end{proof}
+\begin{lemma}
+ Suppose that $f(x)\in \mathbf{C(\R)}$ and $f'(\xstar)=-1$. 
+ \begin{enumerate}
+  \item If $\xstar$ is an equilibrium point for \eqref{2.14}, then it is an equilibrium point for \eqref{2.19};
+  \item If the equilibrium point $\xstar$ is locally asymptotic stable with respect to \eqref{2.19}, then it is also locally asymptotic stable for \eqref{2.14};
+  \item If the equilibrium point $\xstar$ of \eqref{2.14} is unstable with respect to \eqref{2.19}, then it is unstable with respectto \eqref{2.14}.
+ \end{enumerate}
+
+\end{lemma}
+
 
 
 
