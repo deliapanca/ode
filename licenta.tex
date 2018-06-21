@@ -970,6 +970,7 @@ meaning that $\xstar$ is locally asimptotic stable also for \eqref{2.14}.
 \end{theorem}
 
 \begin{theorem}
+\label{2.3.2.6.}
  Let $\xstar$ to be an equilibrium point of \eqref{2.14}. If $f\in C^{k}(\R),k\geq 2$ and $f'(\xstar)=1$, $f^{(j)}(\xstar)=0, j=\overline{2,k-1}$, $f^{(k)}(\xstar)\neq 0$, then:
  \begin{enumerate}
   \item if k is even, then $\xstar$ is unstable;
@@ -1023,5 +1024,48 @@ b) $x(n+1)=\tan^{-1}{x(n)}$ \\ \\
 In this case, $f(x)=\tan^{-1}{x}$. If $f(x)=x$, we obtain that $x\tan{x}=1$, resulting that the difference equation does not have equilibrium points. \\ \\
 c) $x(n+1)=-x^{3}(n)-x(n)$\\
 In this case, $f(x)=-x^{3}-x$. Solving $f(x)=x$, we obtain the equilibrium point $x=0$. $f'(x)=-3x^{2}-1$, meaning that $f'(0)=1$. $f''(x)=-6x$ resulting $f''(0)=0$ and $f'''(x)=-6$ then $f'''(0)=-6$. Hence, by applying Theorem \ref{2.3.2.5.}, we get that $x=0$ is an unstable equilibrium point. 
+
+\paragraph{3)} Let $x(n+1)=x^{2}(n)+3x(n)$. Find the equilibrium point and specify its stability.
+
+\textbf{Solution:}\\
+By applying the formula, we denote that $f(x)=x^{2}+3x$. To find the equilibrium point, we need to solve $f(x)=x$. We get $x^{2}+2x=0$, meaning that we have two equilibrium points $x^{o}_{1}=0$ and $x_{2}^{o}=-2$. Knowing that $f'(x)=2x+3$, we get that $f'(0)=3>0$, resulting that $x_{1}^{o}=0$ is unstable according to Theorem \ref{2.3.2.6.}. For $x_{2}^{o}=-2$, we have $f'(-2)=-1<0$, resulting that we can apply Theorem \ref{2.3.2.5.}. Thus we have $f''(x)=2$ and $f'''(x)=0$ resulting that $-3\cdot [f''(-2)]^{2}-2\cdot f'''(-2)=-3\cdot 2^{2}-0=-3\cdot 4=-12<0 \Rightarrow x_{2}^{o}$ is locally asimptotic stable. 
+
+\paragraph{4) An application from economics}
+
+Let $S(n)$ be the number of units from a merchandise supplied on the market in period $"n"$. Let $D(n)$ be the number of units from the same commodity demanded in period $"n"$. Let $p(n)$ be the price/unit in period $"n"$. We presume that:
+\begin{equation}
+ \begin{cases} \label{2.21}
+  D(n)=-m_{d}\cdot p(n)+b_{d} \\
+  m_{d},b_{d}>0.
+ \end{cases}
+\end{equation}
+\underline{Assumption:} $D(n)$ depends linearly on $p(n)$. Equation \eqref{2.21} is also called the price-demand curve. $m_{d}$ represents the consumers' sensitivity constant at price. It is certain that $m_{d}$ should be positive as the growth of $p(n)$ implies the declining of the demand. \\
+We presume:
+\begin{equation}
+ \begin{cases} \label{2.22}
+  S(n+1)=-m_{s}\cdot p(n)+b_{s} \\
+  m_{s},b_{s}>0.
+ \end{cases}
+\end{equation}
+Equation \eqref{2.22} represents the price-offer curve.
+\underline{Assumption:} The offer in period $n+1$ depends linearly on the price from the previous period.
+\underline{Assumption:} The price from the market is the price to which the supplied quantity equals the demanded quantity, for example: $D(n+1)=S(n+1)\Rightarrow$
+\begin{equation}\label{2.23}
+ p(n+1)=A\cdot p(n)+B,
+\end{equation}
+where $A=-\frac{m_{s}}{m_{d}}$ and $B=\frac{b_{d}-b_{s}}{m_{d}}.$
+We obtained a first order difference equation. The equilibrium price results from the intersection between the price-offer curve and the price-demand curve. If we note $f(p(n)):=Ap(n)+B$, then $p^{*}$ (equilibrium price) is the only fixed point of $f(p)$. For example:
+$$p^{*}=f(p^{*})\Leftrightarrow p^{*}=Ap^{*}+B \Rightarrow p^{*}=\frac{B}{1-A}.$$
+We denote three important cases:
+\begin{enumerate}[i]
+ \item $A\in (-1,0) \Rightarrow p^{*}$ is asymptotically stable;
+ \item $A=-1\Rightarrow$ The prices are oscilating between two values. For example, if $p(0)=p_{0}\Rightarrow p(1)=-p_{0}+B. p(2)=p_{0} \Rightarrow$ $p^{*}$ is stable;
+ \item $A<-1\Rightarrow$ the prices are oscilating towards infinity $\Rightarrow p^{*}$ is unstable.
+\end{enumerate}
+The explicit solution of equation \eqref{2.23} is:
+$$p(n)=\bigg(p_{0}-\frac{B}{1-A}\bigg)\cdot A^{n}+\frac{B}{1-A}.$$
+\underline{Conclusions:}
+If the bidders are less sensitive to the prices, than the consumers $(m_{s}<m_{d}\Rightarrow A\in(-1,0))$ then the market is stable. Otherwise, it becomes unstable.
+
 
 \end{document}
