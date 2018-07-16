@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt]{report}
+\documentclass[a4paper, 11pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[none]{hyphenat}
 \usepackage{amssymb,amsfonts,latexsym,makeidx}
@@ -42,6 +42,7 @@
  \chapter{Ordinary Differential Equations and Linear Systems}
  \pagenumbering{arabic}
  %\nopagebreak
+ \section{Introduction}
  This chapter presents the general notions of an equation with separable variables, the otion of a linear differential equations of first order, after which we will consider the linear differential systems. In this part, we will present some results regarding the existence and uniqueness of a solution, as well as its possible representations. In the end, we will present the linear systems with constant coefficients and its particular cases.
  The author's contribution is the selection and solving of the examples found at the end of each chapter.
  \section{Equations with separable variables}\label{1.1.1}
@@ -602,11 +603,63 @@ $3)$ $U'=AU$, where $A=\begin{bmatrix}
     By separating the real part and the imaginary part, we get two real solutions:
     $$U_{1}=e^{t}\bigg( \cos{2t}  \begin{bmatrix} 1\\ -\frac{4}{5}\end{bmatrix} - \sin{2t} \begin{bmatrix} 0\\ \frac{2}{5}\end{bmatrix} \bigg) $$ and
     $$ U_{2}=e^{t}\bigg( \cos{2t} \begin{bmatrix} 0\\ \frac{2}{5}\end{bmatrix} + \sin{2t} \begin{bmatrix} 1\\ -\frac{4}{5}\end{bmatrix} \bigg).$$
-    
+
+\section{Dynamic systems}
+\subsection{The dynamic of an operator}
+ Let $(X,d)$ be a complete metric space and $f:X\rightarrow X$ an operator. If $x\in X$, then $f(x)$ will be named the state of $x$ through $f$. The sequence of successive aproximations $$x,f(x),f^{2}(x),...$$ represents the states of $x$ through the iterations of $f$. Space $X$ will be named the space of states. Set $${x,f(x),f^{2}(x),...,f^{n}(x),...}$$ will be called the orbit of $x$ through $f$. If $x\in X$ is a fixed point of $f$, then $f^{n}(x)=x$. For this reason, the fixed points of f will be named equilibrium states or stationary positions. The pair $(X,f)$ will be refered to as a dynamic.
+ The central matter of the theory of dynamic systems consists in the study of the movements of a dynamic system. For example, we question the study of limit points of the sequence of successive aproximations.
+ Let $x_{0}\in X$. A state $\xstar \in X$ is called an $\omega$-limit state of $x$ if exists $n_{k}\rightarrow \infty$ such that $f^{n_{k}}(x_{0})\rightarrow \xstar$. $\omega(x_{0})$ represents the set of $\omega$-limit states of $x_{0}$ in relation with operator $f$.
+ \paragraph{Example} Let us consider the dynamic system $(\R,f)$ where $f(x)=x^{3}$. next, we study the $\omega$-limit states of $f$. In this case we have:
+ \begin{enumerate}[i)]
+  \item If $|x|>1$ then $f^{n}(x)=x^{3^{n}}\rightarrow \infty$ meaning $\omega(x)=\emptyset$;
+  \item If $|x|<1$ then $f^{n}(x)=x^{3^{n}}\rightarrow 0$ meaning $\omega(x)={0}$;
+  \item When $f^{n}(1)=1^{3^{n}}\rightarrow 1$ then $O(f;1)={1}$ and so $\omega(1)={1}$;
+  \item When $f^{n}(-1)=(-1)^{3^{n}}\rightarrow -1$ then $O(f;-1)={-1}$ and so $\omega(-1)={-1}$.
+ \end{enumerate}
+
+\subsection{The notion of a dynamic system}
+Let $(X,d)$ be a metric space. Let $(G,+,\tau)$ be a topologic group, meaning that:
+\begin{enumerate}
+ \item $(G,+)$ is a group;
+ \item $(G,\tau)$ is a separated topologic space;
+ \item operators:
+ $$+: G\times G\rightarrow G, (t_{1},t_{2})\rightarrow t_{1}+t_{2}$$
+ $$-:G\rightarrow G, t\rightarrow -t.$$ are continuous.
+\end{enumerate}
+Let $\phi:G\times X\rightarrow X$ be an operator.
+\begin{definition}
+ The triplet $(X,G,\phi)$ is named a dynamic system if:
+ \begin{enumerate}[i)]
+  \item $\phi(0,x)=x,\forall x\in X$
+  \item $\phi(t,\phi(s,x))=\phi(t+s,x),\forall t,s \in G, \forall x\in X$
+ \end{enumerate}
+\end{definition}
+If $G=\mathbb{Z}$, then the system is called discrete. If $G=\R$, then the system is called continuous.
+Space $X$ is called the phases space or the states space. Operator $\phi(t,\cdot):X\rightarrow X, t\in G$ is called the transition operator. Operator $\phi(\cdot,x):G\rightarrow X, x\in X$ is called the movement of x in regard with the dynamic system $(X,G,\phi)$. The set $\phi(G,X)$ is called the trajectory of $x$ or the orbit of $x$.
+In the next paragraph, we presume $G$ to be an abelian group.
+Considering the axioms of the dynamic system, we have the following results.
+\begin{theorem}
+ If $(X,G,\phi)$ is a dynamic system, then $\phi(t,\cdot):X\rightarrow X$ is a topological isomorphism, for all $t$ in $G$.
+\end{theorem}
+\begin{proof}
+ We observe that $$\phi(-t,\cdot)\circ \phi(t,\cdot)=\phi(t,\cdot) \circ \phi (-t,\cdot)=1_{x},$$ for all $t\in G$. So $\phi(t,\cdot)$ is a bijection and $(\phi(t,\cdot))^{-1}=\phi(-t,\cdot)$. Knowing that $\phi$ is continuous and that $G$ is a topological group, results that operators $\phi(t,\cdot)$ and $\phi(-t,\cdot)$ are continuous. So $\phi(t,\cdot)$ is a topological isomorphism for all $t\in G$.
+\end{proof}
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+\section{Conclusion}
 The chapter introduced the reader to the general notions of an equation with separable variables, of linear differential equations of first order and the linear differential systems, needed for presenting the main part of the paper. The notions have been extracted from the classic books mentioned in the bibliography of the paper. The author's contribution was the selection and solving of the exercises found at the end of each section.
+
     
     
     \chapter{Difference Equations}
+    \section{Introduction}
     In this chapter, we will introduce the general form of a linear difference equation and its particular cases, followed by the generated dynamical systems. After which, we will present the notion of equilibrium point, the stability criteria and a few important results. The author's contribution are the selection and solving of the examples from the end of each section.
     \section{Linear difference equations of first order}
     The general form of a linear difference equation of first order is:
@@ -700,7 +753,7 @@ Thus the solution is:
 $$
 
 \subsection{Examples}
-$1)$ $x_{n+1}=-x_{n}+n$\\
+\paragraph{1)} $x_{n+1}=-x_{n}+n$\\ \\
 \underline{Solution:}
 In this example, $a_{n}=a=-1\in\R$, meaning we are in case \ref{i}. Then, the products become:
 $$ \prod_{j=0}^{n-1} a=a^{n}=(-1)^{n}$$
@@ -708,13 +761,35 @@ and
 $$\prod_{k=j+1}^{n-1} a=(-1)^{n-j-1}.$$ 
 Hence, by applying \eqref{2.6}, the solution is:
 $$x_{n}=(-1)^{n}\cdot x_{0}+\sum_{j=0}^{n-1} (-1)^{n-j-1}\cdot j.$$
-Let us choose $x_{0}=1$, then the solution is: $$x_{n}=(-1)^{n}+\sum_{j=0}^{n-1} (-1)^{n-j-1}\cdot j.$$
-$2)$ $x_{n+1}=\frac{n+2}{n+1}\cdot x_{n}$.\\
+Let us choose $x_{0}=1$, then the solution is: 
+$$ x_{n}=(-1)^{n}+\sum_{j=0}^{n-1} (-1)^{n-j-1}\cdot j.$$
+
+\paragraph{2)} $x_{n+1}=\frac{n+2}{n+1}\cdot x_{n}$.\\ \\
 \underline{Solution:}\\ \\
 In this example, $a_{n}=\frac{n+2}{n+1}$ and $b_{n}=0 \in \R$, meaning we are in case \ref{2.1.1.2}. Then, the solution is:
 $$ x_{n}=\prod_{j=0}^{n-1} \frac{j+2}{j+1}\cdot x_{0}=\frac{2}{1}\cdot ...\cdot \frac{n+2}{n+1} \cdot x_{0} =(n+2)\cdot x_{0}.$$
 Let us choose $x_{0}=1$. Then the solution is: $x_{n}=n+2$.
-\subsection{Conclusions}
+
+\paragraph{3)} $x_{n+1}=2x_{n}+3^{n}$, $x_{0}=1$.\\ \\
+\underline{Solution:}
+We will find the general term by solving the equation step by step. Hence we have:
+\begin{align*}
+ x_{1}&=2x_{0}+3^{0}\\
+ x_{2}&=2x_{1}+3^{1}=2(2x_{0}+3^{0})+3^{1}=2^{2}x_{0}+2\cdot 3^{0}+3^{1}\\
+ x_{3}&=2x_{2}+3^{2}=2(2^{2}x_{0}+2\cdot 3^{0}+3^{1})+3^{2}=2^{3}x_{0}+2^{2}\cdot 3^{0}+2\cdot 3^{1}+3^{2}\\
+ &.\\ &.\\ &.\\
+ x_{n}&=2^{n}x_{0}+2^{n-1}3^{0}+2^{n-2}3^{1}+...+2\cdot 3^{n-2}+3^{n-1}.
+\end{align*}
+We can now presume that
+$$x_{n}=2^{n}x_{0}+\sum_{k=0}^{n-1} 2^{n-1-k}3^{k}+3^{n-1}.$$
+
+The sum can be written: $$ 2^{n-1}\sum_{k=0}^{n-1}\bigg(\frac{3}{2}\bigg)^{k}.$$ Solving the resulted sum of a geometric progression, we get:
+$$2^{n-1}\sum_{k=0}^{n-1}\bigg(\frac{3}{2}\bigg)^{k}=2^{n}\cdot \bigg[ (\frac{3}{2})^{n-1}-1\bigg].$$
+Thus, the general term of the difference equation is:
+$$x_{n}=2^{n}\cdot 1+2^{n}\bigg[ \bigg(\frac{3}{2}\bigg)^{n-1}-1\bigg]+3^{n-1}.$$
+
+
+
 
 \section{Dynamical systems}
 \subsection{General notions}
@@ -1106,7 +1181,7 @@ The explicit solution of equation \eqref{2.23} is:
 $$p(n)=\bigg(p_{0}-\frac{B}{1-A}\bigg)\cdot A^{n}+\frac{B}{1-A}.$$
 \underline{Conclusions:}
 If the bidders are less sensitive to the prices, than the consumers $(m_{s}<m_{d}\Rightarrow A\in(-1,0))$ then the market is stable. Otherwise, it becomes unstable.
-
+\section{Conclusion}
 Dynamic systems generated by difference equation are encountered in many mathematical models used in fields such as chemistry, biology, physics, economy and so on. They represent a useful tool in describing real behaviors and finding the equilibruim state of the models. In the next chapter, we will witness how the notions described above helped in solving real economic matters which appeared in specific times with the evolution of the civilization.
 
 

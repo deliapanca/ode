@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.23)  27 JUN 2018 22:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.23)  16 JUL 2018 21:59
 entering extended mode
 **./licenta.tex
 (licenta.tex
@@ -624,23 +624,23 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ]
 Chapter 1.
 
-Overfull \hbox (6.65pt too wide) in paragraph at lines 49--49
+Overfull \hbox (6.65pt too wide) in paragraph at lines 50--50
 []\OT1/cmr/bx/n/12 The gen-eral form of an equa-tion with sep-a-ra-ble vari-abl
 es 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--69
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--69
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
 
  []
 
 [1]
-Overfull \hbox (1.9651pt too wide) in paragraph at lines 87--90
+Overfull \hbox (1.9651pt too wide) in paragraph at lines 88--91
 \OT1/cmr/m/n/10.95 in $(\OML/cmm/m/it/10.95 x[]; x[]\OT1/cmr/m/n/10.95 )$ and $
 \OML/cmm/m/it/10.95 t$ \OT1/cmr/m/n/10.95 goes through a neigh-bour-hood of poi
 nt $\OML/cmm/m/it/10.95 t[]$ \OT1/cmr/m/n/10.95 such that $[][] \OML/cmm/m/it/1
@@ -649,16 +649,16 @@ t/10.95 ds$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--98
+Underfull \hbox (badness 10000) in paragraph at lines 94--99
 
  []
 
 [2] [3]
 
-LaTeX Warning: Command \O invalid in math mode on input line 114.
+LaTeX Warning: Command \O invalid in math mode on input line 115.
 
 
-Overfull \hbox (17.20052pt too wide) in paragraph at lines 118--125
+Overfull \hbox (17.20052pt too wide) in paragraph at lines 119--126
 \OT1/cmr/m/n/10.95 For ex-am-ple, if we have a Cauchy prob-lem of the fol-low-i
 ng form: $[]$
  []
@@ -671,179 +671,194 @@ Package epstopdf Info: Source file: <PortretEVS.eps>
 (epstopdf)                    size: 17386 bytes
 (epstopdf)             Command: <epstopdf --outfile=PortretEVS-eps-converted-to
 .pdf PortretEVS.eps>
-(epstopdf)             \includegraphics on input line 137.
+(epstopdf)             \includegraphics on input line 138.
 Package epstopdf Info: Output file is already uptodate.
 <PortretEVS-eps-converted-to.pdf, id=31, 557.08125pt x 557.08125pt>
 File: PortretEVS-eps-converted-to.pdf Graphic file (type pdf)
 <use PortretEVS-eps-converted-to.pdf>
 Package pdftex.def Info: PortretEVS-eps-converted-to.pdf  used on input line 13
-7.
+8.
 (pdftex.def)             Requested size: 284.52756pt x 284.5327pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4] [5 <./PortretEVS-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 192--194
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 205--210
+Underfull \hbox (badness 10000) in paragraph at lines 206--211
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
 [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 330--334
+Underfull \hbox (badness 10000) in paragraph at lines 331--335
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
+Underfull \hbox (badness 10000) in paragraph at lines 360--362
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--374
+Underfull \hbox (badness 10000) in paragraph at lines 373--375
 
  []
 
 [11]
-Overfull \hbox (13.57722pt too wide) in paragraph at lines 411--413
-\OT1/cmr/bx/n/10.95 Theorem 1.3.4.2 \OT1/cmr/m/n/10.95 (of ex-is-tence, unique-
+Overfull \hbox (13.57722pt too wide) in paragraph at lines 412--414
+\OT1/cmr/bx/n/10.95 Theorem 1.4.4.2 \OT1/cmr/m/n/10.95 (of ex-is-tence, unique-
 ness and rep-re-sen-ta-tion of the so-lu-tion)\OT1/cmr/bx/n/10.95 .
  []
 
 
-Overfull \hbox (15.02026pt too wide) in paragraph at lines 430--431
-\OT1/cmr/bx/n/10.95 Definition 1.3.4.1. \OT1/cmr/m/it/10.95 A ma-trix in which 
+Overfull \hbox (15.02026pt too wide) in paragraph at lines 431--432
+\OT1/cmr/bx/n/10.95 Definition 1.4.4.1. \OT1/cmr/m/it/10.95 A ma-trix in which 
 the columns are the lin-early in-de-pen-dent
  []
 
 [12] [13]
-Overfull \hbox (22.54799pt too wide) in paragraph at lines 475--476
-[]\OT1/cmr/m/n/10.95 According to 1.3.5.1[], solv-ing a lin-ear sys-tem de-pend
+Overfull \hbox (22.54799pt too wide) in paragraph at lines 476--477
+[]\OT1/cmr/m/n/10.95 According to 1.4.5.1[], solv-ing a lin-ear sys-tem de-pend
 s on find-ing a fun-da-men-tal
  []
 
 [14] [15]
-Overfull \hbox (0.80551pt too wide) in paragraph at lines 552--554
+Overfull \hbox (0.80551pt too wide) in paragraph at lines 553--555
 \OT1/cmr/m/n/10.95 con-ju-gate func-tion $[]$, as well as any lin-ear com-bi-na
 -tion of theirs with com-plex
  []
 
-[16] [17] [18]
+[16] [17] [18] [19]
 Chapter 2.
 
-Overfull \hbox (9.35004pt too wide) in paragraph at lines 610--611
+Overfull \hbox (9.35004pt too wide) in paragraph at lines 663--664
 \OT1/cmr/m/n/10.95 equa-tion and its par-tic-u-lar cases, fol-lowed by the gen-
 er-ated dy-nam-i-cal sys-tems.
  []
 
 
-Overfull \hbox (35.18225pt too wide) detected at line 624
+Overfull \hbox (35.18225pt too wide) detected at line 677
 []
  []
 
-[19
+[20
 
-] [20] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 711--715
+] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 756--759
 
  []
 
 [22]
-Overfull \hbox (14.44028pt too wide) in paragraph at lines 737--737
+Underfull \hbox (badness 10000) in paragraph at lines 767--770
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 767--770
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 773--776
+
+ []
+
+[23]
+Overfull \hbox (14.44028pt too wide) in paragraph at lines 812--812
 []\OT1/cmr/bx/n/12 Dynamical sys-tems de-fined by a lin-ear dif-fer-ence equa-t
 ion
  []
 
-[23]
-Overfull \hbox (6.56207pt too wide) in paragraph at lines 791--792
-\OT1/cmr/bx/n/10.95 Definition 2.3.1.1. \OT1/cmr/m/it/10.95 A point $\OML/cmm/m
+[24] [25]
+Overfull \hbox (6.56207pt too wide) in paragraph at lines 866--867
+\OT1/cmr/bx/n/10.95 Definition 2.4.1.1. \OT1/cmr/m/it/10.95 A point $\OML/cmm/m
 /it/10.95 x[] \OMS/cmsy/m/n/10.95 2 \U/msb/m/n/10.95 R$ \OT1/cmr/m/it/10.95 is 
 called an equi-lib-rium point (sta-tion-ary)
  []
 
 
-Overfull \hbox (6.8497pt too wide) in paragraph at lines 791--792
+Overfull \hbox (6.8497pt too wide) in paragraph at lines 866--867
 \OT1/cmr/m/n/10.95 (\U/msb/m/n/10.95 R\OML/cmm/m/it/10.95 ; \U/msb/m/n/10.95 N\
 OML/cmm/m/it/10.95 ; '\OT1/cmr/m/n/10.95 )$\OT1/cmr/m/it/10.95 . The con-stant 
 so-lu-tion de-fined by [] is called equi-lib-rium so-lu-tion
  []
 
 
-Overfull \hbox (8.25215pt too wide) in paragraph at lines 793--794
+Overfull \hbox (8.25215pt too wide) in paragraph at lines 868--869
 []\OT1/cmr/m/n/10.95 One of the main ob-jec-tives in the study of dy-nam-ics ge
 n-er-ated by dif-fer-ence
  []
 
 
-Overfull \hbox (4.44283pt too wide) in paragraph at lines 793--794
+Overfull \hbox (4.44283pt too wide) in paragraph at lines 868--869
 \OT1/cmr/m/n/10.95 so-lu-tions. We will in-tro-duce the sta-bil-ity no-tions th
 at de-scribe this be-haviour: 
  []
 
-[24]
-Overfull \hbox (0.18945pt too wide) in paragraph at lines 817--818
+[26]
+Overfull \hbox (0.18945pt too wide) in paragraph at lines 892--893
 []\OT1/cmr/m/n/10.95 We draw the hor-i-zon-tal line from $(\OML/cmm/m/it/10.95 
 x[]; x[]\OT1/cmr/m/n/10.95 )$ un-til it in-ter-sects the di-ag-o-nal
  []
 
-[25] [26] [27] [28]
-Overfull \hbox (5.69493pt too wide) in paragraph at lines 944--946
+[27] [28] [29]
+Overfull \hbox (5.69493pt too wide) in paragraph at lines 1019--1021
 \OT1/cmr/m/n/10.95 Obviously,if $\OML/cmm/m/it/10.95 x[]$ \OT1/cmr/m/n/10.95 is
  an equi-lib-rium point for [], then $\OML/cmm/m/it/10.95 x[]$ \OT1/cmr/m/n/10.
 95 is also an equi-lib-rium
  []
 
-[29]
-Overfull \hbox (17.51pt too wide) in paragraph at lines 1019--1020
-\OT1/cmr/bx/n/10.95 Theorem 2.3.2.9. \OT1/cmr/m/it/10.95 If k is even, then the
+[30] [31]
+Overfull \hbox (17.51pt too wide) in paragraph at lines 1094--1095
+\OT1/cmr/bx/n/10.95 Theorem 2.4.2.9. \OT1/cmr/m/it/10.95 If k is even, then the
  zero so-lu-tion of [] is asymp-tot-i-cally
  []
 
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1054
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1054
-
- []
-
-[31]
-Underfull \hbox (badness 10000) in paragraph at lines 1058--1060
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1061--1063
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1061--1063
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1064--1067
-
- []
-
 [32]
-Overfull \hbox (3.11465pt too wide) in paragraph at lines 1110--1111
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1136--1138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1136--1138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1139--1142
+
+ []
+
+[33] [34]
+Overfull \hbox (3.11465pt too wide) in paragraph at lines 1185--1186
 \OT1/cmr/m/n/10.95 mat-ters which ap-peared in spe-cific times with the evo-lu-
 tion of the civ-i-liza-tion. 
  []
 
-[33] [34] (licenta.aux)
+[35] (licenta.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -878,9 +893,9 @@ l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/UserHp
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C
 :/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/sy
 mbols/msbm10.pfb>
-Output written on licenta.pdf (36 pages, 336371 bytes).
+Output written on licenta.pdf (37 pages, 344546 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
+ 198 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
