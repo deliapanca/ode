@@ -606,7 +606,7 @@ $3)$ $U'=AU$, where $A=\begin{bmatrix}
 
 \section{Dynamic systems}
 \subsection{The dynamic of an operator}
- Let $(X,d)$ be a complete metric space and $f:X\rightarrow X$ an operator. If $x\in X$, then $f(x)$ will be named the state of $x$ through $f$. The sequence of successive aproximations $$x,f(x),f^{2}(x),...$$ represents the states of $x$ through the iterations of $f$. Space $X$ will be named the space of states. Set $${x,f(x),f^{2}(x),...,f^{n}(x),...}$$ will be called the orbit of $x$ through $f$. If $x\in X$ is a fixed point of $f$, then $f^{n}(x)=x$. For this reason, the fixed points of f will be named equilibrium states or stationary positions. The pair $(X,f)$ will be refered to as a dynamic.
+ Let $(X,d)$ be a complete metric space and $f:X\rightarrow X$ an operator. If $x\in X$, then $f(x)$ will be named the state of $x$ through $f$. The sequence of successive aproximations $$x,f(x),f^{2}(x),...$$ represents the states of $x$ through the iterations of $f$. Space $X$ will be named the space of states. Set $$\{x,f(x),f^{2}(x),...,f^{n}(x),...\}$$ will be called the orbit of $x$ through $f$. If $x\in X$ is a fixed point of $f$, then $f^{n}(x)=x$. For this reason, the fixed points of f will be named equilibrium states or stationary positions. The pair $(X,f)$ will be refered to as a dynamic.
  The central matter of the theory of dynamic systems consists in the study of the movements of a dynamic system. For example, we question the study of limit points of the sequence of successive aproximations.
  Let $x_{0}\in X$. A state $\xstar \in X$ is called an $\omega$-limit state of $x$ if exists $n_{k}\rightarrow \infty$ such that $f^{n_{k}}(x_{0})\rightarrow \xstar$. $\omega(x_{0})$ represents the set of $\omega$-limit states of $x_{0}$ in relation with operator $f$.
  \paragraph{Example} Let us consider the dynamic system $(\R,f)$ where $f(x)=x^{3}$. next, we study the $\omega$-limit states of $f$. In this case we have:
@@ -626,27 +626,70 @@ Let $(X,d)$ be a metric space. Let $(G,+,\tau)$ be a topologic group, meaning th
  $$+: G\times G\rightarrow G, (t_{1},t_{2})\rightarrow t_{1}+t_{2}$$
  $$-:G\rightarrow G, t\rightarrow -t.$$ are continuous.
 \end{enumerate}
-Let $\phi:G\times X\rightarrow X$ be an operator.
+Let $\varphi:G\times X\rightarrow X$ be an operator.
 \begin{definition}
- The triplet $(X,G,\phi)$ is named a dynamic system if:
+ The triplet $(X,G,\varphi)$ is named a dynamic system if:
  \begin{enumerate}[i)]
-  \item $\phi(0,x)=x,\forall x\in X$
-  \item $\phi(t,\phi(s,x))=\phi(t+s,x),\forall t,s \in G, \forall x\in X$
+  \item $\varphi(0,x)=x,\forall x\in X$
+  \item $\varphi(t,\varphi(s,x))=\varphi(t+s,x),\forall t,s \in G, \forall x\in X$
  \end{enumerate}
 \end{definition}
 If $G=\mathbb{Z}$, then the system is called discrete. If $G=\R$, then the system is called continuous.
-Space $X$ is called the phases space or the states space. Operator $\phi(t,\cdot):X\rightarrow X, t\in G$ is called the transition operator. Operator $\phi(\cdot,x):G\rightarrow X, x\in X$ is called the movement of x in regard with the dynamic system $(X,G,\phi)$. The set $\phi(G,X)$ is called the trajectory of $x$ or the orbit of $x$.
+Space $X$ is called the phases space or the states space. Operator $\varphi(t,\cdot):X\rightarrow X, t\in G$ is called the transition operator. Operator $\varphi(\cdot,x):G\rightarrow X, x\in X$ is called the movement of x in regard with the dynamic system $(X,G,\varphi)$. The set $\varphi(G,X)$ is called the trajectory of $x$ or the orbit of $x$.
 In the next paragraph, we presume $G$ to be an abelian group.
 Considering the axioms of the dynamic system, we have the following results.
 \begin{theorem}
- If $(X,G,\phi)$ is a dynamic system, then $\phi(t,\cdot):X\rightarrow X$ is a topological isomorphism, for all $t$ in $G$.
+ If $(X,G,\varphi)$ is a dynamic system, then $\varphi(t,\cdot):X\rightarrow X$ is a topological isomorphism, for all $t$ in $G$.
 \end{theorem}
 \begin{proof}
- We observe that $$\phi(-t,\cdot)\circ \phi(t,\cdot)=\phi(t,\cdot) \circ \phi (-t,\cdot)=1_{x},$$ for all $t\in G$. So $\phi(t,\cdot)$ is a bijection and $(\phi(t,\cdot))^{-1}=\phi(-t,\cdot)$. Knowing that $\phi$ is continuous and that $G$ is a topological group, results that operators $\phi(t,\cdot)$ and $\phi(-t,\cdot)$ are continuous. So $\phi(t,\cdot)$ is a topological isomorphism for all $t\in G$.
+ We observe that $$\varphi(-t,\cdot)\circ \varphi(t,\cdot)=\varphi(t,\cdot) \circ \varphi (-t,\cdot)=1_{x},$$ for all $t\in G$. So $\varphi(t,\cdot)$ is a bijection and $(\varphi(t,\cdot))^{-1}=\varphi(-t,\cdot)$. Knowing that $\varphi$ is continuous and that $G$ is a topological group, results that operators $\varphi(t,\cdot)$ and $\varphi(-t,\cdot)$ are continuous. So $\varphi(t,\cdot)$ is a topological isomorphism for all $t\in G$.
 \end{proof}
 
+\begin{theorem}
+ The set of transition operators $\{\varphi(t,\cdot)|t\in G\}$ forms an abelian group in relation to operator composition operation.
+\end{theorem}
 
- 
+\begin{proof}
+ Let $T:=\{\varphi(t,\cdot)|t\in G\}$. Let $\varphi(t,\cdot), \varphi(s,\cdot)\in T$. Then $\varphi(t,\cdot)\circ \varphi(s,\cdot)=\varphi(t+s,\cdot)\in T$. So $T$ is closed in relation to composition operation. The asociativity and commutativity properties can be easily proved. $\varphi(0,\cdot)=1_{x}$ is the unit element and $\varphi(-t,\cdot)$ is the reserve element of $\varphi(t,\cdot), t\in G$.
+\end{proof}
+
+\subsection{Examples}
+\subsubsection{Dynamic systems defined by a topological isomorphism}
+Let $(X,d)$ be a metric space and $f:X\rightarrow X$ a topological isomorphism. Let $$\varphi:\mathbb{Z}\times X\rightarrow X, (t,x)\rightarrow f^{t}(x).$$ In these conditions, triplet $(X,\mathbb{Z},\varphi)$ is a dynamic system. We remind that $f^{0}=1_{x}$, $f^{t}$, for $t\in\mathbb{Z}$, $t>0$, is the number $t$ iteration of $f$, and $f^{-t}$ is the number $t$ iteration of $f^{-1}$. It is easy to prove that the axioms of the dynamic systems are valid in this case. This system will be called the dynamic system generated by $f$ or the dynamic system presented through a topological isomorphism or the dynamic system defined by isomorphism $f$.
+\subsubsection{Dynamic systems defined by systems of differential equations}
+Firstly, let us consider a system of differential equations with constant coefficients 
+\begin{equation}\label{1.10}
+ x'=Ax, A\in \mathcal{M}_{n}(\R)
+\end{equation}
+We have observer that the flux of system \eqref{1.10} is given by $$\varphi:\R\times\R^{n}\rightarrow\R^{n},(t,\eta)\rightarrow e^{tA}\eta.$$ The flux of a system of form $x'=Ax+B$ is the function $\varphi:[a,b]\times\R^{n}\rightarrow\R^{n},(t,\eta)\rightarrow x(t;t_{0},\eta)$.
+\begin{theorem}
+ The flux $\varphi(t,\eta)=e^{tA}\eta$ (the case where $A$ is a constant matrix) satisfies the following statements:
+ \begin{enumerate}
+  \item $\varphi(0,\eta)=\eta,\forall \eta\in\R^{n}$
+  \item $\varphi(s+t,\eta)=\varphi(t,\varphi(s,\eta)),\forall t,s\in\R,\forall \eta\in\R^{n}$
+  \item $\varphi(t,\varphi(-t,\eta))=\varphi(-t,\varphi(t,\eta))=\eta,\forall \eta\in\R^{n},\forall t\in\R$
+  \item $\varphi\in C^{\infty}(\R\times\R^{n},\R^{n})$.
+ \end{enumerate}
+
+\end{theorem}
+From the stated theorem results that $(\R^{n},\R,\varphi)$ is a dynamic system. More generally, let us consider the autonomous system \begin{equation}\label{1.11}
+x'=f(x)                                                                                                                                       
+                                                                                                                                \end{equation}
+where $f\in C(\R^{n},\R)$. We presume that for all $\eta\in\R^{n}$, \eqref{1.11} has in $C^{1}(\R,\R^{n})$ an unique solution, which satisfies $$x(0)=\eta.$$ We note the relation with $\varphi(\cdot,\eta)$. Function $\varphi:\R\times\R^{n}\rightarrow \R^{n}$, $(t,\eta)\rightarrow\varphi(t,\eta)$ is by definition the flux of \eqref{1.11}. $(\R^{n},\R,\varphi)$ is a dynamic system.
+
+\subsection{Fixed points}
+Let $(X,G,\varphi)$ a dynamic system. A point $x_{0}\in X$ is called a fixed point of system $(X,G,\varphi)$ if $$\varphi(t,x_{0})=x_{0},\forall t\in G.$$
+It can be easily proved that the following theorem is valid:
+\begin{theorem}
+ Let us consider $(X,G,\varphi)$ a dynamic system. Then we have:
+ \begin{enumerate}
+  \item $\varphi(G,x_{0})=\{x_{0}\} \Leftrightarrow x_{0}$ is a fixed point of the dynamic system;
+  \item the set of fixed points of the dynamic system is given by: $$\cap_{t\in G} F_{\varphi(t,\cdot)}$$
+  \item the set of fixed points is a closed set.
+ \end{enumerate}
+
+\end{theorem}
+Let us consider further a dynamic system presented through a topological isomorphism $f:X\rightarrow X$, where $(X,d)$ is a metric space.
  
  
  

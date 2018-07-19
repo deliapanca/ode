@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.23)  16 JUL 2018 21:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.23)  19 JUL 2018 21:44
 entering extended mode
 **./licenta.tex
 (licenta.tex
@@ -736,138 +736,151 @@ Overfull \hbox (0.80551pt too wide) in paragraph at lines 553--555
 -tion of theirs with com-plex
  []
 
-[16] [17] [18] [19]
+[16] [17] [18]
+Overfull \hbox (2.90672pt too wide) in paragraph at lines 653--654
+\OT1/cmr/m/n/10.95 The aso-cia-tiv-ity and com-mu-ta-tiv-ity prop-er-ties can b
+e eas-ily proved. $\OML/cmm/m/it/10.95 '\OT1/cmr/m/n/10.95 (0\OML/cmm/m/it/10.9
+5 ; \OMS/cmsy/m/n/10.95 \OT1/cmr/m/n/10.95 ) =
+ []
+
+[19]
+Overfull \hbox (16.66534pt too wide) in paragraph at lines 659--659
+[]\OT1/cmr/bx/n/10.95 Dynamic sys-tems de-fined by sys-tems of dif-fer-en-tial 
+equa-tions 
+ []
+
+[20] [21]
 Chapter 2.
 
-Overfull \hbox (9.35004pt too wide) in paragraph at lines 663--664
+Overfull \hbox (9.35004pt too wide) in paragraph at lines 706--707
 \OT1/cmr/m/n/10.95 equa-tion and its par-tic-u-lar cases, fol-lowed by the gen-
 er-ated dy-nam-i-cal sys-tems.
  []
 
 
-Overfull \hbox (35.18225pt too wide) detected at line 677
+Overfull \hbox (35.18225pt too wide) detected at line 720
 []
  []
 
-[20
+[22
 
-] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 756--759
-
- []
-
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 767--770
+] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 799--802
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 767--770
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 810--813
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 773--776
+Underfull \hbox (badness 10000) in paragraph at lines 810--813
 
  []
 
-[23]
-Overfull \hbox (14.44028pt too wide) in paragraph at lines 812--812
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--819
+
+ []
+
+[25]
+Overfull \hbox (14.44028pt too wide) in paragraph at lines 855--855
 []\OT1/cmr/bx/n/12 Dynamical sys-tems de-fined by a lin-ear dif-fer-ence equa-t
 ion
  []
 
-[24] [25]
-Overfull \hbox (6.56207pt too wide) in paragraph at lines 866--867
+[26] [27]
+Overfull \hbox (6.56207pt too wide) in paragraph at lines 909--910
 \OT1/cmr/bx/n/10.95 Definition 2.4.1.1. \OT1/cmr/m/it/10.95 A point $\OML/cmm/m
 /it/10.95 x[] \OMS/cmsy/m/n/10.95 2 \U/msb/m/n/10.95 R$ \OT1/cmr/m/it/10.95 is 
 called an equi-lib-rium point (sta-tion-ary)
  []
 
 
-Overfull \hbox (6.8497pt too wide) in paragraph at lines 866--867
+Overfull \hbox (6.8497pt too wide) in paragraph at lines 909--910
 \OT1/cmr/m/n/10.95 (\U/msb/m/n/10.95 R\OML/cmm/m/it/10.95 ; \U/msb/m/n/10.95 N\
 OML/cmm/m/it/10.95 ; '\OT1/cmr/m/n/10.95 )$\OT1/cmr/m/it/10.95 . The con-stant 
 so-lu-tion de-fined by [] is called equi-lib-rium so-lu-tion
  []
 
 
-Overfull \hbox (8.25215pt too wide) in paragraph at lines 868--869
+Overfull \hbox (8.25215pt too wide) in paragraph at lines 911--912
 []\OT1/cmr/m/n/10.95 One of the main ob-jec-tives in the study of dy-nam-ics ge
 n-er-ated by dif-fer-ence
  []
 
 
-Overfull \hbox (4.44283pt too wide) in paragraph at lines 868--869
+Overfull \hbox (4.44283pt too wide) in paragraph at lines 911--912
 \OT1/cmr/m/n/10.95 so-lu-tions. We will in-tro-duce the sta-bil-ity no-tions th
 at de-scribe this be-haviour: 
  []
 
-[26]
-Overfull \hbox (0.18945pt too wide) in paragraph at lines 892--893
+[28]
+Overfull \hbox (0.18945pt too wide) in paragraph at lines 935--936
 []\OT1/cmr/m/n/10.95 We draw the hor-i-zon-tal line from $(\OML/cmm/m/it/10.95 
 x[]; x[]\OT1/cmr/m/n/10.95 )$ un-til it in-ter-sects the di-ag-o-nal
  []
 
-[27] [28] [29]
-Overfull \hbox (5.69493pt too wide) in paragraph at lines 1019--1021
+[29] [30] [31]
+Overfull \hbox (5.69493pt too wide) in paragraph at lines 1062--1064
 \OT1/cmr/m/n/10.95 Obviously,if $\OML/cmm/m/it/10.95 x[]$ \OT1/cmr/m/n/10.95 is
  an equi-lib-rium point for [], then $\OML/cmm/m/it/10.95 x[]$ \OT1/cmr/m/n/10.
 95 is also an equi-lib-rium
  []
 
-[30] [31]
-Overfull \hbox (17.51pt too wide) in paragraph at lines 1094--1095
+[32] [33]
+Overfull \hbox (17.51pt too wide) in paragraph at lines 1137--1138
 \OT1/cmr/bx/n/10.95 Theorem 2.4.2.9. \OT1/cmr/m/it/10.95 If k is even, then the
  zero so-lu-tion of [] is asymp-tot-i-cally
  []
 
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 1125--1129
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 1168--1172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1125--1129
+Underfull \hbox (badness 10000) in paragraph at lines 1168--1172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1133--1135
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1136--1138
+Underfull \hbox (badness 10000) in paragraph at lines 1179--1181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1136--1138
+Underfull \hbox (badness 10000) in paragraph at lines 1179--1181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1139--1142
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1185
 
  []
 
-[33] [34]
-Overfull \hbox (3.11465pt too wide) in paragraph at lines 1185--1186
+[35] [36]
+Overfull \hbox (3.11465pt too wide) in paragraph at lines 1228--1229
 \OT1/cmr/m/n/10.95 mat-ters which ap-peared in spe-cific times with the evo-lu-
 tion of the civ-i-liza-tion. 
  []
 
-[35] (licenta.aux)
+[37] (licenta.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3271 strings out of 493305
- 42946 string characters out of 3129367
- 109105 words of memory out of 3000000
- 6744 multiletter control sequences out of 15000+200000
+ 3273 strings out of 493305
+ 43020 string characters out of 3129367
+ 109129 words of memory out of 3000000
+ 6746 multiletter control sequences out of 15000+200000
  14015 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,26p,796b,264s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -893,9 +906,9 @@ l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/UserHp
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C
 :/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/sy
 mbols/msbm10.pfb>
-Output written on licenta.pdf (37 pages, 344546 bytes).
+Output written on licenta.pdf (39 pages, 351430 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
+ 204 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
