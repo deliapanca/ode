@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.23)  19 JUL 2018 21:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.23)  22 JUL 2018 20:19
 entering extended mode
 **./licenta.tex
 (licenta.tex
@@ -654,10 +654,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--99
  []
 
 [2] [3]
-
-LaTeX Warning: Command \O invalid in math mode on input line 115.
-
-
 Overfull \hbox (17.20052pt too wide) in paragraph at lines 119--126
 \OT1/cmr/m/n/10.95 For ex-am-ple, if we have a Cauchy prob-lem of the fol-low-i
 ng form: $[]$
@@ -749,139 +745,175 @@ Overfull \hbox (16.66534pt too wide) in paragraph at lines 659--659
 equa-tions 
  []
 
-[20] [21]
+[20] [21] [22]
+! Undefined control sequence.
+<argument> \varhi 
+                  (h,\varphi (t,\eta ))-\varphi (0,\varphi (t,\eta ))
+l.743  \end{align*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \varhi 
+                  (h,\varphi (t,\eta ))-\varphi (0,\varphi (t,\eta ))
+l.743  \end{align*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[23]
 Chapter 2.
 
-Overfull \hbox (9.35004pt too wide) in paragraph at lines 706--707
-\OT1/cmr/m/n/10.95 equa-tion and its par-tic-u-lar cases, fol-lowed by the gen-
-er-ated dy-nam-i-cal sys-tems.
+Overfull \hbox (5.26376pt too wide) in paragraph at lines 761--762
+\OT1/cmr/m/it/10.95 equa-tion and its par-tic-u-lar cases, fol-lowed by the gen
+-er-ated dy-nam-i-cal sys-tems.
  []
 
 
-Overfull \hbox (35.18225pt too wide) detected at line 720
+Overfull \hbox (35.18225pt too wide) detected at line 775
 []
  []
 
-[22
+[24
 
-] [23]
-Underfull \hbox (badness 10000) in paragraph at lines 799--802
-
- []
-
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 810--813
+] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 854--857
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 810--813
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 865--868
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 816--819
+Underfull \hbox (badness 10000) in paragraph at lines 865--868
 
  []
 
-[25]
-Overfull \hbox (14.44028pt too wide) in paragraph at lines 855--855
+
+Underfull \hbox (badness 10000) in paragraph at lines 871--874
+
+ []
+
+[27]
+Overfull \hbox (14.44028pt too wide) in paragraph at lines 910--910
 []\OT1/cmr/bx/n/12 Dynamical sys-tems de-fined by a lin-ear dif-fer-ence equa-t
 ion
  []
 
-[26] [27]
-Overfull \hbox (6.56207pt too wide) in paragraph at lines 909--910
+[28] [29]
+Overfull \hbox (6.56207pt too wide) in paragraph at lines 964--965
 \OT1/cmr/bx/n/10.95 Definition 2.4.1.1. \OT1/cmr/m/it/10.95 A point $\OML/cmm/m
 /it/10.95 x[] \OMS/cmsy/m/n/10.95 2 \U/msb/m/n/10.95 R$ \OT1/cmr/m/it/10.95 is 
 called an equi-lib-rium point (sta-tion-ary)
  []
 
 
-Overfull \hbox (6.8497pt too wide) in paragraph at lines 909--910
+Overfull \hbox (6.8497pt too wide) in paragraph at lines 964--965
 \OT1/cmr/m/n/10.95 (\U/msb/m/n/10.95 R\OML/cmm/m/it/10.95 ; \U/msb/m/n/10.95 N\
 OML/cmm/m/it/10.95 ; '\OT1/cmr/m/n/10.95 )$\OT1/cmr/m/it/10.95 . The con-stant 
 so-lu-tion de-fined by [] is called equi-lib-rium so-lu-tion
  []
 
 
-Overfull \hbox (8.25215pt too wide) in paragraph at lines 911--912
-[]\OT1/cmr/m/n/10.95 One of the main ob-jec-tives in the study of dy-nam-ics ge
-n-er-ated by dif-fer-ence
+Overfull \hbox (5.11005pt too wide) in paragraph at lines 966--967
+[]\OT1/cmr/m/it/10.95 One of the main ob-jec-tives in the study of dy-nam-ics g
+en-er-ated by dif-fer-ence
+ []
+
+[30]
+Overfull \hbox (15.11385pt too wide) in paragraph at lines 986--988
+\OT1/cmr/m/it/10.95 The Cob-web di-a-gram rep-re-sents the graphic vi-su-al-iza
+-tion of a dy-namic gen-er-ated
  []
 
 
-Overfull \hbox (4.44283pt too wide) in paragraph at lines 911--912
-\OT1/cmr/m/n/10.95 so-lu-tions. We will in-tro-duce the sta-bil-ity no-tions th
-at de-scribe this be-haviour: 
+Overfull \hbox (0.81963pt too wide) in paragraph at lines 990--991
+[]\OT1/cmr/m/it/10.95 We draw the hor-i-zon-tal line from $\OT1/cmr/m/n/10.95 (
+\OML/cmm/m/it/10.95 x[]; x[]\OT1/cmr/m/n/10.95 )$ \OT1/cmr/m/it/10.95 un-til it
+ in-ter-sects the di-ag-o-nal
  []
 
-[28]
-Overfull \hbox (0.18945pt too wide) in paragraph at lines 935--936
-[]\OT1/cmr/m/n/10.95 We draw the hor-i-zon-tal line from $(\OML/cmm/m/it/10.95 
-x[]; x[]\OT1/cmr/m/n/10.95 )$ un-til it in-ter-sects the di-ag-o-nal
- []
-
-[29] [30] [31]
-Overfull \hbox (5.69493pt too wide) in paragraph at lines 1062--1064
+[31] [32] [33]
+Overfull \hbox (5.69493pt too wide) in paragraph at lines 1117--1119
 \OT1/cmr/m/n/10.95 Obviously,if $\OML/cmm/m/it/10.95 x[]$ \OT1/cmr/m/n/10.95 is
  an equi-lib-rium point for [], then $\OML/cmm/m/it/10.95 x[]$ \OT1/cmr/m/n/10.
 95 is also an equi-lib-rium
  []
 
-[32] [33]
-Overfull \hbox (17.51pt too wide) in paragraph at lines 1137--1138
+[34] [35]
+Overfull \hbox (17.51pt too wide) in paragraph at lines 1192--1193
 \OT1/cmr/bx/n/10.95 Theorem 2.4.2.9. \OT1/cmr/m/it/10.95 If k is even, then the
  zero so-lu-tion of [] is asymp-tot-i-cally
  []
 
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 1168--1172
+[36]
+Overfull \hbox (6.45pt too wide) in paragraph at lines 1223--1227
+ \OT1/cmr/bx/n/10.95 2)[] \OT1/cmr/m/it/10.95 If ex-ists, find the equi-li-brui
+m points and spec-ify their type for the fol-low-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1223--1227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1168--1172
+Underfull \hbox (badness 10000) in paragraph at lines 1223--1227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1176--1178
+Underfull \hbox (badness 10000) in paragraph at lines 1231--1233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1179--1181
+Underfull \hbox (badness 10000) in paragraph at lines 1234--1236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1179--1181
+Underfull \hbox (badness 10000) in paragraph at lines 1234--1236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1182--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1237--1240
 
  []
 
-[35] [36]
-Overfull \hbox (3.11465pt too wide) in paragraph at lines 1228--1229
-\OT1/cmr/m/n/10.95 mat-ters which ap-peared in spe-cific times with the evo-lu-
-tion of the civ-i-liza-tion. 
+[37] [38]
+Overfull \hbox (1.51044pt too wide) in paragraph at lines 1279--1282
+$[]$ \OT1/cmr/m/it/10.95 If the bid-ders are less sen-si-tive to the prices, th
+an the con-sumers
  []
 
-[37] (licenta.aux)
+
+Overfull \hbox (11.58806pt too wide) in paragraph at lines 1283--1284
+\OT1/cmr/m/it/10.95 math-e-mat-i-cal mod-els used in fields such as chem-istry,
+ bi-ol-ogy, physics, econ-omy
+ []
+
+[39] (licenta.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3273 strings out of 493305
- 43020 string characters out of 3129367
- 109129 words of memory out of 3000000
- 6746 multiletter control sequences out of 15000+200000
- 14015 words of font info for 54 fonts, out of 3000000 for 9000
+ 3281 strings out of 493305
+ 43081 string characters out of 3129367
+ 109165 words of memory out of 3000000
+ 6752 multiletter control sequences out of 15000+200000
+ 14716 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,26p,796b,264s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
@@ -904,11 +936,12 @@ c/amsfonts/cm/cmr8.pfb><C:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/UserHp/AppData/Loca
 l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/UserHp
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C
-:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/sy
-mbols/msbm10.pfb>
-Output written on licenta.pdf (39 pages, 351430 bytes).
+:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmti8.pfb><C:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/symbols/msbm10.pfb>
+Output written on licenta.pdf (41 pages, 370951 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
+ 214 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
