@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.23)  22 JUL 2018 20:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.30)  23 JUL 2018 21:32
 entering extended mode
 **./licenta.tex
 (licenta.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\report.cls"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size11.clo"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size11.clo"
 File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -21,20 +21,19 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty
-"
+) ("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.st
+y"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
- ("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\utf8.def"
+ ("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -275,7 +274,7 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -315,7 +314,8 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -339,18 +339,18 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyphenat\hyphenat
-.sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyphenat\hyphenat.
+sty"
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
 \langwohyphens=\language76
 LaTeX Info: Redefining \_ on input line 43.
 )
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.
-sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.s
+ty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts
-.sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.
+sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks16
 \symAMSa=\mathgroup4
@@ -358,70 +358,68 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\latexsym.sty
-"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\latexsym.sty"
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
-)
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\makeidx.sty"
+) ("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\makeidx.sty
+"
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx
-.sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.s
-ty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
+y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics
-.sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
-"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\grap
-hics.cfg"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
+ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdft
-ex.def"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
+x.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.s
-ty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
+y"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.s
-ty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.st
+y"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.st
-y"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen105
 ))
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.st
-y"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen106
 )
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.st
-y"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count88
@@ -462,8 +460,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty
-"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks23
 \thm@bodyfont=\toks24
@@ -475,8 +472,8 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip48
 \dth@everypar=\toks28
 )
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\enumerate.s
-ty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\enumerate.st
+y"
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks29
 )
@@ -484,17 +481,17 @@ Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \c@corollary=\count101
 \c@definition=\count102
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace
-.sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace.
+sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox
-.sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
+sty"
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count103
 )
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\afterpage.s
-ty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\afterpage.st
+y"
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@output=\toks30
 \AP@partial=\box28
@@ -525,8 +522,8 @@ LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
-kii"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count104
 \scratchdimen=\dimen114
@@ -540,40 +537,40 @@ kii"
 \makeMPintoPDFobject=\count109
 \everyMPtoPDFconversion=\toks32
 )
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf
--base.sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
+base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwar
-err.sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+rr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.s
-ty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
+y"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefi
-nekeys.sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefin
+ekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmd
-s.sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoption
-s.sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetk
-eys.sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetke
+ys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcm
-ds.sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmd
+s.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluat
-ex.sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluate
+x.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -582,13 +579,13 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftex
-cmds.sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexc
+mds.sty"
 Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.
-sty"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+ty"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -605,21 +602,20 @@ G,.JBIG2,.JB2,.eps]
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 33.
 
-("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 33.
- ("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
-"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+lasy on input line 33.
- ("C:\Users\UserHp\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+("C:\Users\delia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) [1
+)
+[1
 
-{C:/Users/UserHp/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[0
+{C:/Users/delia/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [0
 
 ]
 Chapter 1.
@@ -660,10 +656,10 @@ ng form: $[]$
  []
 
 Package epstopdf Info: Source file: <PortretEVS.eps>
-(epstopdf)                    date: 2018-05-10 11:43:45
+(epstopdf)                    date: 2018-07-22 20:20:00
 (epstopdf)                    size: 93890 bytes
 (epstopdf)             Output file: <PortretEVS-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-10 11:43:45
+(epstopdf)                    date: 2018-07-22 20:20:00
 (epstopdf)                    size: 17386 bytes
 (epstopdf)             Command: <epstopdf --outfile=PortretEVS-eps-converted-to
 .pdf PortretEVS.eps>
@@ -768,180 +764,260 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+Package epstopdf Info: Source file: <Portretfazicex1.eps>
+(epstopdf)                    date: 2018-07-23 20:58:07
+(epstopdf)                    size: 102827 bytes
+(epstopdf)             Output file: <Portretfazicex1-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-07-23 21:13:57
+(epstopdf)                    size: 15819 bytes
+(epstopdf)             Command: <epstopdf --outfile=Portretfazicex1-eps-convert
+ed-to.pdf Portretfazicex1.eps>
+(epstopdf)             \includegraphics on input line 760.
+Package epstopdf Info: Output file is already uptodate.
+<Portretfazicex1-eps-converted-to.pdf, id=96, 557.08125pt x 557.08125pt>
+File: Portretfazicex1-eps-converted-to.pdf Graphic file (type pdf)
+<use Portretfazicex1-eps-converted-to.pdf>
+Package pdftex.def Info: Portretfazicex1-eps-converted-to.pdf  used on input li
+ne 760.
+(pdftex.def)             Requested size: 284.52756pt x 284.5327pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <Portretfazicex2.eps>
+(epstopdf)                    date: 2018-07-23 20:57:43
+(epstopdf)                    size: 102510 bytes
+(epstopdf)             Output file: <Portretfazicex2-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-07-23 21:19:56
+(epstopdf)                    size: 18352 bytes
+(epstopdf)             Command: <epstopdf --outfile=Portretfazicex2-eps-convert
+ed-to.pdf Portretfazicex2.eps>
+(epstopdf)             \includegraphics on input line 773.
+Package epstopdf Info: Output file is already uptodate.
+<Portretfazicex2-eps-converted-to.pdf, id=97, 557.08125pt x 557.08125pt>
+File: Portretfazicex2-eps-converted-to.pdf Graphic file (type pdf)
+<use Portretfazicex2-eps-converted-to.pdf>
+Package pdftex.def Info: Portretfazicex2-eps-converted-to.pdf  used on input li
+ne 773.
+(pdftex.def)             Requested size: 284.52756pt x 284.5327pt.
 [23]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <Portretfazicex3.eps>
+(epstopdf)                    date: 2018-07-23 20:57:12
+(epstopdf)                    size: 102510 bytes
+(epstopdf)             Output file: <Portretfazicex3-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-07-23 21:22:43
+(epstopdf)                    size: 18359 bytes
+(epstopdf)             Command: <epstopdf --outfile=Portretfazicex3-eps-convert
+ed-to.pdf Portretfazicex3.eps>
+(epstopdf)             \includegraphics on input line 786.
+Package epstopdf Info: Output file is already uptodate.
+<Portretfazicex3-eps-converted-to.pdf, id=102, 557.08125pt x 557.08125pt>
+File: Portretfazicex3-eps-converted-to.pdf Graphic file (type pdf)
+<use Portretfazicex3-eps-converted-to.pdf>
+Package pdftex.def Info: Portretfazicex3-eps-converted-to.pdf  used on input li
+ne 786.
+(pdftex.def)             Requested size: 284.52756pt x 284.5327pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[24 <./Portretfazicex1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Portretfazicex4.eps>
+(epstopdf)                    date: 2018-07-23 20:50:37
+(epstopdf)                    size: 128455 bytes
+(epstopdf)             Output file: <Portretfazicex4-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-07-23 21:31:42
+(epstopdf)                    size: 20061 bytes
+(epstopdf)             Command: <epstopdf --outfile=Portretfazicex4-eps-convert
+ed-to.pdf Portretfazicex4.eps>
+(epstopdf)             \includegraphics on input line 805.
+Package epstopdf Info: Output file is already uptodate.
+<Portretfazicex4-eps-converted-to.pdf, id=108, 557.08125pt x 557.08125pt>
+File: Portretfazicex4-eps-converted-to.pdf Graphic file (type pdf)
+<use Portretfazicex4-eps-converted-to.pdf>
+Package pdftex.def Info: Portretfazicex4-eps-converted-to.pdf  used on input li
+ne 805.
+(pdftex.def)             Requested size: 284.52756pt x 284.5327pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25 <./Portretfazicex2-eps-converted-to.pdf>] [26 <./Portretfazicex3-eps-conver
+ted-to.pdf>] [27 <./Portretfazicex4-eps-converted-to.pdf>]
 Chapter 2.
 
-Overfull \hbox (5.26376pt too wide) in paragraph at lines 761--762
+Overfull \hbox (5.26376pt too wide) in paragraph at lines 814--815
 \OT1/cmr/m/it/10.95 equa-tion and its par-tic-u-lar cases, fol-lowed by the gen
 -er-ated dy-nam-i-cal sys-tems.
  []
 
 
-Overfull \hbox (35.18225pt too wide) detected at line 775
+Overfull \hbox (35.18225pt too wide) detected at line 828
 []
  []
 
-[24
+[28
 
-] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 854--857
-
- []
-
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 865--868
+] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 907--910
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 865--868
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 918--921
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 871--874
+Underfull \hbox (badness 10000) in paragraph at lines 918--921
 
  []
 
-[27]
-Overfull \hbox (14.44028pt too wide) in paragraph at lines 910--910
+
+Underfull \hbox (badness 10000) in paragraph at lines 924--927
+
+ []
+
+[31]
+Overfull \hbox (14.44028pt too wide) in paragraph at lines 963--963
 []\OT1/cmr/bx/n/12 Dynamical sys-tems de-fined by a lin-ear dif-fer-ence equa-t
 ion
  []
 
-[28] [29]
-Overfull \hbox (6.56207pt too wide) in paragraph at lines 964--965
+[32] [33]
+Overfull \hbox (6.56207pt too wide) in paragraph at lines 1017--1018
 \OT1/cmr/bx/n/10.95 Definition 2.4.1.1. \OT1/cmr/m/it/10.95 A point $\OML/cmm/m
 /it/10.95 x[] \OMS/cmsy/m/n/10.95 2 \U/msb/m/n/10.95 R$ \OT1/cmr/m/it/10.95 is 
 called an equi-lib-rium point (sta-tion-ary)
  []
 
 
-Overfull \hbox (6.8497pt too wide) in paragraph at lines 964--965
+Overfull \hbox (6.8497pt too wide) in paragraph at lines 1017--1018
 \OT1/cmr/m/n/10.95 (\U/msb/m/n/10.95 R\OML/cmm/m/it/10.95 ; \U/msb/m/n/10.95 N\
 OML/cmm/m/it/10.95 ; '\OT1/cmr/m/n/10.95 )$\OT1/cmr/m/it/10.95 . The con-stant 
 so-lu-tion de-fined by [] is called equi-lib-rium so-lu-tion
  []
 
 
-Overfull \hbox (5.11005pt too wide) in paragraph at lines 966--967
+Overfull \hbox (5.11005pt too wide) in paragraph at lines 1019--1020
 []\OT1/cmr/m/it/10.95 One of the main ob-jec-tives in the study of dy-nam-ics g
 en-er-ated by dif-fer-ence
  []
 
-[30]
-Overfull \hbox (15.11385pt too wide) in paragraph at lines 986--988
+[34]
+Overfull \hbox (15.11385pt too wide) in paragraph at lines 1039--1041
 \OT1/cmr/m/it/10.95 The Cob-web di-a-gram rep-re-sents the graphic vi-su-al-iza
 -tion of a dy-namic gen-er-ated
  []
 
 
-Overfull \hbox (0.81963pt too wide) in paragraph at lines 990--991
+Overfull \hbox (0.81963pt too wide) in paragraph at lines 1043--1044
 []\OT1/cmr/m/it/10.95 We draw the hor-i-zon-tal line from $\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 x[]; x[]\OT1/cmr/m/n/10.95 )$ \OT1/cmr/m/it/10.95 un-til it
  in-ter-sects the di-ag-o-nal
  []
 
-[31] [32] [33]
-Overfull \hbox (5.69493pt too wide) in paragraph at lines 1117--1119
+[35] [36] [37]
+Overfull \hbox (5.69493pt too wide) in paragraph at lines 1170--1172
 \OT1/cmr/m/n/10.95 Obviously,if $\OML/cmm/m/it/10.95 x[]$ \OT1/cmr/m/n/10.95 is
  an equi-lib-rium point for [], then $\OML/cmm/m/it/10.95 x[]$ \OT1/cmr/m/n/10.
 95 is also an equi-lib-rium
  []
 
-[34] [35]
-Overfull \hbox (17.51pt too wide) in paragraph at lines 1192--1193
+[38] [39]
+Overfull \hbox (17.51pt too wide) in paragraph at lines 1245--1246
 \OT1/cmr/bx/n/10.95 Theorem 2.4.2.9. \OT1/cmr/m/it/10.95 If k is even, then the
  zero so-lu-tion of [] is asymp-tot-i-cally
  []
 
-[36]
-Overfull \hbox (6.45pt too wide) in paragraph at lines 1223--1227
+[40]
+Overfull \hbox (6.45pt too wide) in paragraph at lines 1276--1280
  \OT1/cmr/bx/n/10.95 2)[] \OT1/cmr/m/it/10.95 If ex-ists, find the equi-li-brui
 m points and spec-ify their type for the fol-low-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1223--1227
+Underfull \hbox (badness 10000) in paragraph at lines 1276--1280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1223--1227
+Underfull \hbox (badness 10000) in paragraph at lines 1276--1280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1231--1233
+Underfull \hbox (badness 10000) in paragraph at lines 1284--1286
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1234--1236
+Underfull \hbox (badness 10000) in paragraph at lines 1287--1289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1234--1236
+Underfull \hbox (badness 10000) in paragraph at lines 1287--1289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1237--1240
+Underfull \hbox (badness 10000) in paragraph at lines 1290--1293
 
  []
 
-[37] [38]
-Overfull \hbox (1.51044pt too wide) in paragraph at lines 1279--1282
+[41] [42]
+Overfull \hbox (1.51044pt too wide) in paragraph at lines 1332--1335
 $[]$ \OT1/cmr/m/it/10.95 If the bid-ders are less sen-si-tive to the prices, th
 an the con-sumers
  []
 
 
-Overfull \hbox (11.58806pt too wide) in paragraph at lines 1283--1284
+Overfull \hbox (11.58806pt too wide) in paragraph at lines 1336--1337
 \OT1/cmr/m/it/10.95 math-e-mat-i-cal mod-els used in fields such as chem-istry,
  bi-ol-ogy, physics, econ-omy
  []
 
-[39] (licenta.aux)
+[43] (licenta.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3281 strings out of 493305
- 43081 string characters out of 3129367
+ 3301 strings out of 493305
+ 43868 string characters out of 3129802
  109165 words of memory out of 3000000
- 6752 multiletter control sequences out of 15000+200000
+ 6768 multiletter control sequences out of 15000+200000
  14716 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,26p,796b,264s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmbx10.pfb><C:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmbx12.pfb><C:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/UserHp/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/UserHp/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><
-C:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb><C:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmmi6.pfb><C:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/UserHp/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/UserHp/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/User
-Hp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><
-C:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr6.pfb><C:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr8.pfb><C:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/UserHp/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/UserHp/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/UserHp
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C
-:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmti8.pfb><C:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/symbols/msbm10.pfb>
-Output written on licenta.pdf (41 pages, 370951 bytes).
+<C:/Users/delia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><C:/Users/delia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb><C:/Users/delia/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/delia/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/delia/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Us
+ers/delia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
+10.pfb><C:/Users/delia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi6.pfb><C:/Users/delia/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmmi8.pfb><C:/Users/delia/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/delia/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/delia/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/de
+lia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+C:/Users/delia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr8.pfb><C:/Users/delia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><C:/Users/delia/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/delia/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/delia/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/delia/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Use
+rs/delia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/
+msbm10.pfb>
+Output written on licenta.pdf (45 pages, 441827 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
+ 239 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

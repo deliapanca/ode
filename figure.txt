@@ -1,0 +1,5 @@
+\begin{figure}[h]
+\caption{The graphic of the solution from exercise $2)$.}
+\centering
+ \includegraphics[width=10cm]{PortretEVS.eps}
+\end{figure}
