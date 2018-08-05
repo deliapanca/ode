@@ -1,4 +1,4 @@
-\documentclass[a4paper, 11pt]{report}
+\documentclass[a4paper,11pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[none]{hyphenat}
 \usepackage{amssymb,amsfonts,latexsym,makeidx}
@@ -6,6 +6,7 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{enumerate}
+
 \newtheorem{theorem}{Theorem}[subsection]
 \newtheorem{corollary}{Corollary}[theorem]
 \newtheorem{lemma}[theorem]{Lemma}
@@ -841,6 +842,95 @@ By solving the differential equations, we obtain the solutions $\xstar(t)=c_{1}\
  \includegraphics[width=10cm]{Portretfazicex5.eps}
 \end{figure}
 
+\section{IS-LM dynamics}
+\subsection{The static model}
+The models includes a set of equations that denote behavioural relationships for expenditures, along with an equilibrium condition. All together comprise the goods market. Investment is considered to be inversely proportional to the rate of interest. Consumers' expenditure related to disposable income is defined as income less direct taxes. We consider a closed economy, thus total expenditure is the sum of consumers' expenditure, investment expenditure and government expenditure. We consider government expenditure as the only exogenous variable in the present model. The equilibrium condition regarding the goods market is that income is equal to total expenditure. The goods market equations are set out algebraically in the upper section of table:
+
+\begin{table}[]
+\begin{tabular}{|l|l|l|}
+\hline
+Goods market    & Conditions        & Definitions              \\ \hline
+$C=a+bYd$       & $0\leq b\leq 1$   & C=consumers' expenditure \\ \hline
+$Yd=Y-Tx$       &                   & Yd=disposable income     \\ \hline
+$Tx=Tx_{0}+txY$ & $0\leq tx \leq 1$ & Tx=total taxes           \\ \hline
+$I=I_{0}-hr$    & $h>0$             & r=interest rate          \\ \hline
+$Y=C+I+G$       &                   & I=investment expenditure \\ \hline
+                &                   & G=government expenditure \\ \hline
+\end{tabular}
+\end{table}
+which indicate the Goods market equations. The terms $a$, $Tx_{0}$ and $I_{0}$ denote autonomous expenditures. Parameter $b$ denotes the marginal propensity to consume and $tx$ represents the marginal rate of tax. Equation $Y=C+I+G$ represents the equilibrium condition in the goods market.\par
+By substitutions, we get the following condition for goods market equilibrium:
+\begin{equation}\label{incomeislm}
+ Y=(a-bTx_{0}+I_{0}+G)+b(1-tx)Y-hr
+\end{equation}
+\begin{equation}\label{margrate}
+ r=\frac{(a-bTx_{0}+I_{0}+G)}{h}-\frac{1-b(1-tx)Y}{h}
+\end{equation}
+Equation \eqref{margrate} can be written more simply as:
+\begin{equation}\label{simple mr}
+ r=A_{0}-A_{1}Y \\
+ A_{0}=\frac{(a-bTx_{0}+I_{0}+G)}{h} \\
+ A_{1}=\frac{1-b(1-tx)Y}{h}
+\end{equation}
+In general, we will have a positive intercept and a negative slope when drawing in $(Y,r)$-space, with $Y$ on the horizontal axis and $r$ on the vertical axes.
+Next, let us consider the money market. The money supply is assumed exogenous and set at $M$. Substituting this into the equilibrium condition, we get:
+\begin{equation*}
+ M_{0}=kY-ur=M
+\end{equation*}
+or
+\begin{equation}\label{money mr}
+ r=\frac{M_{0}-M}{u}+\frac{kY}{u}
+\end{equation}
+Simpler:
+\begin{equation}\label{simpler money mr}
+ r=B_{0}+B_{1}Y\\
+ B_{0}=\frac{M_{0}-M}{u} \\
+ B_{1}=\frac{kY}{u}
+\end{equation}
+In this case, the slope will be positive when drawn in $(Y,r)$-space, due to our assumptions about the sign of the parameters $k$ and $u$. The intercept can be positive, zero or negative.
+Now we have two equations: \eqref{simpler money mr} and \eqref{simple mr}, with $Y$ and $r$ unknown. The situation is represented graphically in figure
+\begin{figure}[h]
+\caption{IS-LM model}
+\centering
+ \includegraphics[width=10cm]{IS-LM.png}
+\end{figure}
+The goods market equilibrium is labelled IS and the money market equilibrium is labelled LM. All-round equilibrium is the point where the two lines intersect, leading to equilibrium levels $Y^{*}$ and $r^{*}$. 
+A rise in the government spending raises the intercept $A_{0}$ and so shifts the curve IS to the right. Similarly, a rise in the money supply reduces the intercept $B_{0}$ and so shifts the LM curve down. In each case there is a rise in the level of national income. For fiscal expansion, there is a rise in the rate of interest and in the case of a monetary expansion there is a fall in the rate of interest.
+\subsection{A continuous model}
+Let us consider a continuous model and also allow differential adjustments in both the money market and the goods market, neither of which is instantaneous. We assume that the money market is quicker to adjust than the goods market. In the goods market, we assume that income rises over time if there is excess demand and falls if there is excess supply. More specifically:
+\begin{equation}
+ Y^{\cdot}(t)=\alpha(E(t)-Y(t)), \alpha>0
+\end{equation}
+where $E(t)=C(t)+I(t)+G$. In the money market we assume that the interest rate rises if there is excess demand in this market and falls if there is excess supply. Meaning:
+\begin{equation}
+ r^{\cdot}(t)=\beta(Md-Ms).\beta>0
+\end{equation}
+Thus, the model is:
+\begin{align}
+ C(t)&=a+bYd(t) \\
+ Yd(t)&=Y(t)-Tx(t) \\
+ Tx(t)&=Tx_{0}+txY(t)\\
+ I(t)&=I_{0}-hr(t)\\
+ E(t)&=C(t)+I(t)+G\\
+ Y^{\cdot}(t)&=\alpha(E(t)-Y(t)), \alpha>0\\
+ Md(t)&=M_{0}+kY(t)-ur(t)\\
+ Ms(t)&=M\\
+ r^{\cdot}(t)&=\beta(Md-Ms).\beta>0.
+\end{align}
+In equilibrium, $Y^{\cdot}(t)=0$ meaning that $Y(t)=C(t)+I(t)+G$ and $r^{\cdot}(t)=0$ meaning that $Md(t)=Ms(t)=M$. Moreover, both equilibrium conditions do not depend on the adjustment coefficients $\alpha$ and $\beta$.By substituting all the relationships in each of the adjustment equations in turn, results:
+\begin{align*}
+ \text{IS:}y^{\cdot}(t)=\alpha(a-bTx_{0}+I_{0}+G)-\alpha(1-b(1-tx))Y(t)-\alpha hr(t) \\
+ \text{LM:} r^{\cdot}(t)=\beta(M_{0}-M)+\beta k Y(t)-\beta ur(t).
+\end{align*}
+It can be rapidly noticed that the IS curve is the isocline $Y^{\cdot}=0$ and the LM curve is the isocline $r^{\cdot}=0$. We consider that $(1-b(1-tx))>0$ and $k,u>0$.
+Considering first the goods market, if $Y^{\cdot}(t)>0$ then $Y(t)$ is rising. This will occur when:
+$$\alpha(a-bTx_{0}+I_{0}+G)-\alpha(1-b(1-tx))Y(t)-\alpha hr(t)>0$$
+$$r(t)<\frac{(a-bTx_{0}+I_{0}+G)}{h}-\frac{(1-b(1-tx))Y(t)}{h}$$
+This refers to points below the IS curve. Thus, there is pressure for income to rise. Above the IS curve, there is pressure for income to fall.
+In the money market, if $r(t)>0$ then $r(t)$ is rising and
+$$\beta(M_{0}-M)+\beta kY(t)-\beta ur(t)>0$$
+$$r(t)<\frac{M_{0}-M}{u}+\frac{kY(t)}{u}$$
+hence below the LM curve is pressure on interest rates to rise, while above there is pressure on interest rates to fall. 
 
 \section{Conclusion}
 The chapter introduced the reader to the general notions of an equation with separable variables, of linear differential equations of first order and the linear differential systems, needed for presenting the main part of the paper. The notions have been extracted from the classic books mentioned in the bibliography of the paper. The author's contribution was the selection and solving of the exercises found at the end of each section.
@@ -1318,7 +1408,7 @@ In this case, $f(x)=-x^{3}-x$. Solving $f(x)=x$, we obtain the equilibrium point
 \textbf{Solution:}\\
 By applying the formula, we denote that $f(x)=x^{2}+3x$. To find the equilibrium point, we need to solve $f(x)=x$. We get $x^{2}+2x=0$, meaning that we have two equilibrium points $x^{o}_{1}=0$ and $x_{2}^{o}=-2$. Knowing that $f'(x)=2x+3$, we get that $f'(0)=3>0$, resulting that $x_{1}^{o}=0$ is unstable according to Theorem \ref{2.3.2.6.}. For $x_{2}^{o}=-2$, we have $f'(-2)=-1<0$, resulting that we can apply Theorem \ref{2.3.2.5.}. Thus we have $f''(x)=2$ and $f'''(x)=0$ resulting that $-3\cdot [f''(-2)]^{2}-2\cdot f'''(-2)=-3\cdot 2^{2}-0=-3\cdot 4=-12<0 \Rightarrow x_{2}^{o}$ is locally asimptotic stable. 
 
-\paragraph{4) An application from economics}
+\paragraph{4)} An application from economics
 
 Let $S(n)$ be the number of units from a merchandise supplied on the market in period $"n"$. Let $D(n)$ be the number of units from the same commodity demanded in period $"n"$. Let $p(n)$ be the price/unit in period $"n"$. We presume that:
 \begin{equation}
@@ -1356,6 +1446,9 @@ $$p(n)=\bigg(p_{0}-\frac{B}{1-A}\bigg)\cdot A^{n}+\frac{B}{1-A}.$$
 If the bidders are less sensitive to the prices, than the consumers $(m_{s}<m_{d}\Rightarrow A\in(-1,0))$ then the market is stable. Otherwise, it becomes unstable.
 \section{Conclusion}
 Dynamic systems generated by difference equations appear in many mathematical models used in fields such as chemistry, biology, physics, economy and so on. They represent a useful tool in describing real behaviors and finding the equilibruim state of the models. In the next chapter, we will witness how the notions described above helped in solving real economic matters which appeared in specific times with the evolution of the civilization.
+
+
+
 \begin{thebibliography}{9}
  \bibitem{ecdiferentiale}
  Ioan A. Rus. \textit{Ecua\c{t}ii Diferen\c{t}iale, ecua\c{t}ii integrale \c{s}i sisteme dinamice.} Transilvania Press, Cluj-Napoca 1996 (Romanian).
