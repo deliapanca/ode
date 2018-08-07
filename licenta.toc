@@ -59,8 +59,10 @@
 \contentsline {subsection}{\numberline {2.4.2}Stability criteria of the equilibrium points}{39}
 \contentsline {paragraph}{Application}{43}
 \contentsline {subsection}{\numberline {2.4.3}Examples}{44}
-\contentsline {paragraph}{1) Depreciation}{44}
-\contentsline {paragraph}{2)}{44}
-\contentsline {paragraph}{3)}{45}
-\contentsline {paragraph}{4)}{45}
-\contentsline {section}{\numberline {2.5}Conclusion}{46}
+\contentsline {subsubsection}{\numberline {2.4.3.1}Depreciation}{44}
+\contentsline {subsubsection}{\numberline {2.4.3.2}Example 2}{44}
+\contentsline {subsubsection}{\numberline {2.4.3.3}Example 3}{45}
+\contentsline {subsubsection}{\numberline {2.4.3.4}An application from economics}{46}
+\contentsline {subsubsection}{\numberline {2.4.3.5}The linear Cobweb model}{47}
+\contentsline {subsubsection}{\numberline {2.4.3.6}Keynesian cross diagram}{49}
+\contentsline {section}{\numberline {2.5}Conclusion}{52}

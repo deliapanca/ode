@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.30)  5 AUG 2018 19:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.30)  7 AUG 2018 21:19
 entering extended mode
 **./licenta.tex
 (licenta.tex
@@ -802,13 +802,13 @@ Package epstopdf Info: Source file: <Portretfazicex1.eps>
 (epstopdf)                    size: 15819 bytes
 (epstopdf)             Command: <epstopdf --outfile=Portretfazicex1-eps-convert
 ed-to.pdf Portretfazicex1.eps>
-(epstopdf)             \includegraphics on input line 778.
+(epstopdf)             \includegraphics on input line 777.
 Package epstopdf Info: Output file is already uptodate.
 <Portretfazicex1-eps-converted-to.pdf, id=104, 557.08125pt x 557.08125pt>
 File: Portretfazicex1-eps-converted-to.pdf Graphic file (type pdf)
 <use Portretfazicex1-eps-converted-to.pdf>
 Package pdftex.def Info: Portretfazicex1-eps-converted-to.pdf  used on input li
-ne 778.
+ne 777.
 (pdftex.def)             Requested size: 284.52756pt x 284.5327pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -821,13 +821,13 @@ Package epstopdf Info: Source file: <Portretfazicex2.eps>
 (epstopdf)                    size: 18352 bytes
 (epstopdf)             Command: <epstopdf --outfile=Portretfazicex2-eps-convert
 ed-to.pdf Portretfazicex2.eps>
-(epstopdf)             \includegraphics on input line 791.
+(epstopdf)             \includegraphics on input line 790.
 Package epstopdf Info: Output file is already uptodate.
 <Portretfazicex2-eps-converted-to.pdf, id=105, 557.08125pt x 557.08125pt>
 File: Portretfazicex2-eps-converted-to.pdf Graphic file (type pdf)
 <use Portretfazicex2-eps-converted-to.pdf>
 Package pdftex.def Info: Portretfazicex2-eps-converted-to.pdf  used on input li
-ne 791.
+ne 790.
 (pdftex.def)             Requested size: 284.52756pt x 284.5327pt.
 [23]
 
@@ -841,13 +841,13 @@ Package epstopdf Info: Source file: <Portretfazicex3.eps>
 (epstopdf)                    size: 18359 bytes
 (epstopdf)             Command: <epstopdf --outfile=Portretfazicex3-eps-convert
 ed-to.pdf Portretfazicex3.eps>
-(epstopdf)             \includegraphics on input line 804.
+(epstopdf)             \includegraphics on input line 803.
 Package epstopdf Info: Output file is already uptodate.
 <Portretfazicex3-eps-converted-to.pdf, id=109, 557.08125pt x 557.08125pt>
 File: Portretfazicex3-eps-converted-to.pdf Graphic file (type pdf)
 <use Portretfazicex3-eps-converted-to.pdf>
 Package pdftex.def Info: Portretfazicex3-eps-converted-to.pdf  used on input li
-ne 804.
+ne 803.
 (pdftex.def)             Requested size: 284.52756pt x 284.5327pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -861,13 +861,13 @@ Package epstopdf Info: Source file: <Portretfazicex4.eps>
 (epstopdf)                    size: 20061 bytes
 (epstopdf)             Command: <epstopdf --outfile=Portretfazicex4-eps-convert
 ed-to.pdf Portretfazicex4.eps>
-(epstopdf)             \includegraphics on input line 823.
+(epstopdf)             \includegraphics on input line 822.
 Package epstopdf Info: Output file is already uptodate.
 <Portretfazicex4-eps-converted-to.pdf, id=115, 557.08125pt x 557.08125pt>
 File: Portretfazicex4-eps-converted-to.pdf Graphic file (type pdf)
 <use Portretfazicex4-eps-converted-to.pdf>
 Package pdftex.def Info: Portretfazicex4-eps-converted-to.pdf  used on input li
-ne 823.
+ne 822.
 (pdftex.def)             Requested size: 284.52756pt x 284.5327pt.
 
 
@@ -882,13 +882,13 @@ Package epstopdf Info: Source file: <Portretfazicex5.eps>
 (epstopdf)                    size: 33919 bytes
 (epstopdf)             Command: <epstopdf --outfile=Portretfazicex5-eps-convert
 ed-to.pdf Portretfazicex5.eps>
-(epstopdf)             \includegraphics on input line 842.
+(epstopdf)             \includegraphics on input line 841.
 Package epstopdf Info: Output file is already uptodate.
 <Portretfazicex5-eps-converted-to.pdf, id=121, 557.08125pt x 557.08125pt>
 File: Portretfazicex5-eps-converted-to.pdf Graphic file (type pdf)
 <use Portretfazicex5-eps-converted-to.pdf>
 Package pdftex.def Info: Portretfazicex5-eps-converted-to.pdf  used on input li
-ne 842.
+ne 841.
 (pdftex.def)             Requested size: 284.52756pt x 284.5327pt.
 
 
@@ -897,16 +897,16 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [26 <./Portretfazicex3-eps-converted-to.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 849.
+               Default added (so using `tbp') on input line 848.
 
 
-Overfull \hbox (8.72144pt too wide) in paragraph at lines 861--861
+Overfull \hbox (8.72144pt too wide) in paragraph at lines 860--860
 \OT1/cmr/m/it/10.95 de-note au-tonomous ex-pen-di-tures. Pa-ram-e-ter $\OML/cmm
 /m/it/10.95 b$ \OT1/cmr/m/it/10.95 de-notes the marginal propen-sity
  []
 
 
-Overfull \hbox (15.6999pt too wide) in paragraph at lines 862--863
+Overfull \hbox (15.6999pt too wide) in paragraph at lines 861--862
 []\OT1/cmr/m/it/10.95 By sub-sti-tu-tions, we get the fol-low-ing con-di-tion f
 or goods mar-ket equi-lib-rium: 
  []
@@ -915,10 +915,10 @@ or goods mar-ket equi-lib-rium:
 <IS-LM.png, id=133, 365.365pt x 365.365pt>
 File: IS-LM.png Graphic file (type png)
 <use IS-LM.png>
-Package pdftex.def Info: IS-LM.png  used on input line 895.
+Package pdftex.def Info: IS-LM.png  used on input line 894.
 (pdftex.def)             Requested size: 284.52756pt x 284.54312pt.
  [28 <./Portretfazicex5-eps-converted-to.pdf>]
-Overfull \hbox (10.02098pt too wide) in paragraph at lines 900--901
+Overfull \hbox (10.02098pt too wide) in paragraph at lines 899--900
 \OT1/cmr/m/it/10.95 both the money mar-ket and the goods mar-ket, nei-ther of w
 hich is in-stan-ta-neous.
  []
@@ -926,181 +926,214 @@ hich is in-stan-ta-neous.
 [29 <./IS-LM.png (PNG copy)>] [30] [31]
 Chapter 2.
 
-Overfull \hbox (5.26376pt too wide) in paragraph at lines 942--943
+Overfull \hbox (5.26376pt too wide) in paragraph at lines 941--942
 \OT1/cmr/m/it/10.95 equa-tion and its par-tic-u-lar cases, fol-lowed by the gen
 -er-ated dy-nam-i-cal sys-tems.
  []
 
 
-Overfull \hbox (35.18225pt too wide) detected at line 956
+Overfull \hbox (35.18225pt too wide) detected at line 955
 []
  []
 
 [32
 
 ] [33]
-Underfull \hbox (badness 10000) in paragraph at lines 1035--1038
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1037
 
  []
 
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 1046--1049
+Underfull \hbox (badness 10000) in paragraph at lines 1045--1048
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1046--1049
+Underfull \hbox (badness 10000) in paragraph at lines 1045--1048
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1052--1055
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1054
 
  []
 
 [35]
-Overfull \hbox (14.44028pt too wide) in paragraph at lines 1075--1075
+Overfull \hbox (14.44028pt too wide) in paragraph at lines 1074--1074
 []\OT1/cmr/bx/n/12 Dynamical sys-tems de-fined by a lin-ear dif-fer-ence equa-t
 ion
  []
 
 [36]
-Overfull \hbox (6.56207pt too wide) in paragraph at lines 1129--1130
+Overfull \hbox (6.56207pt too wide) in paragraph at lines 1128--1129
 \OT1/cmr/bx/n/10.95 Definition 2.4.1.1. \OT1/cmr/m/it/10.95 A point $\OML/cmm/m
 /it/10.95 x[] \OMS/cmsy/m/n/10.95 2 \U/msb/m/n/10.95 R$ \OT1/cmr/m/it/10.95 is 
 called an equi-lib-rium point (sta-tion-ary)
  []
 
 
-Overfull \hbox (6.8497pt too wide) in paragraph at lines 1129--1130
+Overfull \hbox (6.8497pt too wide) in paragraph at lines 1128--1129
 \OT1/cmr/m/n/10.95 (\U/msb/m/n/10.95 R\OML/cmm/m/it/10.95 ; \U/msb/m/n/10.95 N\
 OML/cmm/m/it/10.95 ; '\OT1/cmr/m/n/10.95 )$\OT1/cmr/m/it/10.95 . The con-stant 
 so-lu-tion de-fined by [] is called equi-lib-rium so-lu-tion
  []
 
 
-Overfull \hbox (5.11005pt too wide) in paragraph at lines 1131--1132
+Overfull \hbox (5.11005pt too wide) in paragraph at lines 1130--1131
 []\OT1/cmr/m/it/10.95 One of the main ob-jec-tives in the study of dy-nam-ics g
 en-er-ated by dif-fer-ence
  []
 
 [37]
-Overfull \hbox (15.11385pt too wide) in paragraph at lines 1151--1153
+Overfull \hbox (15.11385pt too wide) in paragraph at lines 1150--1152
 \OT1/cmr/m/it/10.95 The Cob-web di-a-gram rep-re-sents the graphic vi-su-al-iza
 -tion of a dy-namic gen-er-ated
  []
 
 
-Overfull \hbox (0.81963pt too wide) in paragraph at lines 1155--1156
+Overfull \hbox (0.81963pt too wide) in paragraph at lines 1154--1155
 []\OT1/cmr/m/it/10.95 We draw the hor-i-zon-tal line from $\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 x[]; x[]\OT1/cmr/m/n/10.95 )$ \OT1/cmr/m/it/10.95 un-til it
  in-ter-sects the di-ag-o-nal
  []
 
 [38] [39] [40] [41]
-Overfull \hbox (5.69493pt too wide) in paragraph at lines 1282--1284
+Overfull \hbox (5.69493pt too wide) in paragraph at lines 1281--1283
 \OT1/cmr/m/n/10.95 Obviously,if $\OML/cmm/m/it/10.95 x[]$ \OT1/cmr/m/n/10.95 is
  an equi-lib-rium point for [], then $\OML/cmm/m/it/10.95 x[]$ \OT1/cmr/m/n/10.
 95 is also an equi-lib-rium
  []
 
 [42]
-Overfull \hbox (17.51pt too wide) in paragraph at lines 1357--1358
+Overfull \hbox (17.51pt too wide) in paragraph at lines 1356--1357
 \OT1/cmr/bx/n/10.95 Theorem 2.4.2.9. \OT1/cmr/m/it/10.95 If k is even, then the
  zero so-lu-tion of [] is asymp-tot-i-cally
  []
 
 [43]
-Overfull \hbox (6.45pt too wide) in paragraph at lines 1388--1392
- \OT1/cmr/bx/n/10.95 2)[] \OT1/cmr/m/it/10.95 If ex-ists, find the equi-li-brui
-m points and spec-ify their type for the fol-low-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1388--1392
+Underfull \hbox (badness 10000) in paragraph at lines 1387--1391
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1388--1392
+Underfull \hbox (badness 10000) in paragraph at lines 1387--1391
 
  []
 
 [44]
-Underfull \hbox (badness 10000) in paragraph at lines 1396--1398
+Underfull \hbox (badness 10000) in paragraph at lines 1395--1397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1401
+Underfull \hbox (badness 10000) in paragraph at lines 1398--1400
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1401
+Underfull \hbox (badness 10000) in paragraph at lines 1398--1400
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1402--1405
+Underfull \hbox (badness 10000) in paragraph at lines 1401--1404
 
  []
 
 [45]
-Overfull \hbox (1.51044pt too wide) in paragraph at lines 1444--1447
+Overfull \hbox (1.51044pt too wide) in paragraph at lines 1443--1446
 $[]$ \OT1/cmr/m/it/10.95 If the bid-ders are less sen-si-tive to the prices, th
 an the con-sumers
  []
 
+[46]
+<Cobweb.PNG, id=200, 558.58687pt x 376.40625pt>
+File: Cobweb.PNG Graphic file (type png)
+<use Cobweb.PNG>
+Package pdftex.def Info: Cobweb.PNG  used on input line 1465.
+(pdftex.def)             Requested size: 284.52756pt x 191.7349pt.
+<cobwebdiagramfirstexample.png, id=202, 526.96875pt x 299.61937pt>
+File: cobwebdiagramfirstexample.png Graphic file (type png)
+<use cobwebdiagramfirstexample.png>
+Package pdftex.def Info: cobwebdiagramfirstexample.png  used on input line 1471
+.
+(pdftex.def)             Requested size: 284.52756pt x 161.7829pt.
+<cobwebratioabove1.PNG, id=203, 589.4522pt x 385.44pt>
+File: cobwebratioabove1.PNG Graphic file (type png)
+<use cobwebratioabove1.PNG>
+Package pdftex.def Info: cobwebratioabove1.PNG  used on input line 1477.
+(pdftex.def)             Requested size: 284.52756pt x 186.0501pt.
+<CobwebRatio1.PNG, id=204, 591.71063pt x 397.485pt>
+File: CobwebRatio1.PNG Graphic file (type png)
+<use CobwebRatio1.PNG>
+Package pdftex.def Info: CobwebRatio1.PNG  used on input line 1483.
+(pdftex.def)             Requested size: 284.52756pt x 191.13634pt.
 
-Overfull \hbox (18.6239pt too wide) in paragraph at lines 1448--1449
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[47 <./Cobweb.PNG>] [48 <./cobwebdiagramfirstexample.png> <./cobwebratioabove1.
+PNG>]
+Overfull \hbox (9.97952pt too wide) in paragraph at lines 1497--1499
+\OT1/cmr/m/it/10.95 and then in the third equa-tion from the model we shall re-
+place to-tal ex-pen-di-tures
+ []
+
+[49 <./CobwebRatio1.PNG>] [50]
+<keynesian.PNG, id=221, 457.71pt x 627.84563pt>
+File: keynesian.PNG Graphic file (type png)
+<use keynesian.PNG>
+Package pdftex.def Info: keynesian.PNG  used on input line 1532.
+(pdftex.def)             Requested size: 227.62204pt x 312.22635pt.
+ [51 <./keynesian.PNG>]
+Overfull \hbox (18.6239pt too wide) in paragraph at lines 1540--1541
 \OT1/cmr/m/it/10.95 Dynamic sys-tems gen-er-ated by dif-fer-ence equa-tions ap-
 pear in many math-e-mat-i-cal
  []
 
-[46]
-Underfull \hbox (badness 4108) in paragraph at lines 1456--1457
+[52]
+Underfull \hbox (badness 4108) in paragraph at lines 1548--1549
 []\OT1/cmr/m/it/10.95 G. Morosanu. Ecua[]ii Diferen[]iale. Aplica[]ii. Ed-i-tu
 ra Academiei
  []
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 1462--1463
+Underfull \hbox (badness 1803) in paragraph at lines 1554--1555
 []\OT1/cmr/m/it/10.95 Ronald Shone. An in-tro-duc-tion to eco-nomic dy-namic. C
 am-bridge
  []
 
 
-Overfull \hbox (42.94966pt too wide) in paragraph at lines 1464--1466
+Overfull \hbox (42.94966pt too wide) in paragraph at lines 1556--1558
 \OT1/cmtt/m/it/10.95 https://www.sciencedirect.com/science/article/pii/S0022247
 X0500106X 
  []
 
 
-Overfull \hbox (48.69835pt too wide) in paragraph at lines 1467--1469
+Overfull \hbox (48.69835pt too wide) in paragraph at lines 1559--1561
 \OT1/cmtt/m/it/10.95 https://www.khanacademy.org/economics-finance-domain/macro
 economics/ 
  []
 
 
-Overfull \hbox (65.94441pt too wide) in paragraph at lines 1467--1469
+Overfull \hbox (65.94441pt too wide) in paragraph at lines 1559--1561
 \OT1/cmtt/m/it/10.95 income-and-expenditure-topic/keynesian-cross-tutorial/v/ke
 ynesian-cross 
  []
 
 
-Overfull \hbox (48.69835pt too wide) in paragraph at lines 1470--1472
+Overfull \hbox (48.69835pt too wide) in paragraph at lines 1562--1564
 \OT1/cmtt/m/it/10.95 https://www.khanacademy.org/economics-finance-domain/macro
 economics/ 
  []
 
 
-Overfull \hbox (65.94441pt too wide) in paragraph at lines 1470--1472
+Overfull \hbox (65.94441pt too wide) in paragraph at lines 1562--1564
 \OT1/cmtt/m/it/10.95 income-and-expenditure-topic/is-lm-model-tutorial/v/invest
 ment-and-real 
  []
 
-[47
+[53
 
 ] (licenta.aux)
 
@@ -1108,13 +1141,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3340 strings out of 493305
- 44354 string characters out of 3129802
- 110213 words of memory out of 3000000
- 6797 multiletter control sequences out of 15000+200000
+ 3368 strings out of 493305
+ 44923 string characters out of 3129802
+ 110240 words of memory out of 3000000
+ 6819 multiletter control sequences out of 15000+200000
  16134 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,26p,930b,241s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,12n,26p,1011b,241s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/delia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/delia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb><C:/Users/delia/AppData/Local/Programs/MiKTeX 2.9/f
@@ -1140,9 +1173,9 @@ AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:
 mti12.pfb><C:/Users/delia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmti8.pfb><C:/Users/delia/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb>
-Output written on licenta.pdf (52 pages, 532594 bytes).
+Output written on licenta.pdf (58 pages, 666126 bytes).
 PDF statistics:
- 271 PDF objects out of 1000 (max. 8388607)
+ 300 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
