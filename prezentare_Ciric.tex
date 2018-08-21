@@ -1,0 +1,457 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+%svgnames
+%
+\usepackage[all]{xypic}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\mode<presentation> {
+\usetheme{CambridgeUS}}
+%\setbeamercovered{transparent}}
+\setbeamertemplate{items}[default]
+
+%\useinnertheme{rounded}
+\title[Conference]{\'Ciri\'c type fixed point theorems}
+\author[A. Petru\c sel]{Adrian Petru\c sel}
+\institute[BBU Cluj-Napoca]{Babe\c s-Bolyai University Cluj-Napoca\\
+Faculty of Mathematics and Computer Science}
+\date{January, 2014}
+
+
+
+\AtBeginSection[]{
+%\frametitle{Planul prezent\u arii}
+\tableofcontents[current]}
+
+\AtBeginSubsection[] {
+
+ \begin{frame}<beamer>
+   %\frametitle{Planul prezent\u arii}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}}
+
+
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Introduction}
+\textrm{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Abstract}
+\begin{frame}
+
+The purpose of this talk is to present
+some fixed point and strict results for (single-valued and multi-valued) 
+generalized contractions of \'Ciri\'c type.\pause
+
+
+
+\medskip
+
+
+Connections with other results given in: 
+
+\end{frame}
+
+\begin{frame}
+
+
+L.B. \'Ciri\'c: \textit{Generalized contraction and fixed point theorems}, 
+Publ. Inst. Math., 12 (1971), 19-26.\pause
+
+\medskip
+
+L.B. \'Ciri\'c: {\it Fixed points for generalized multi-valued contractions},
+Math. Vesnik, 9(24) (1972), 265-272.\pause
+
+\medskip
+
+L.B. \'Ciri\'c: \textit{A generalization of Banach's contraction principle}, 
+Proc. Amer. Math. Soc., 45 (1974), 267-273.\pause
+
+\medskip
+
+
+L.B. \'Ciri\'c: {\it Contractive type non-self mappings on metric spaces of
+hyperbolic type}, J. Math. Anal. Appl., 317 (2006), 28-42.\pause
+
+\medskip
+
+G.E. Hardy and T.D. Rogers: {\it A generalization of a fixed point theorem of Reich}, Canad. Math. Bull., 16(1973), 201-206.
+
+\medskip
+
+S. Reich: \textit{Fixed point of contractive functions}, Boll. Un. Mat. Ital.,
+5 (1972), 26-42.\pause
+
+
+
+
+\end{frame}
+
+\begin{frame}
+
+I.A. Rus: {\it Generalized Contractions and Applications}, Transilvania Press, 2001.\pause
+
+\medskip
+
+I. Beg, A.R. Butt and S. Radojevic: \textit{The contraction
+principle for set-valued mappings on a metric space with a graph},
+Computers Math. Appl., 60(2010), 1214-1219.\pause
+
+\medskip
+
+A. Petru\c sel, G. Petru\c sel: Multivalued Picard operator, J. Nonlinear Convex Anal., 2012
+\pause
+
+
+T. Dinevari and M. Frigon: \textit{Fixed point results for
+multivalued contractions on a metric space with a graph}, J. Math. Anal.
+Appl., 405(2013), 2, 507-517.\pause
+
+\medskip
+
+
+C. Chifu, G. Petru\c sel and M. Bota,
+{\it Fixed points and strict fixed points for multivalued contractions of Reich type on metric 
+spaces endowed with a graph}, Fixed Point Theory  Appl. 2013, 2013:203, 
+doi:10.1186/1687-1812-2013-203.\pause
+
+\end{frame}
+
+\section{Some known results}
+
+\subsection{The single-valued case}
+
+
+\subsection{The multi-valued case}
+
+\section{Fixed point theorems in metric spaces endowed with a partial order}
+
+\subsection{Basic concepts}
+
+\begin{frame}
+ \vskip3mm \pause
+  \begin{itemize}
+  \item
+{\bf Definition.} Let $X$ be a nonempty set. Then, by
+definition $(X, \to, \le)$ is an ordered L-space if and only if:
+
+\quad (i) $(X,\to)$ is an L-space;
+
+\quad (ii) $(X,\le)$ is a partially ordered set;
+
+\quad (iii) $(x_n)_{n\in \mathbb{N}}\rightarrow x$, $(y_n)_{n\in
+\mathbb{N}}\rightarrow y$ and $x_n\le y_n$, for each $n\in
+\mathbb{N} \mbox{ } \Rightarrow x\le y$.
+
+\medskip
+
+\item If $(X,d)$ is a metric space, then the triple
+$(X,d,\le)$ will be called an ordered metric space.
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+\item 
+Let $(X,\le)$ be a partially ordered set. 
+
+Denote $$X_{\le}:=
+\{(x,y)\in X\times X| x\le y \mbox{ or } y\le x \}.$$ \pause
+
+\item In the same setting, consider $f:X\to X$. Then:
+
+$(LF)_f:=\{x\in X| x\le f(x) \}$ is the lower fixed point set of $f$, 
+
+$(UF)_f:=\{x\in X| x\ge f(x) \}$ is the upper fixed point
+set of f. \pause
+
+\bigskip
+
+\item If $f:X\to X$ and $g:Y\to Y$, then the cartesian
+product of $f$ and $g$ is denoted by $f\times g$ and it is defined
+in the following way: $$f\times g:X\times Y\to X\times Y, (f\times
+g)(x,y):= (f(x),g(y)).$$
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+
+{\bf Definition.} (I.A. Rus) Let $(X,\rightarrow)$
+be an L-space.\\ An operator $f:X\to X$ is, by definition, a Picard
+operator if:
+
+(i) $F_f=\{x^*\}$;
+
+(ii) $(f^{n}(x))_{n\in\mathbb{N}}\to x^*$ as $n\to\infty ,\ \mbox{
+for all }  x\in X$.
+
+\end{frame}
+
+
+\begin{frame}
+  %\frametitle{Obiectivele tezei}
+\begin{exampleblock}{} 
+
+{\bf Theorem.} (Ran and Reurings-2004)  {\it Let $X$ be a
+partially ordered set such that every pair $x,y\in X$ has a lower
+and an upper bound. Let $d$ be a metric on $X$ such that the metric
+space $(X,d)$ is complete. Let $f:X\to X$ be a continuous and
+monotone (i. e., either decreasing or increasing) operator. Suppose
+that the following two assertions hold:
+
+\quad 1) there exists $a\in ]0,1[$ such that $d(f(x),f(y))\le
+a\cdot d(x,y)$, for each $x,y\in X$ with $x\le y$
+
+\quad 2) $(LF)_f\cup (UF)_f\neq\emptyset$.
+
+Then $f$ is a Picard operator.} \end{exampleblock}\end{frame}
+
+\begin{frame}
+
+{\bf Theorem.} (Nieto and Rodr\'{\i}guez-L\'{o}pez, 2005)
+{\it Let $X$ be a partially ordered set such that every pair $x,y\in
+X$ has a lower or an upper bound. Let $d$ be a metric on $X$ such
+that the metric space $(X,d)$ is complete. Let $f:X\to X$ be an
+increasing operator. Suppose that the following two assertions hold:
+
+\quad 1) there exists $a\in ]0,1[$ such that $d(f(x),f(y))\le
+a\cdot d(x,y)$, for each $x,y\in X$ with $x\le y$;
+
+\quad 2) there exists $x_0\in X$ such that $x_0\le f(x_0)$;
+
+\quad 3) if an increasing sequence $(x_n)$ converges to $x$ in $X$,
+then $x_n\le x$ for all $n\in \mathbb{N}$.
+
+Then $f$ is a Picard operator.}
+
+\end{frame}
+
+
+\subsection{Some abstract results}
+\begin{frame}
+
+
+\begin{block}{\bf Lemma.}(A. Petru\c sel and Rus, 2006)
+
+{\it Let $(X, \to)$ be an L-space and $U$ a
+symmetric subset of $X\times X$ such that $\Delta(X)\subset U$.
+Let $f:X\to X$ be an operator. Suppose that:
+
+\quad (i) for each $x,y\in X$ with $(x,y)\notin U$ there exists
+$z\in X$ such that $(x,z)\in U$ and $(y,z)\in U$;
+
+\quad (ii) there exist $x_0,x^*\in X$ such that $x_0\in A_f(x^*)$;
+
+\quad (iii) $(x,y)\in U$ and $x\in A_f(x^*)$ implies $y\in
+A_f(x^*)$.
+
+Then $A_f(x^*)=X$.
+
+Moreover, if $f$ is orbitally continuous, then $f$ is a Picard operator.}
+\end{block} \vskip 3mm
+
+where $$A_f(x^*):=\{x\in X \ : \ (f^{n}(x))_{n\in\mathbb{N}}\to x^* \mbox{ as } n\to\infty \}.$$
+\end{frame}
+
+\begin{frame}
+
+A natural consequence of the above result follows by choosing
+$U:=X_{\le}$.
+
+\begin{block}{\bf Lemma.}(A. Petru\c sel and Rus, 2006) 
+
+{\it Let $(X, \to, \le)$ be an ordered L-space
+and  $f:X\to X$ be an operator. Suppose that:
+
+\quad (i) for each $x,y\in X$ with $(x,y)\notin X_{\le}$ there
+exists $z\in X$ such that $(x,z)\in X_{\le}$ and $(y,z)\in
+X_{\le}$;
+
+\quad (ii) there exist $x_0,x^*\in X$ such that $x_0\in A_f(x^*)$;
+
+\quad (iii) $(x,y)\in X_{\le}$ and $x\in A_f(x^*)$ implies $y\in
+A_f(x^*)$;
+
+\quad $(iv)$ $f$ is orbitally continuous
+
+
+Then $f$ is a Picard opeartor.}\end{block} 
+
+\end{frame}
+
+\subsection{Fixed point theorems for $\varphi$-contractions}
+
+
+\begin{frame}
+\begin{block}
+{\bf Theorem.}(O'Regan and A. Petru\c sel, 2008)
+
+{\it Let $(X,d,\le)$ be an ordered metric space
+and $f:X\to X$ be an operator. We suppose that:
+
+\quad (i) For each $x,y\in X$ with $(x,y)\notin X_{\le}$ there
+exists $c(x,y)\in X$ such that $(x,c(x,y))\in X_{\le}$ and
+$(y,c(x,y))\in X_{\le}$;
+
+\quad (ii) $f:(X,\le)\to (X,\le)$ is  increasing;
+
+\quad (iii) there exists $x_0\in X$ such that $x_0\le f(x_0)$;
+
+\quad $(iv)_{a}$ \quad $f$ is orbitally continuous
+
+\quad or
+
+\quad $(iv)_b$ \quad if an increasing  sequence $(x_n)$ converges
+to $x$ in $X$, then $x_n\le x$  for all $n\in \mathbb{N}$;
+
+
+\quad (v) there exists a comparison function $\varphi:\mathbb{R}_+\to \mathbb{R}_+$
+such that $d(f(x),f(y))\le \varphi(d(x,y))$, for each $(x,y)\in
+X_{\le}$;
+
+\quad (vi) the metric $d$ is complete.
+
+Then $f$ is a Picard operator.}
+\end{block} 
+\end{frame}
+
+
+
+\section{Fixed point theorems in metric spaces endowed with a graph}
+
+\subsection{Basic concepts}
+
+\begin{frame}
+
+
+Let $(X,d)$ be a metric space and $\Delta$  the
+diagonal of $X\times X$.\pause
+
+\medskip
+
+Let  $G$ be a directed graph such that one can identify $G$ with the pair $(V(G),E(G))$, where the set $V(G)$ of its vertices coincides
+with $X$  and the set $E(G)$ of the edges of the graph contains $\Delta$.\pause 
+
+\medskip
+
+If $x$ and $y$ are vertices of $G$, then a path in $G$ from $x$ to $y$ of length $k\in \mathbb{N}$ is a finite sequence 
+$(x_n)_{n\in \{0,1,2,\cdots, k \}}$ of vertices such that
+$$x_0 = x, x_k = y \mbox{  and } (x_{i-1}, x_i)\in E(G), \mbox{ for } i\in \{1,2,\cdots, k \}.$$\pause
+
+\medskip
+
+A graph $G$ is connected if
+there is a path between any two vertices and it is weakly connected if $\tilde{G}$ is connected, where
+$\tilde{G}$ denotes the undirected graph obtained from $G$ by ignoring the direction of edges.
+
+\end{frame}
+
+\begin{frame}
+\begin{block} {\bf Definition. (J. Jachymski-2008)}
+An operator $f:X\to X$ is called a Banach $G$-contraction  if and only if:\pause
+
+\quad (a) $f$ is edge preserving, i.e., for each $x,y\in X$ with $(x,y)\in E(G) \mbox{ we have } (f(x),f(y))\in E(G)$;\pause
+
+\quad (b) there exists $\alpha\in ]0,1[$ such that for each $x,y\in X$ the following implication holds:
+$$(x,y)\in E(G) \mbox{ implies } d\left(f(x),f(y)\right)\le \alpha d(x,y).$$
+\end{block} \vskip2mm\pause
+Examples:\\
+1) Any Banach contraction is a $G_0$-contraction, where the graph $G_0$
+is defined by $E(G_0):= X\times X$.\vskip1mm\pause
+2) Let $\le$ be a partial order in X. Define the graph $G_1$ by
+$$E(G_1):= \{(x, y)\in X\times X \ : \ x\le y \}.$$\pause
+3) Let $\le$ be a partial order in X. Define the graph $G_2$ by
+$$E(G_2):= \{(x, y)\in X\times X \ : \ x\le y \mbox{ or } y\le x \}.$$
+
+\end{frame}
+
+\subsection{The single-valued case}
+
+\begin{frame}
+\begin{block} {\bf Theorem. (J. Jachymski-2008)}
+{\it Let $(X,d)$ be a complete metric space and let $G$ be a
+directed graph $G$ such that  the triple $(X,d,G)$ has property $(P)$:
+\[ (P)  \left. \begin{array}{lll}
+	  \mbox{for any sequence } (x_{n})_{n\in \mathbb{N}}\subset X, \mbox{ if } x_n\to x \mbox{ as } n\to +\infty \mbox{ and }\\ (x_n,x_{n+1})\in E(G),
+      \mbox{for each } n\in \mathbb{N}, \mbox{ then there exists a subsequence }\\ (x_{k_n})_{n\in \mathbb{N}} \mbox{ of } (x_n)_{n\in \mathbb{N}} \mbox{ such that }
+      (x_{k_n},x)\in E(G), \mbox{ for each } n\in \mathbb{N}.\end{array}\right.\]
+Let $f:X\to X$ be a $G$-contraction. Then the following statments hold:
+
+\quad 1) $F_f\neq\emptyset$ if and only if $X_f\neq \emptyset$, $$\mbox{ where } X_f:=\{x\in X \ : \ (x,f(x))\in E(G) \};$$
+
+\quad 2)   if $X_f\neq \emptyset$ and $G$ is weakly connected, then $f$ is a Picard operator.}
+\end{block} 
+\end{frame}
+
+
+
+\subsection{The multi-valued case}
+
+\begin{frame}
+\begin{block} {\bf Theorem.}(Nicolae-O'Regan-A. Petru\c sel, 2011)
+
+{\it Let $(X,d)$ be a complete metric space and $G$ be a directed graph such that the triple $(X,d,G)$ satisfy property $(P)$.
+Let $T : X \to P_{cl}(X)$ be a multi-valued operator. Suppose the following assertions hold: 
+
+\quad (i) there exists $\alpha\in (0,1)$ such that $$H(T(x),T(y)) \le \alpha d(x,y) \mbox{ for all } (x,y) \in E(G).$$
+
+\quad (ii) for each $(x,y)\in E(G)$, each $u\in T(x)$ and $v\in T(y)$ satisfying the condition
+$d(u,v)\le a d(x,y)$, for some $a\in (0,1)$, we have $(u,v)\in E(G)$;
+
+Then $F_T\neq\emptyset$ if and only if $X_T\neq\emptyset$, where 
+$$X_T:=\{x\in X ; \mbox{ there exists } y\in  T(x) \mbox{ such that } (x,y)\in E(G) \},$$.}
+\end{block} 
+\end{frame}
+
+\section{Main works}
+\begin{frame}
+
+This part is based on:\pause \vskip1mm
+
+\begin{block}{A.C.M. Ran, M.C. Reurings:} A fixed point theorem in partially
+ordered sets and some applications to matrix equations, {\it Proc.
+Amer. Math. Soc.}  132(2004) 1435-1443.
+\end{block}\pause
+
+\begin{block}{J.J. Nieto, R. Rodr\'{\i}guez-L\'{o}pez:}  Contractive mapping theorems in
+partially ordered sets and applications to ordinary differential
+equations, {\it Order} 22(2005)  223-239.
+\end{block}\pause 
+
+
+\begin{block}{A. Petru\c sel, I.A. Rus:}
+Fixed point theorems in ordered
+$L$-spaces, {\it Proc. Amer. Math. Soc.} 134(2006) 411-418.
+\end{block}\pause
+
+\begin{block}{D. O'Regan, A. Petru\c sel:} 
+Fixed point theorems in ordered metric spaces,
+{\it J. Math. Anal. Appl.} 341(2008) 1241-1252.
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+
+\begin{block}{J. Jachymski:}
+The contraction principle for mappings on a metric space with a graph,
+{\it Proc. Amer. Math. Soc.} 136(2008) 1359-1373.
+\end{block}\pause 
+
+
+\begin{block}{A. Nicolae, D. O'Regan, A. Petru\c sel:}
+Fixed point theorems for singlevalued and multivalued generalized contractions in metric spaces
+endowed with a graph, J. Georgian Math. Soc., 18(2011), 307–327.
+\end{block}
+\end{frame}
+
+
+
+\end{document}
