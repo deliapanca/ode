@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.23)  21 AUG 2018 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.23)  21 AUG 2018 19:34
 entering extended mode
 **./licenta.tex
 (licenta.tex
@@ -1090,45 +1090,45 @@ pear in many math-e-mat-i-cal
  []
 
 [52]
-Underfull \hbox (badness 4108) in paragraph at lines 1548--1549
-[]\OT1/cmr/m/it/10.95 G. Morosanu. Ecua[]ii Diferen[]iale. Aplica[]ii. Ed-i-tu
-ra Academiei
- []
-
-
-Underfull \hbox (badness 1803) in paragraph at lines 1554--1555
-[]\OT1/cmr/m/it/10.95 Ronald Shone. An in-tro-duc-tion to eco-nomic dy-namic. C
-am-bridge
- []
-
-
-Overfull \hbox (42.94966pt too wide) in paragraph at lines 1556--1558
-\OT1/cmtt/m/it/10.95 https://www.sciencedirect.com/science/article/pii/S0022247
-X0500106X 
- []
-
-
-Overfull \hbox (48.69835pt too wide) in paragraph at lines 1559--1561
+Overfull \hbox (48.69835pt too wide) in paragraph at lines 1550--1552
 \OT1/cmtt/m/it/10.95 https://www.khanacademy.org/economics-finance-domain/macro
 economics/ 
  []
 
 
-Overfull \hbox (65.94441pt too wide) in paragraph at lines 1559--1561
+Overfull \hbox (65.94441pt too wide) in paragraph at lines 1550--1552
 \OT1/cmtt/m/it/10.95 income-and-expenditure-topic/keynesian-cross-tutorial/v/ke
 ynesian-cross 
  []
 
 
-Overfull \hbox (48.69835pt too wide) in paragraph at lines 1562--1564
+Overfull \hbox (48.69835pt too wide) in paragraph at lines 1554--1556
 \OT1/cmtt/m/it/10.95 https://www.khanacademy.org/economics-finance-domain/macro
 economics/ 
  []
 
 
-Overfull \hbox (65.94441pt too wide) in paragraph at lines 1562--1564
+Overfull \hbox (65.94441pt too wide) in paragraph at lines 1554--1556
 \OT1/cmtt/m/it/10.95 income-and-expenditure-topic/is-lm-model-tutorial/v/invest
 ment-and-real 
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 1558--1559
+[]\OT1/cmr/m/it/10.95 G. Morosanu. Ecua[]ii Diferen[]iale. Aplica[]ii. Ed-i-tu
+ra Academiei
+ []
+
+
+Overfull \hbox (42.94966pt too wide) in paragraph at lines 1561--1563
+\OT1/cmtt/m/it/10.95 https://www.sciencedirect.com/science/article/pii/S0022247
+X0500106X 
+ []
+
+
+Underfull \hbox (badness 4341) in paragraph at lines 1574--1576
+[]\OT1/cmr/m/it/10.95 M.A. []erban. Ecua[]ii si sis-teme de ecua[]ii diferen[]
+iale, Presa
  []
 
 [53
@@ -1139,10 +1139,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3368 strings out of 493305
- 44965 string characters out of 3129367
- 110240 words of memory out of 3000000
- 6819 multiletter control sequences out of 15000+200000
+ 3371 strings out of 493305
+ 44982 string characters out of 3129367
+ 110247 words of memory out of 3000000
+ 6822 multiletter control sequences out of 15000+200000
  16134 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,26p,1011b,241s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1170,7 +1170,7 @@ b><C:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmti12.pfb><C:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmti8.pfb><C:/Users/UserHp/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on licenta.pdf (58 pages, 657379 bytes).
+Output written on licenta.pdf (58 pages, 658310 bytes).
 PDF statistics:
  296 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

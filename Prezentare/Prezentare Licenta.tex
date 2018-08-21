@@ -1,0 +1,295 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usetheme{Antibes}
+\uselanguage{romanian}
+\languagepath{romanian}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\deftranslation[to=romanian]{Theorem}{Teorem\u a}
+\title{SERII FOURIER}
+\institute[]{UNIVERSITATEA BABE\c S-BOLYAI, CLUJ-NAPOCA\\FACULTATEA DE MATEMATIC\u A \c SI INFORMATIC\u A\\SPECIALIZAREA MATEMATIC\u A}
+\author{Moldovan Ioana}  
+\date{2018}
+\begin{document}
+	\begin{frame}
+	\titlepage
+\end{frame}
+
+
+
+
+
+\section*{INTRODUCERE}
+\addcontentsline{toc}{chapter}{Introducere}
+\begin{frame}{Introducere}
+\hspace*{20pt}Lucrarea de fa\c t\u a \^ i\c si propune prezentarea dezvolt\u arii \^ in serie Fourier a unei func\c tii de variabil\u a real\u a, enun\c tarea unor teoreme de convergen\c t\u a \c si divergen\c t\u a, precum \c si rezolvarea unor aplica\c tii sugestive cu ajutorul seriilor Fourier. \\
+\hspace*{20pt}Lucrarea de licen\c t\u a este structurat\u a \^ in patru capitole.
+\end{frame}
+
+\begin{frame}
+\frametitle{Cuprins}
+\tableofcontents
+\end{frame}
+
+\section{SERIA FOURIER}
+\begin{frame}
+\frametitle{Seria Fourier a unei func\c tii de variabil\u a real\u a}
+\hspace*{20pt}Fie $f:[-\pi, \pi]\rightarrow \mathbb{R}$ o func\c tie continu\u a. Seria trigonometric\u a 
+\begin{equation*}
+f(x) \sim \frac{a_0}{2} + \sum_{n=1}^\infty \Big(a_n\cos(nx) + b_n\sin(nx)\Big)
+\end{equation*}
+este cunoscut\u a sub numele de \textit{seria Fourier a func\c tiei f}, iar numerele
+\begin{equation*}
+ a_n = \frac{1}{\pi}\int_{-\pi}^\pi f(x)\cos(nx)\,dx,\: n = 0, 1, ...
+\end{equation*}
+\begin{equation*}
+ b_n =\frac{1}{\pi} \int_{-\pi}^\pi f(x)\sin(nx)\,dx, \: n = 1, 2, ...
+\end{equation*}
+se numesc $\textit {coeficien\c tii Fourier ai func\c tiei f}$.
+\end{frame}
+
+
+\section{CONVERGEN\c TA SERIILOR FOURIER}
+
+\begin{frame}
+\subsection{Inegalitatea lui Bessel. Egalitatea lui Parseval}
+\frametitle{Inegalitatea lui Bessel. Egalitatea lui Parseval}
+\hspace*{20pt}Fie $f$ o func\c tie de p\u atrat integrabil\u a definit\u a pe intervalul $[-\pi, \pi]$ \c si $a_0,\:a_k, \: b_k$ coeficien\c tii Fourier ai dezvolt\u arii func\c tiei $f$ \^ in serie Fourier. Inegalitatea
+\begin{equation*}
+\frac{1}{2}\pi a_0^2 + \pi \sum_{k=1}^{\infty}(a_k^2 + b_k^2) \leq \int_{-\pi}^{\pi} f(x)^2\,dx
+\end{equation*}
+este cunoscut\u a sub numele de \textit{inegalitatea lui Bessel}, iar rela\c tia 
+\begin{equation*}
+\frac{1}{2}\pi a_0^2 + \pi \sum_{k=1}^{\infty}(a_k^2 + b_k^2) = \int_{-\pi}^{\pi} f(x)^2\,dx.
+\end{equation*}
+poart\u a numele de \textit{egalitatea lui Parseval.}
+\end{frame}
+
+\begin{frame}
+\subsection*{Teorema de aproximare a lui Weierstrass}
+\frametitle{Teorema de aproximare a lui Weierstrass}
+\hspace*{20pt}Fie $f$ o func\c tie continu\u a pe intervalul $[-\pi, \pi]$, cu proprietatea c\u a $f(-\pi) = f(\pi)$. Atunci oricare ar fi $\varepsilon > 0$, exist\u a un polinom trigonometric astfel \^ inc\^ at $\left | f(x) - T(x) \right | < \varepsilon$, pentru orice x din intervalul $[-\pi, \pi]$.
+\end{frame}
+
+
+\begin{frame}
+\subsection*{Nucleul lui Dirichlet}
+\frametitle{Nucleul lui Dirichlet}
+\hspace*{20pt}Func\c tia 
+\begin{equation*}
+D_n(x) =  \frac{\sin\Big(x\big(n + \frac{1}{2}\big)\Big)}{2\sin\big(\frac{1}{2}x\big)}=\frac{1}{2} + \sum_{k=1}^{n}\cos(kx),
+\end{equation*}
+pentru $n=1, 2, ...,$ este cunoscut\u a sub numele de \textit{nucleul lui Dirichlet}. Aceasta are urm\u atoarea proprietate:
+\begin{equation*}
+\frac{1}{\pi}
+\int_{-\pi}^{\pi} D_n(x)\, dx = 1,\: n = 1, 2, ...\text{ .} 
+\end{equation*}
+\end{frame}
+
+
+\begin{frame}
+\subsection{Teoreme de convergen\c t\u a}
+\frametitle{Teorema de convergen\c t\u a}
+\hspace*{20pt}Fie $f$ o func\c tie de p\u atrat integrabil\u a pe intervalul $[-\pi, \pi]$ \c si fie $s_n$ suma par\c tial\u a de ordin n a seriei Fourier a func\c tiei $f$. Fie f extins\u a pe axa real\u a prin condi\c tia de periodicitate $f(x+2\pi)=$ $=f(x)$. Presupunem c\u a \^intr-un punct $x \in \mathbb{R}$ prelungirea func\c tiei satisface urm\u atoarea condi\c tie de tip Lipschitz:
+\begin{equation*}
+\left| f(x+t)-f(x) \right| \leq C\left|t\right|, \:\left|t\right|<\delta,
+\end{equation*}
+unde $C$ \c si $\delta$ sunt constante independente de $x$. 
+Atunci $s_n(x)$ tinde c\u atre $f(x)$ c\^ and n$\text{ tinde la }  \infty$.
+\end{frame}
+
+\begin{frame}
+\subsection*{Criteriul lui Dirichlet}
+\frametitle{Criteriul lui Dirichlet}
+\hspace*{20pt}Fie $f:\mathbb{R}\rightarrow \mathbb{R}$ o func\c tie periodic\u a de perioad\u a $2\pi$, continu\u a (cu excep\c tia eventual a unui num\u ar finit de puncte de discontinui- tate de prima spe\c t\u a) \c si monoton\u a pe por\c tiuni pe intervalul $[-\pi, \pi]$. Atunci seria Fourier asociat\u a acestei func\c tii, 
+\begin{equation*}
+\frac{a_0}{2} + \sum_{n=1}^\infty \Big(a_n\cos(nx) + b_n\sin(nx)\Big),
+\end{equation*} 
+este convergent\u a \^ in toate punctele \c si suma ei este:
+\begin{enumerate}
+\item $f(x)$, \^ in fiecare punct de continuitate $x$;
+\item $\frac{f(x+0)-f(x-0)}{2}$, dac\u a $x$ este punct de discontinuitate pentru $f$.
+\end{enumerate}
+\end{frame}
+
+
+\section{DIVERGEN\c TA SERIILOR FOURIER}
+\begin{frame}
+\subsection{Principiul condens\u arii singularit\u a\c tilor}
+\frametitle{Principiul condens\u arii singularit\u a\c tilor}
+\hspace*{20pt}O submul\c time $S$ a unui spa\c tiu topologic $T$ se nume\c ste \textit{superdens\u a} \^ in $T$ dac\u a $S$ este dens\u a, nenum\u arabil\u a \c si rezidual\u a \^ in $T$.\\
+\hspace*{20pt}Fie $X$ \c si $Y$ dou\u a spa\c tii normate pe acela\c si $K$ \c si $\mathcal{A} \subset (X, Y)^*$. Dac\u a $X$ este complet \c si dac\u a 
+\begin{equation*}
+\sup\{\|A(x)\| \mid A \in \mathcal{A}\} = \infty,
+\end{equation*}atunci mul\c timea singularit\u a\c tilor lui A:
+\begin{equation*}
+S_{\mathcal{A}} = \big\{x \in X \mid \sup\{\|A(x)\| \mid A \in \mathcal{A}\} = \infty\big\}
+\end{equation*} 
+este superdens\u a \^ in $X$.
+\end{frame}
+
+
+\begin{frame}
+\subsection{Teorema de divergen\c t\u a}
+\frametitle{Teorema de divergen\c t\u a}
+\hspace*{20pt}Fie $s\in[0,1]$. Asociem fiec\u arei func\c tii $x$ din spa\c tiul Banach complex $C[0,1]$ \c sirul $(T_{n,s}(x))_{n\in \mathbb{N}}$ al sumelor par\c tiale ale seriei Fourier calculate \^ in punctul $s$,
+\begin{equation*}
+T_{n,s}(x)= \sum_{k=-n}^{n}c_ke_k(s),
+\end{equation*}
+unde $e_k(s)=e^{2\pi iks}, \: k\in \mathbb{Z}$.\\
+\hspace*{20pt}\textit{Teorema de divergen\c t\u a (W. Rudin)}\\
+\hspace*{20pt}Pentru fiecare $s \in [0,1]$, mul\c timea func\c tiilor de divergen\c t\u a  nem\u arginit\u a:
+\begin{equation*}
+\Big\{x \in C[0,1] \mid \sup \{\left|T_{n,s}(x) \right|\mid n \in \mathbb{N}\} = \infty \Big\}
+\end{equation*}
+este superdens\u a \^ in $C[0,1]$.
+\end{frame}
+
+
+\section{APLICA\c TII}
+\subsection*{Aplica\c tia 4.1}
+\begin{frame}
+
+\frametitle{Aplica\c tia 4.1}
+\hspace*{20pt}Demonstra\c ti urm\u atoarea rela\c tie:
+\begin{equation*}
+\frac{1}{1^2}+\frac{1}{2^2}+\frac{1}{3^2}+...=\frac{\pi^2}{6}.
+\end{equation*}
+\textit{Solu\c tie:}\\
+\hspace*{20pt}Consider\u am dezvoltarea \^ in serie Fourier a func\c tiei $f(x)=x^2, \: 0 \leq x<2\pi$, prelungit\u a prin periodicitate de perioad\u a $2\pi$ la \^ intreaga ax\u a real\u a.\\
+\end{frame}
+
+\begin{frame}
+\hspace*{20pt}Coeficien\c tii Fourier sunt:
+\begin{equation*}
+a_0=\frac{1}{\pi}\int_{0}^{2\pi} x^2\, dx = \frac{8\pi^2}{3},
+\end{equation*}
+\begin{equation*}
+a_n=\frac{1}{\pi}\int_{0}^{2\pi} x^2 \cos(nx)\, dx=\frac{4}{n^2},
+\end{equation*}
+\begin{equation*}
+b_n=\frac{1}{\pi}\int_{0}^{2\pi} x^2 \sin(nx)\, dx=-\frac{4\pi}{n}.
+\end{equation*}
+\hspace*{20pt}Aplic\^ and criteriul lui Dirichlet, avem
+\begin{equation*}
+f(x) = x^2 = \frac{4\pi^2}{3} + \sum_{n=1}^\infty\bigg( \frac{4}{n^2}\cos(nx)-\frac{4\pi}{n}\sin(nx)\bigg),
+\end{equation*}
+oricare ar fi $x \in (0, 2\pi)$.
+\end{frame}
+
+\begin{frame}
+\hspace*{20pt}Pentru $x=0$ avem
+\begin{equation*}
+\frac{4\pi^2}{3} +  \sum_{n=1}^\infty \frac{4}{n^2}.
+\end{equation*}
+\hspace*{20pt}\c Tin\^ and cont de condi\c tiile lui Dirichlet \c si de faptul ca punctul $x_0=0$ este punct de discontinuitate pentru func\c tia $f$, atunci avem c\u a seria (4.1) converge c\u atre $\frac{0+4\pi^2}{2}=2\pi^2$. Deci
+\begin{equation*}
+4\sum_{n=1}^\infty \frac{1}{n^2}=2\pi^2-\frac{4\pi^2}{3}=\frac{2\pi^2}{3}.
+\end{equation*}
+\hspace*{20pt}De unde rezult\u a ceea ce trebuia demonstrat.
+\end{frame}
+
+
+\subsection*{Aplica\c tia 4.2}
+\begin{frame}
+\frametitle{Aplica\c tia 4.2}
+\hspace*{20pt}Dezvolta\c ti \^ in serie Fourier func\c tia $f(x)=x,$ pentru $0 \leq x<2$ numai dup\u a cosinusuri \c si determina\c ti func\c tia zeta patru a lui Riemann.\\
+\textit{Solu\c tie:}\\
+\hspace*{20pt}Dezvoltarea func\c tiei $f(x)$ \^ in serie Fourier numai dup\u a cosinusuri este
+\begin{equation*}
+f(x)=1-\frac{8}{\pi^2}\bigg[\cos\bigg(\frac{\pi x}{2}\bigg)+\frac{1}{3^2}\cos\bigg(\frac{3\pi x}{2}\bigg)+\frac{1}{5^2}\cos\bigg(\frac{5\pi x}{2}\bigg)+...\bigg],
+\end{equation*}
+oricare ar fi $x\in(0,2)$.
+\end{frame}
+
+\begin{frame}
+\hspace*{20pt}Din egalitatea lui Parseval, se ob\c tine
+\begin{equation*}
+\frac{1}{2}\int_{-2}^2 x^2 \, dx = \frac{4}{2}+\sum_{n=1}^\infty\bigg(\frac{16}{n^4\pi^4}\Big[\cos(n\pi)-1\Big]^2\bigg).
+\end{equation*}
+\hspace*{20pt}De unde rezult\u a 
+\begin{equation*}
+\frac{1}{1^4}+\frac{1}{2^4}+\frac{1}{3^4}+...+\frac{1}{n^4}+...=\frac{\pi^4}{96}.
+\end{equation*}
+\end{frame}
+
+
+\subsection*{Aplica\c tia 4.3}
+\begin{frame}
+\frametitle{Aplica\c tie cu referire la conduc\c tia termic\u a}
+\hspace*{20pt}Determina\c ti temperatura unei bare, \c stiind c\u a valoarea problemei pe frontier\u a este
+\begin{equation*}
+\frac{\partial u}{\partial t}=2\frac{\partial^2u}{\partial x^2}, \: 0<x<3,\: t>0,
+\end{equation*} 
+$u(0,t)=u(3,t)=0$, temperatura ini\c tial\u a este de $u(x,0)=25^\circ C$ \c si $\left|u(x,t)\right|<M$.\\
+\textit{Solu\c tie:}\\
+\hspace*{20pt}Fie $u(x,t)=X(x)T(t)$, de unde rezult\u a
+\begin{equation*}
+\frac{X''}{X}=\frac{T'}{2T}=-\lambda^2. 
+\end{equation*}
+\end{frame}
+
+
+\begin{frame}
+\hspace*{20pt}A\c sadar, o solu\c tie a ecua\c tiei cu derivate par\c tiale este 
+\begin{equation*}
+u(x,t)=e^{-2\lambda^2t}\big(A\cos(\lambda x)+B\sin(\lambda x)\big),
+\end{equation*}
+unde A \c si B sunt constante.\\
+\hspace*{20pt}\c Tin\^ and cont de condi\c tiile ini\c tiale $u(0,t)=u(3,t)=0$, avem 
+\begin{equation*}
+u(x,t)=B e^{\frac{-2k^2\pi^2t}{9}}\sin\Big(\frac{k\pi x}{3}\Big).
+\end{equation*} 
+\hspace*{20pt}Pentru a satisface condi\c tia $u(x,0)=25$, vom apela la principiul superpozi\c tiei, deci
+\begin{equation*}
+u(x,t)=\sum_{k=1}^\infty B_k e^{\frac{-2k^2\pi^2t}{9}}\sin\Big(\frac{k\pi x}{3}\Big).
+\end{equation*}
+\end{frame}
+
+
+\begin{frame}
+\hspace*{20pt}Deoarece 
+\begin{equation*}
+B_k= \frac{50\big(1-cos(k\pi)\big)}{k\pi},
+\end{equation*}
+ob\c tinem
+\begin{equation*}
+u(x,t)=\frac{100}{\pi}\Big[e^{\frac{-2\pi^2t}{9}}\sin\Big(\frac{\pi x}{3}\Big)+ \frac{1}{3}e^{-2\pi^2t}\sin(\pi x)+...\Big].
+\end{equation*}
+\end{frame}
+
+
+
+
+\section*{BIBLIOGRAFIE}
+
+\begin{frame}
+%\addcontentsline{toc}{chapter}{Bibliografie}
+\begin{thebibliography}\\
+\bibitem{}FIHTENHOL\c T G.M., \textit{Curs de calcul diferen\c tial \c si integral}, Editura Tehnic\u a, Bucure\c sti 1965.
+\bibitem{}MUNTEAN I. \textit{Analiz\u a func\c tional\u a}, Cluj-Napoca, 1993.
+\bibitem{}MURRAY R. SPIEGEL, \textit{Theory and problems of Fourier Analysis with applications to Boundary value problems}, Schaum's Outline Series, McGraw-Hill Book Company.
+\bibitem{}PETER L. DUREN, \textit{Invitation to Classical Analysis}, Volumul 17 din \textit{Pure and applied undergraduate texts, The Sally series}, Editura American Mathematical Society, 2012.
+\bibitem{}SOLOMON M., MIRON N., \textit{Analiz\u a matematic\u a, volumul II}, Editura Didactic\u a \c si Pedagogic\u a.
+\bibitem{}WREDE R., MURRAY R. SPIEGEL, \textit{Advenced Calculus}, a treia edi\c tie, Schaum's Outline Series, McGraw-Hill Companies.
+\end{thebibliography}
+\end{frame}
+
+\begin{frame}
+\begin{thebibliography}\\
+\bibitem{}$civile.utcb.ro/cmat/cursrt/ec1.pdf$.
+\bibitem{}$www.utgjiu.ro/math/miovanov/book/ms\_curs/cap4.pdf$.
+\bibitem{}$https://en.wikipedia.org/wiki/Fourier\_series$.
+\bibitem{}$https://ro.wikipedia.org/wiki/Serie\_Fourier$.
+\end{thebibliography}
+\end{frame}
+
+\section*{}
+\begin{frame}
+\begin{equation*}
+\text{\Huge{V\u a mul\c tumesc!}}
+\end{equation*}
+\end{frame}
+
+\end{document}

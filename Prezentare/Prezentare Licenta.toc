@@ -1,0 +1,9 @@
+\contentsline {chapter}{Introducere}
+\beamer@sectionintoc {2}{SERIA FOURIER}{4}{0}{1}
+\beamer@sectionintoc {3}{CONVERGEN\c TA SERIILOR FOURIER}{5}{0}{2}
+\beamer@subsectionintoc {3}{1}{Inegalitatea lui Bessel. Egalitatea lui Parseval}{5}{0}{2}
+\beamer@subsectionintoc {3}{4}{Teoreme de convergen\c t\u a}{8}{0}{2}
+\beamer@sectionintoc {4}{DIVERGEN\c TA SERIILOR FOURIER}{10}{0}{3}
+\beamer@subsectionintoc {4}{1}{Principiul condens\u arii singularit\u a\c tilor}{10}{0}{3}
+\beamer@subsectionintoc {4}{2}{Teorema de divergen\c t\u a}{11}{0}{3}
+\beamer@sectionintoc {5}{APLICA\c TII}{12}{0}{4}

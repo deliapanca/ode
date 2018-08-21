@@ -1,0 +1,312 @@
+\documentclass[11]{beamer}
+\usetheme{CambridgeUS}
+%svgnames
+%
+\usepackage[all]{xypic}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+ \newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\xstar}{x^{*}}
+
+
+
+
+\title[Bachelor's thesis]{Differential Equations with Applications to Economics}
+\author{Delia P\u{a}nc\^{a}}
+\institute[BBU Cluj-Napoca]{Babe\c s-Bolyai University Cluj-Napoca\\
+Faculty of Mathematics and Computer Science}
+\date{September, 2018}
+
+
+
+
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section*{Introduction}
+
+\begin{frame}
+
+The present bachelor's thesis proposes to present some results from the theory of discrete and continuous dynamic systems and to justify their use in the real world through the description of some economic models like: price and demand (microeconomics), Keynesian model and IS-LM (macroeconomics).The purpose of the thesis is to recall some results from the theory of differential equations and the theory of difference equations. This will be considered from the theory of discrete and continuous dynamic systems point of view and some theoretical and practical examples (applies in economy) will be given for a better understanding of the notions.
+\end{frame}
+\begin{frame}
+\frametitle{Contents}
+ \tableofcontents
+\end{frame}
+
+\section{Linear differential equations of first order}
+\begin{frame}
+\frametitle{Linear differential equations of first order}
+A linear differential equation has the following expression:
+
+\begin{equation}
+ x'=a(t)x+b(t) \label{LE} \tag{LE}
+\end{equation}
+
+where $a,b: (t_1,t_2) \subset \R\rightarrow\R$ are continous on $(t_1,t_2)$ (bounded or not). If $x=x(t)$, $t_1<t<t_2$ is a solutions for \eqref{LE}, then
+multiplying with $exp(-\int_{t_0}^{t} a(s)ds)$, where $t_0$ is arbitrary chosen from $(t_1,t_2)$, the following equation is obtained
+\begin{equation*}
+ \frac{d}{dt}\bigg[ e^{-\int_{t_0}^{t} a(s)ds}x(t)\bigg] = b(t)e^{-\int_{t_0}^{t} a(s)ds}, t \in (t_1,t_2) 
+\end{equation*}
+
+
+\end{frame}
+
+\begin{frame}
+So
+
+\begin{equation}
+ x(t)=e^{\int_{t_0}^{t} a(s)ds}x_0 + \int_{t_0}^{t} b(s)e^{-\int_{t_0}^{s} a(\sigma)d\sigma}ds , t \in (t_1,t_2) \label{SOL} \tag{SOL}
+\end{equation}
+
+where $x_0$ is an arbitrary real number. Reciprocally, we can easily agree that any function $x=x(t), t\in (t_1,t_2)$ given by the formula \eqref{SOL} is a solution for \eqref{LE}.
+Actually, \eqref{SOL} asserts the solution of \eqref{LE} with the Cauchy condition $x(t_0)=x_0$.
+
+
+\end{frame}
+
+
+\begin{frame}
+ Sometimes, it is more convienent to use the following form of \eqref{SOL}:
+
+\begin{equation}
+ x(t)= e^{\int a(s)ds}\cdot\int b(t)e^{-\int a(t) dt}dt \label{SOL*}\tag{SOL*}
+\end{equation}
+
+with the convention that $\int a(t) dt$ is a fixed primitive of $a=a(t)$ (the same in \eqref{SOL} and \eqref{SOL*}).
+In practice, a method that does not require the use of \eqref{SOL} formula is based on the algebraic link which exists between the set of the \eqref{LE} solutions and the set of the associated homogeneous equation solutions: $$x'=a(t)x.$$
+This link is contained in the following theorem:
+\end{frame}
+
+\begin{frame}
+\begin{theorem}
+ If $x_{p}$ is a particular solution of \eqref{LE}, than any other solution $x$ of the equation is the sum between a certain solution $x_{o}$ of the homogeneous equation and $x_{p}$, meaning: $$x=x_{o}+x_{p}.$$ Reciprocically, any solution $x_{o}$ of the homogeneous equation is the difference between a certain solution $x$ of \eqref{LE} and $x_{p}$.
+\end{theorem}
+The theorem sustains that for solving a \eqref{LE}, we have to go through two stages:
+\begin{enumerate}
+ \item to solve the associated homogeneous equation;
+ \item to determine a particular solution of \eqref{LE}.
+\end{enumerate}
+\end{frame}
+
+
+\section{Dynamic systems}
+\subsection{The notion of a dynamic system}
+\begin{frame}
+ \frametitle{The notion of a dynamic system}
+ Let $\varphi:G\times X\rightarrow X$ be an operator.
+\begin{definition}
+ The triplet $(X,G,\varphi)$ is named a dynamic system if:
+ \begin{enumerate}[i)]
+  \item $\varphi(0,x)=x,\forall x\in X$
+  \item $\varphi(t,\varphi(s,x))=\varphi(t+s,x),\forall t,s \in G, \forall x\in X$
+ \end{enumerate}
+\end{definition}
+ 
+ 
+\end{frame}
+\subsection{Fixed points}
+\begin{frame}
+ \frametitle{Fixed points}
+ A point $x_{0}\in X$ is called a fixed point of system $(X,G,\varphi)$ if $$\varphi(t,x_{0})=x_{0},\forall t\in G.$$
+It can be easily proved that the following theorem is valid:
+\begin{theorem}
+ Let us consider $(X,G,\varphi)$ a dynamic system. Then we have:
+ \begin{enumerate}
+  \item $\varphi(G,x_{0})=\{x_{0}\} \Leftrightarrow x_{0}$ is a fixed point of the dynamic system;
+  \item the set of fixed points of the dynamic system is given by: $$\cap_{t\in G} F_{\varphi(t,\cdot)}$$
+  \item the set of fixed points is a closed set.
+ \end{enumerate}
+
+\end{theorem}
+\end{frame}
+\subsection{Dynamic systems in $\R^{n}$}
+\begin{frame}
+ \frametitle{Dynamic systems in $\R^{n}$}
+ Considering a dynamic system in $R^{n}$ defined by an autonomous system $x'=f(x)$, the following result occur.
+ \begin{theorem}
+  Let $(\R^{n},\R,\varphi)$ be a dynamic system on $\R^{n}$. We presume that $\varphi\in C^{1}(\R\times\R^{n},\R^{n})$. We note $$f(\eta):=\frac{\partial \varphi(0,\eta)}{\partial t}.$$ Then $\varphi(\cdot,\eta)$ is the solution of the Cauchy problem 
+  \begin{equation}\label{1.14}
+   x'=f(x),x(0)=\eta.
+  \end{equation}
+
+ \end{theorem}
+ \end{frame}
+ \begin{frame}
+\begin{proof}
+ We have:
+ \begin{align*}
+  x'(t)=\frac{\partial \varphi(t,\eta)}{\partial t}=\lim_{h\rightarrow 0}\frac{\varphi(t+h,\eta)-\varphi(t,\eta)}{h}=\\
+  =\lim_{h\rightarrow 0}\frac{\varhi(h,\varphi(t,\eta))-\varphi(0,\varphi(t,\eta))}{h}=f(\varphi(t,\eta)), \forall t\in \R.  
+ \end{align*}
+and $$x(0)=\varphi(0,\eta)=\eta.$$
+\end{proof}
+\end{frame}
+\section{IS-LM dynamics}
+\subsection{A continuous model}
+\begin{frame}
+ \frametitle{IS-LM dynamics. A continuous model}
+ Let us consider a continuous model and also allow differential adjustments in both the money market and the goods market, neither of which is instantaneous. We assume that the money market is quicker to adjust than the goods market. In the goods market, we assume that income rises over time if there is excess demand and falls if there is excess supply. More specifically:
+\begin{equation}
+ Y'(t)=\alpha(E(t)-Y(t)), \alpha>0
+\end{equation}
+where $E(t)=C(t)+I(t)+G$.
+
+ In the money market we assume that the interest rate rises if there is excess demand in this market and falls if there is excess supply. Meaning:
+\begin{equation}
+ r'(t)=\beta(Md-Ms),\beta>0
+\end{equation}
+\end{frame}
+\begin{frame}
+ Thus, the model is:
+\begin{align}
+ C(t)&=a+bYd(t) \\
+ Yd(t)&=Y(t)-Tx(t) \\
+ Tx(t)&=Tx_{0}+txY(t)\\
+ I(t)&=I_{0}-hr(t)\\
+ E(t)&=C(t)+I(t)+G\\
+ Y'(t)&=\alpha(E(t)-Y(t)), \alpha>0\\
+ Md(t)&=M_{0}+kY(t)-ur(t)\\
+ Ms(t)&=M\\
+ r'(t)&=\beta(Md-Ms),\beta>0.
+\end{align}
+\end{frame}
+\begin{frame}
+ In equilibrium, $Y'(t)=0$ meaning that $Y(t)=C(t)+I(t)+G$ and $r'(t)=0$ meaning that $Md(t)=Ms(t)=M$. Moreover, both equilibrium conditions do not depend on the adjustment coefficients $\alpha$ and $\beta$.By substituting all the relationships in each of the adjustment equations in turn, results:
+\begin{align*}
+ \text{IS: }&Y'(t)=\alpha(a-bTx_{0}+I_{0}+G)-\alpha(1-b(1-tx))Y(t)-\alpha hr(t) \\
+ \text{LM: } &r'(t)=\beta(M_{0}-M)+\beta k Y(t)-\beta ur(t).
+\end{align*}
+
+\end{frame}
+\begin{frame}
+ Considering first the goods market, if $Y'(t)>0$ then $Y(t)$ is rising. This will occur when:
+$$\alpha(a-bTx_{0}+I_{0}+G)-\alpha(1-b(1-tx))Y(t)-\alpha hr(t)>0$$
+$$r(t)<\frac{(a-bTx_{0}+I_{0}+G)}{h}-\frac{(1-b(1-tx))Y(t)}{h}$$
+This refers to points below the IS curve. Thus, there is pressure for income to rise. Above the IS curve, there is pressure for income to fall.
+In the money market, if $r(t)>0$ then $r(t)$ is rising and
+$$\beta(M_{0}-M)+\beta kY(t)-\beta ur(t)>0$$
+$$r(t)<\frac{M_{0}-M}{u}+\frac{kY(t)}{u}$$
+hence below the LM curve is pressure on interest rates to rise, while above there is pressure on interest rates to fall. 
+
+\end{frame}
+
+\section{Difference equations}
+\subsection{Linear difference equations of first order}
+\begin{frame}
+ \frametitle{Linear difference equations of first order}
+ The general form of a linear difference equation of first order is:
+    \begin{equation} 
+     x_{n+1}=a_{n}x_{n}+b_{n} \label{2.1}
+    \end{equation}
+    for any $n \geq 0$, where $(a_{n})_{n\geq 0}$ and $(b_{n})_{n\geq 0}$ are given series of real numbers. 
+    Through mathematical induction, it is proved that the solution of the linear difference equation of first order has the following form:
+\begin{equation}\label{2.2}
+ x_{n}=\bigg( \prod_{j=0}^{n-1} a_{j} \bigg) \cdot x_{0} + \sum_{j=0}^{n-1} \bigg( \prod_{k=j+1}^{n-1} a_{k} \bigg)\cdot b_{j}.
+\end{equation}
+\end{frame}
+\subsection{Equilibrium point. Stability criteria}
+\begin{frame}
+ \frametitle{Equilibrium point}
+ \begin{definition}
+ A point $\xstar\in\R$ is called an equilibrium point (stationary) for equation $ x_{n+1}=f(x_{n})$ if it is a fixed point for the generated dynamical system $(\R,\mathbb{N},\varphi)$. The constant solution defined by $(x_{n})=(\xstar,\xstar,...\xstar)$ is called equilibrium solution (stationary).
+\end{definition}
+
+\end{frame}
+\begin{frame}
+\begin{theorem}[The stability criteria in first aproximation]\label{2.3.2.3.}
+ Let $\xstar\in I$ be an equilibrium point for $ x_{n+1}=f(x_{n})$, $f:I\rightarrow\R$ such that f is differentiable in $\xstar$. Then:
+ \begin{enumerate}
+  \item if $\xstar$ is locally stable, then $|f'(\xstar)|\leq 1$;
+  \item if $|f'(\xstar)|<1$ then $\xstar$ is locally asymptotic stable;
+  \item if $|f'(\xstar)|>1$ then $\xstar$ is unstable.
+ \end{enumerate}
+\end{theorem}
+\end{frame}
+
+\subsection{The linear Cobweb model}
+\begin{frame}
+\frametitle{The linear Cobweb model}
+Let us consider the agricultural markets. We will assume the expected price to be the same with the price from the previous period. Consider the following simple linear model of demand and supply:
+\begin{align}
+ qd(t)=a-bp(t) \\
+ qs(t)=c+d\cdot pe(t)\\
+ pe(t)=p(t-1)\\
+ q(t)=qd(t)=qs(t)
+\end{align}
+where $qd(t)$ represents the quantity demanded, $qs(t)$ represents the quantity supplied, $pe(t)$ the estimated price and $p(t)$ the price. 
+\end{frame}
+\begin{frame}
+First, we replace the expected price in the second equation by the price in the previous period. Since equilibrium demand is equal to supply, we can equate these two. We obtain:
+\begin{align*}
+ a-bp(t)=c+dp(t-1)\Rightarrow \\
+ p(t)=\frac{a-c}{b}-\frac{d}{b}p(t-1).
+\end{align*}
+If the system is in equilibrium, results that $p(t-1)=p(t)=p^{*}$. Thus, $p^{*}=\frac{a-c}{b+d}$ and $q^{*}=\frac{ad+bc}{b+d}$, where $a$ represents the speed of adjustment.
+\end{frame}
+\section{Bibliography}
+\begin{frame}
+\frametitle{Bibliography}
+ \begin{thebibliography}{9}
+
+ \bibitem{serban2}
+  Octavian Agratini, M.A. \c{S}erban, Veronica Ilea. \textit{Matematic\u{a} aplicat\u{a},} Casa C\u{a}r\c{t}ii de \c{S}tiin\c{t}\u{a}, Cluj-Napoca 2017 (Romanian). 
+
+ \bibitem{khankey}
+ Sal Khan. \textit{Keynesian Cross}
+ \\\texttt{https://www.khanacademy.org/economics-finance-domain/macroeconomics/\\income-and-expenditure-topic/keynesian-cross-tutorial/v/keynesian-cross}
+ 
+  \bibitem{khanislm}
+ Sal Khan. \textit{IS-LM model}
+ \\\texttt{https://www.khanacademy.org/economics-finance-domain/macroeconomics/\\income-and-expenditure-topic/is-lm-model-tutorial/v/investment-and-real\\-interest-rates}
+ 
+  \bibitem{morosanu}
+ G. Moro\c{s}anu. \textit{Ecua\c{t}ii Diferen\c{t}iale. Aplica\c{t}ii}. Editura Academiei Republicii Socialiste Romania, Bucure\c{s}ti 1989 (Romanian).
+ 
+
+ \end{thebibliography}
+ \end{frame}
+ \begin{frame}
+ 
+ \begin{thebibliography}{9}
+   \bibitem{murakami}
+ Kouichi Murakami. \textit{Stability for non-hyperbolic fixed points of scalar difference equations}, 27 September 2004.
+ \\\texttt{https://www.sciencedirect.com/science/article/pii/S0022247X0500106X}
+ 
+ \bibitem{perko}
+ Lawrence Perko. \textit{Differential Equations and Dynamical Systems. Third Edition}. Springer 2001.
+ 
+ \bibitem{precup}
+ Radu Precup. \textit{Ecua\c{t}ii Diferen\c{t}iale}, RISOPRINT, Cluj-Napoca 2011 (Romanian).
+ 
+ \bibitem{rus}
+ Ioan A. Rus. \textit{Ecua\c{t}ii Diferen\c{t}iale, ecua\c{t}ii integrale \c{s}i sisteme dinamice.} Transilvania Press, Cluj-Napoca 1996 (Romanian).
+
+ \bibitem{serban1}
+  M.A. \c{S}erban. \textit{Ecua\c{t}ii \c{s}i sisteme de ecua\c{t}ii diferen\c{t}iale}, Presa Unviersitar\u{a} Clujean\u{a}, Cluj-Napoca 
+  2009 (Romanian).
+  
+ 
+ \bibitem{shone}
+ Ronald Shone. \textit{An introduction to economic dynamic.} Cambridge University Press, 2003.
+
+
+\end{thebibliography}
+\end{frame}
+
+\begin{frame}
+\begin{equation*}
+\text{\Huge{Thank you!}}
+\end{equation*}
+\end{frame}
+
+
+
+\end{document}
