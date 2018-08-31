@@ -30,6 +30,7 @@
 \setcounter{tocdepth}{2}
 \begin{document}
  \begin{titlepage}
+ 
 	\centering
 	\includegraphics[width=0.25\textwidth]{Facultate1.jpg}\par\vspace{1cm}
 	{\scshape\LARGE Babe\c{s}-Bolyai University Cluj-Napoca\\ Faculty of Mathematics and Computer Science \\ Mathematics specialization \par}
@@ -38,7 +39,7 @@
 	\vspace{1.5cm}
 	{\huge\bfseries Differential Equations with Applications to Economics\par}
 	\vspace{2cm}
-	{\Large\itshape Delia P\u{a}nc\^{a}\par}
+	{\Large\itshape Delia P\^{a}nc\u{a}\par}
 	\vfill
 	supervised by\par
 	Prof. Dr.  \textsc{Adrian Petru\c{s}el}
@@ -48,12 +49,28 @@
 % Bottom of the page
 	{2018}
 \end{titlepage}
+\begin{flushleft}
+
+\text{Babe\c{s}-Bolyai University Cluj-Napoca}
+\text{Faculty of Mathematics and Computer Science }
+
+\vspace{20mm}
+\text{Copyright © 2018, Delia P\^{a}nc\u{a}. }\par
+\vspace{10mm}
+\text{All rights reserved.}\par
+\vspace{15mm}
+The author hereby to Babe\c{s}-Bolyai University Cluj-Napoca permission to reproduce and  to distribute publicly paper and electronic copies of this thesis document in whole or in part.
+
+
+
+\end{flushleft}
  \pagenumbering{gobble}
  \tableofcontents
  %\afterpage{\blankpage}
  %gobble = no numbers
  % arabic=arabic numbers
  %roman = roman numbers
+
  \blankpage
 
 
@@ -757,8 +774,8 @@ Consider $(X,\R,\varphi)$ a dynamic system. A subset $A\subset X$, invariant and
 \begin{proof}
  We have:
  \begin{align*}
-  x'(t)=\frac{\partial \varphi(t,\eta)}{\partial t}=\lim_{h\rightarrow 0}\frac{\varphi(t+h,\eta)-\varphi(t,\eta)}{h}=\\
-  =\lim_{h\rightarrow 0}\frac{\varhi(h,\varphi(t,\eta))-\varphi(0,\varphi(t,\eta))}{h}=f(\varphi(t,\eta)), \forall t\in \R.  
+  x'(t)&=\frac{\partial \varphi(t,\eta)}{\partial t}=\lim_{h\rightarrow 0}\frac{\varphi(t+h,\eta)-\varphi(t,\eta)}{h}= \\
+       &=\lim_{h\rightarrow 0}\frac{\varphi(h,\varphi(t,\eta))-\varphi(0,\varphi(t,\eta))}{h}=f(\varphi(t,\eta)), \forall t\in \R.  
  \end{align*}
 and $$x(0)=\varphi(0,\eta)=\eta.$$
 \end{proof}
@@ -890,7 +907,7 @@ Simpler:
 In this case, the slope will be positive when drawn in $(Y,r)$-space, due to our assumptions about the sign of the parameters $k$ and $u$. The intercept can be positive, zero or negative.
 Now we have two equations: \eqref{simpler money mr} and \eqref{simple mr}, with $Y$ and $r$ unknown. The situation is represented graphically in figure
 \begin{figure}[h]
-\caption{IS-LM model}
+\caption{IS-LM model\cite{shone}}
 \centering
  \includegraphics[width=10cm]{IS-LM.png}
 \end{figure}
@@ -1528,9 +1545,10 @@ We notice that the equilibrium condition does not depend on $\lambda$. Next, we 
  Y(t+1)=\lambda(a+I+G)+[1-\lambda(1-b)]Y(t).
 \end{equation}
 \begin{figure}[h]
-
+\caption{The diagrams explained above. \cite{shone}}
 \centering
  \includegraphics[width=8cm]{keynesian.PNG}
+ 
 \end{figure}
 Considering $\lambda$ to be the unit leads to the static model ennounced above. The second diagram represents the difference equation version of the model. The third diagram portraits the phase line of the dynamic model, which is derived from the diagram above it.
 Let us consider a random value for income $Y(0)$, which would be measured on the horizontal axis. Let this be below the equilibrium level. Results $E(0)-Y(0)>0$ and so income in period $1$ is a ratio $\lambda$ of this difference. Since $\lambda>0$, this income in period $t$ is higher than it was in period $0$. At income level $Y(0)$, $\Delta Y(t+1)>0$ resulting a rise of the income. This can be noticed on the phase line when arrow points to the right. In all cases, the economy is experiencing a rise in income and is racing towards the equilibrium level of income. If we choose $Y(0)$ above the equilibrium level, results $E(0)-Y(0)<0$ hence income falls, and the arrow from the phase portrait is pointing to the left.
