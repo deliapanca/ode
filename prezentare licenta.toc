@@ -1,12 +1,12 @@
-\beamer@sectionintoc {2}{Linear differential equations of first order}{4}{0}{1}
+\beamer@sectionintoc {2}{Linear differential equations of first order}{3}{0}{1}
 \beamer@sectionintoc {3}{Dynamic systems}{8}{0}{2}
 \beamer@subsectionintoc {3}{1}{The notion of a dynamic system}{8}{0}{2}
 \beamer@subsectionintoc {3}{2}{Fixed points}{9}{0}{2}
 \beamer@subsectionintoc {3}{3}{Dynamic systems in $\mathbb {R}^{n}$}{10}{0}{2}
-\beamer@sectionintoc {4}{IS-LM dynamics}{12}{0}{3}
-\beamer@subsectionintoc {4}{1}{A continuous model}{12}{0}{3}
-\beamer@sectionintoc {5}{Difference equations}{16}{0}{4}
-\beamer@subsectionintoc {5}{1}{Linear difference equations of first order}{16}{0}{4}
-\beamer@subsectionintoc {5}{2}{Equilibrium point. Stability criteria}{17}{0}{4}
-\beamer@subsectionintoc {5}{3}{The linear Cobweb model}{19}{0}{4}
-\beamer@sectionintoc {6}{Bibliography}{21}{0}{5}
+\beamer@sectionintoc {4}{IS-LM dynamics}{11}{0}{3}
+\beamer@subsectionintoc {4}{1}{A continuous model}{11}{0}{3}
+\beamer@sectionintoc {5}{Difference equations}{15}{0}{4}
+\beamer@subsectionintoc {5}{1}{Linear difference equations of first order}{15}{0}{4}
+\beamer@subsectionintoc {5}{2}{Equilibrium point. Stability criteria}{16}{0}{4}
+\beamer@subsectionintoc {5}{3}{The linear Cobweb model}{18}{0}{4}
+\beamer@sectionintoc {6}{Bibliography}{20}{0}{5}

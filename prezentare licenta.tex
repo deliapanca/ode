@@ -32,10 +32,7 @@ Faculty of Mathematics and Computer Science}
 
 \section*{Introduction}
 
-\begin{frame}
 
-The present bachelor's thesis proposes to present some results from the theory of discrete and continuous dynamic systems and to justify their use in the real world through the description of some economic models like: price and demand (microeconomics), Keynesian model and IS-LM (macroeconomics).The purpose of the thesis is to recall some results from the theory of differential equations and the theory of difference equations. This will be considered from the theory of discrete and continuous dynamic systems point of view and some theoretical and practical examples (applies in economy) will be given for a better understanding of the notions.
-\end{frame}
 \begin{frame}
 \frametitle{Contents}
  \tableofcontents
@@ -50,24 +47,19 @@ A linear differential equation has the following expression:
  x'=a(t)x+b(t) \label{LE} \tag{LE}
 \end{equation}
 
-where $a,b: (t_1,t_2) \subset \R\rightarrow\R$ are continous on $(t_1,t_2)$ (bounded or not). If $x=x(t)$, $t_1<t<t_2$ is a solutions for \eqref{LE}, then
-multiplying with $exp(-\int_{t_0}^{t} a(s)ds)$, where $t_0$ is arbitrary chosen from $(t_1,t_2)$, the following equation is obtained
-\begin{equation*}
- \frac{d}{dt}\bigg[ e^{-\int_{t_0}^{t} a(s)ds}x(t)\bigg] = b(t)e^{-\int_{t_0}^{t} a(s)ds}, t \in (t_1,t_2) 
-\end{equation*}
+where $a,b: (t_1,t_2) \subset \R\rightarrow\R$ are continous on $(t_1,t_2)$ (bounded or not). 
 
 
 \end{frame}
 
 \begin{frame}
-So
+By integrating \eqref{LE}, we get the solution:
 
 \begin{equation}
  x(t)=e^{\int_{t_0}^{t} a(s)ds}x_0 + \int_{t_0}^{t} b(s)e^{-\int_{t_0}^{s} a(\sigma)d\sigma}ds , t \in (t_1,t_2) \label{SOL} \tag{SOL}
 \end{equation}
 
-where $x_0$ is an arbitrary real number. Reciprocally, we can easily agree that any function $x=x(t), t\in (t_1,t_2)$ given by the formula \eqref{SOL} is a solution for \eqref{LE}.
-Actually, \eqref{SOL} asserts the solution of \eqref{LE} with the Cauchy condition $x(t_0)=x_0$.
+where $x_0$ is an arbitrary real number. 
 
 
 \end{frame}
@@ -95,8 +87,19 @@ The theorem sustains that for solving a \eqref{LE}, we have to go through two st
  \item to determine a particular solution of \eqref{LE}.
 \end{enumerate}
 \end{frame}
-
-
+\begin{frame}
+ \frametitle{An example}
+  $\begin{cases}
+       x'+x=e^{2t}\\
+       x(0)=1
+      \end{cases}$\\\\
+      The associated homogeneous equation is: $x_{o}'=-x_{o}.$ Separating the variables, we get: $\frac{dx_{o}}{x_{o}}=-dt.$ By integration, we obtain: $x_{o}=ce^{-t},c\in\R.$
+      Hence, the particular solution is: $x_{p}=c(t)e^{-t}.$ Replacing in the given equation we get: $c'(t)e^{-t}-e^{-t}c(t)+e^{-t}c(t)=e^{2t}\Leftrightarrow$
+      $c'(t)=e^{3t}\Leftrightarrow c(t)=\frac{1}{3}e^{3t}.$
+      Thus, the general solution has the following form:
+      $$x=ce^{-t}+\frac{1}{3}e^{2t}, c\in \R.$$
+      From the Cauchy condition, we get $c=\frac{2}{3}$, so the solution for the Cauchy problem is: $x=\frac{2}{3}e^{-t}+\frac{1}{3}e^{2t}.$
+\end{frame}
 \section{Dynamic systems}
 \subsection{The notion of a dynamic system}
 \begin{frame}
@@ -139,16 +142,7 @@ It can be easily proved that the following theorem is valid:
 
  \end{theorem}
  \end{frame}
- \begin{frame}
-\begin{proof}
- We have:
- \begin{align*}
-  x'(t)=\frac{\partial \varphi(t,\eta)}{\partial t}=\lim_{h\rightarrow 0}\frac{\varphi(t+h,\eta)-\varphi(t,\eta)}{h}=\\
-  =\lim_{h\rightarrow 0}\frac{\varhi(h,\varphi(t,\eta))-\varphi(0,\varphi(t,\eta))}{h}=f(\varphi(t,\eta)), \forall t\in \R.  
- \end{align*}
-and $$x(0)=\varphi(0,\eta)=\eta.$$
-\end{proof}
-\end{frame}
+ 
 \section{IS-LM dynamics}
 \subsection{A continuous model}
 \begin{frame}
